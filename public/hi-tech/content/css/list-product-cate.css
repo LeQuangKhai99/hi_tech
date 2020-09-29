@@ -1,0 +1,152 @@
+a{
+    text-decoration: none !important;
+}
+.text-brand{
+    margin-top: 7px;
+    background: #fff;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: bold;
+    color: #21385d;
+    position: absolute;
+    left: 45px;
+    z-index: 99;
+    text-transform: uppercase;
+    padding: 0 9px;
+}
+
+.sw
+{
+    margin: 20px !important ;
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 0px 0px !important;
+}
+.content_sw
+{
+    padding: 0px 55px;
+}
+.btnsw
+{
+    background: white;
+    width: 74px !important;
+    margin-left: -10px !important;
+    color: gray !important;
+    margin-right: -14px !important;
+    height: 96px !important;
+    margin-top: -50px!important;
+}
+.btnprenext
+{
+    height: 9px;
+}
+.img_sw
+{
+    padding-top: 15px;
+    width: 55%;
+}
+
+.swiper-button-prev:after,.swiper-button-next:after{
+    font-size: 18px !important;
+    font-weight: bold;
+}
+.swiper-slide { width: 14% !important; }
+
+.emergency-item {
+    position: relative;
+    overflow: hidden;
+    transition: all 1s ease 0s;
+    border: 1px solid #c6c6c6;
+}
+
+.emergency-item a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.emergency .desc-spp {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 41px;
+    background: #224b89;
+    opacity: 0.9;
+}
+
+.support .desc-spp > h3 {
+    margin: 0;
+    padding: 0;
+    display: table;
+    width: 100%;
+    text-align: center;
+}
+
+.support .desc-spp a:hover {
+    color: #70b549;
+}
+
+.desc-spp a {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+.support > .col-sm-6 {
+    padding: 18px 8px 0;
+}
+/*-----------------------*/
+.breas {
+    padding-top: 11px;
+    display: table;
+    width: 100%;
+}
+
+.support .breas .col-lg-3:first-child .breas-item {
+    border: 1px solid #e2e2e2;
+}
+
+.support .breas .col-lg-3 .breas-item {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.breas-item .titA3 {
+    text-transform: uppercase;
+    color: #19438b;
+    padding: 5px 0;
+    display: block;
+}
+
+.breas-item .img a {
+    display: block;
+    overflow: hidden;
+}
+
+.breas-item .desc {
+    padding: 10px 0;
+    height: 56px;
+}
+
+.breas-item .titA4 {
+    color: #2a3341;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+}
+
+.titA3 {
+    font-size: 17px;
+    height: 43px;
+}
+
+.titA4 {
+    font-size: 14px;
+    line-height: 1.3;
+}

@@ -1,0 +1,81 @@
+.title-du-an a{
+	color: #21385e !important;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+	margin-top: 10px !important;
+	text-decoration: none;
+}
+.title-du-an2 a:hover,.title-du-an a:hover{
+	color: #6fb548 !important;
+}
+
+.du-an{
+	background-color: #f6f6f6;
+	margin-top: 20px;
+	margin-left: 0px;
+	margin-right: 0px;
+	border-bottom: 4px solid #1c498d;
+}
+
+.img-muiten{
+	margin: 5px !important;
+}
+
+.noi-dung-du-an{
+	text-align: justify;
+    color: #2a3341 !important;
+    line-height: 30px !important;
+}
+
+.title-du-an2 a{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #1c498d;
+    margin: 0;
+    padding-top: 3px;
+}
+
+.title-du-an2 a, .title-du-an a{
+    text-decoration: none;
+}
+
+.btn-detail{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: #1c498d;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+    line-height: 44px;
+    width: 150px;
+    height: 44px;
+    text-transform: uppercase;
+}
+
+.btn-detail:hover{
+	background-color: #ffc22e;
+	color: #fff;
+	text-decoration: none;
+}
+
+.news-project{
+	margin-top: 30px;
+}
+
+.news-title-project{
+	text-align: center;
+	font-weight: bold;
+}
+
+.news-project-item{
+	background-color: #eeee;
+	margin-bottom: 26px !important;
+}
+
+.news-project-item img{
+	width: 100%;
+}
+

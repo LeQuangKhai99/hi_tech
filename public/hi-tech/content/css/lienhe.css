@@ -1,0 +1,131 @@
+.title-contact{
+    text-align: center;
+}
+
+.title-contact h2, .title-contact span{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1c458f;
+    text-transform: uppercase;
+    padding: 34px 0;
+}
+
+.map{
+    background-color: #f4f4f4;
+    border-radius: 30px;
+}
+
+.map iframe{
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.des {
+    padding-left: 15px;
+}
+.des SPAN{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #2a3341;
+    padding: 16px 7px;
+    margin: 0;
+}
+
+.des ul {
+    list-style: none;
+    padding: 0;
+    padding-bottom: 30px;
+    margin: 0;
+}
+.des ul li {
+    line-height: 20px;
+    color: #2a3341;
+}
+.contact{
+    background-color: #f4f4f4;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.contact p{
+    margin: 0;
+    color: #1c458f;
+    padding-top: 35px !important;
+    font-size: 16px;
+    line-height: 30px !important;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact span{
+    font-size: 17px;
+    line-height: 30px;
+    display: block;
+    color: #2a3341;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+.ip{
+    margin-top: 15px;
+}
+
+.form-contact{
+    padding: 30px;
+}
+
+.btn-submit{
+    float: right;
+    margin: 16px 12px 0;
+    background: #7f7f7f;
+    color: #fff;
+    width: 110px;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-submit:hover{
+    background: #1c458f;
+}
+
+.error{
+    color: red;
+}
+
+.content-item h3 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #2a3341;
+    padding: 16px 7px;
+    margin: 0;
+}
+
+.content-item ul {
+    list-style: none;
+    padding: 0;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.content-item ul li {
+    line-height: 20px;
+    color: #2a3341;
+}
+
+.content-item {
+    padding-left: 15px;
+}
+
+.content-item ul li a {
+    color: #2a3341 !important;
+    text-decoration: none;
+}

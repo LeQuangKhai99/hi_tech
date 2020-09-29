@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<!-- saved from url=(0114)https://www.vectorstock.com/royalty-free-vector/healthcare-medical-background-with-heart-beat-line-vector-19610568 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<script type="text/javascript" src="./dv-banner03_files/02e09611df"></script><script src="./dv-banner03_files/nr-1130.min.js"></script><script type="text/javascript" async="" src="./dv-banner03_files/linkid.js"></script><script async="" src="./dv-banner03_files/analytics.js"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>	<link rel="dns-prefetch" href="https://cdn.vectorstock.com/">
+	<link rel="dns-prefetch" href="https://cdn1.vectorstock.com/">
+	<link rel="dns-prefetch" href="https://cdn2.vectorstock.com/">
+	<link rel="dns-prefetch" href="https://cdn3.vectorstock.com/">
+	<link rel="dns-prefetch" href="https://cdn4.vectorstock.com/">
+	<link rel="dns-prefetch" href="https://cdn5.vectorstock.com/">
+
+	<title>Healthcare medical background with heart beat line</title>
+	<meta name="description" content="healthcare medical background with heart beat line. Download a Free Preview or High Quality Adobe Illustrator Ai, EPS, PDF and High Resolution JPEG versions. ID #19610568.">
+	
+	<meta property="og:site_name" content="VectorStock">
+	<meta property="og:type" content="product">
+	<meta property="og:url" content="https://www.vectorstock.com/royalty-free-vector/healthcare-medical-background-with-heart-beat-line-vector-19610568">
+	<meta property="og:title" content="Healthcare medical background with heart beat line vector image on VectorStock">
+	<meta property="og:description" content="healthcare medical background with heart beat line. Download a Free Preview or High Quality Adobe Illustrator Ai, EPS, PDF and High Resolution JPEG versions.">
+	<meta property="og:image" content="https://cdn4.vectorstock.com/i/1000x1000/05/68/healthcare-medical-background-with-heart-beat-line-vector-19610568.jpg">
+	<meta property="og:image:url" content="https://cdn4.vectorstock.com/i/1000x1000/05/68/healthcare-medical-background-with-heart-beat-line-vector-19610568.jpg">
+	<meta property="og:image:secure_url" content="https://cdn4.vectorstock.com/i/1000x1000/05/68/healthcare-medical-background-with-heart-beat-line-vector-19610568.jpg">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta property="og:image:width" content="1000">
+	<meta property="og:image:height" content="727">
+	<meta property="og:price:amount" content="0.69">
+	<meta property="og:price:currency" content="USD">
+	<meta property="product:price:amount" content="0.69">
+	<meta property="product:price:currency" content="USD">
+
+	<meta property="fb:app_id" content="241100862642313">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:url" content="https://www.vectorstock.com/royalty-free-vector/healthcare-medical-background-with-heart-beat-line-vector-19610568">
+	<meta name="twitter:title" content="Healthcare medical background with heart beat line vector image">
+	<meta name="twitter:description" content="healthcare medical background with heart beat line">
+	<meta name="twitter:image" content="https://cdn4.vectorstock.com/i/thumb-large/05/68/healthcare-medical-background-with-heart-beat-line-vector-19610568.jpg">
+	<meta name="twitter:image:width" content="238">
+	<meta name="twitter:image:height" content="250">
+	<meta name="twitter:site" content="@VectorStock">
+
+	<link rel="canonical" href="https://www.vectorstock.com/royalty-free-vector/healthcare-medical-background-with-heart-beat-line-vector-19610568">
+	<link rel="shortcut icon" href="https://cdn.vectorstock.com/img/icons/favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="./dv-banner03_files/common1564549980.min.css">
+	<link rel="stylesheet" href="./dv-banner03_files/vector1564549980.min.css">
+	<script src="./dv-banner03_files/common1565220087.min.js"></script>
+	<script src="./dv-banner03_files/vector1565220087.min.js"></script>
+<!-- Analytics --><script type="text/javascript">// Load GA script
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+// Setup
+ga('create', 'UA-2180430-2', 'none');
+ga('require', 'linkid', 'linkid.js');
+ga('send', 'pageview');
+
+</script>
+</head>
+<body datasqstyle="{&quot;top&quot;:0,&quot;position&quot;:&quot;static&quot;}" datasquuid="631c98e6-5fbb-4a72-8cca-f7178fe702f7" style="top: 40px; position: relative;">
+
+<!-- Top header -->
+<header>
+	<nav class="top">
+		<figure>
+			<a href="https://www.vectorstock.com/" title="VectorStock®">VectorStock®</a>
+		</figure>
+
+		<div class="grid">
+			<form id="searchbox" class="empty">
+				<div class="wrap">
+					<fieldset>
+						<div class="contents">
+							<div class="tags">
+								<ul></ul>
+							</div>
+							<div class="input">
+								<input type="text" name="input" autocomplete="off" autocapitalize="none" spellcheck="true" value="" placeholder="Search…">
+								<button type="button" data-action="clear">×</button>
+							</div>
+
+							<input type="hidden" name="category" value="">
+							<input type="hidden" name="custom_srp" value="">
+							<input type="hidden" name="artist" value="">
+							<input type="hidden" name="similar" value="">
+						</div>
+					<div class="suggestions"><div></div></div></fieldset>
+
+					<button type="submit">
+						<span class="icon">Search</span>
+					</button>
+				</div>
+			</form>
+			<ul>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors">All Vectors</a></li>
+					<li><a href="https://www.vectorstock.com/free-vectors">Free Vectors</a></li>
+				</ul>
+		</div>
+
+		<div class="aside">
+			<ul>
+				<li><a href="https://www.vectorstock.com/popular-categories" title="Popular Categories">Popular
+						Categories</a></li>
+					<li><button type="button" data-action="signup">Sign Up</button></li>
+				</ul>
+		</div>
+
+		<div id="mobilenav-icon">
+			<span></span><span></span><span></span><span></span>
+		</div>
+	</nav>
+
+	<!-- Submenu -->
+		<nav id="searchrelated"></nav>	
+
+		<!-- Mobile menu -->
+	<div id="mobilenav-menu">
+		<div>
+			<div class="group">
+				<h4>Browse</h4>
+				<ul>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors">All Vectors</a></li>
+					<li><a href="https://www.vectorstock.com/free-vectors">Free Vectors</a></li>
+				</ul>
+			</div>
+			<div class="group">
+				<h4>Account</h4>
+				<ul>
+					<li class="account">
+							<ul>
+								<li><a href="https://www.vectorstock.com/signup">Sign Up</a></li>
+								<li data-action="login"><a href="https://www.vectorstock.com/?login=1">Login…</a></li>
+							</ul>
+						</li>
+				</ul>
+				<form method="get" action="https://www.vectorstock.com/auth/logout" class="logout">
+					<input type="hidden" name="logout" value="1">
+				</form>
+			</div>
+			<div class="group">
+				<h4>Help</h4>
+				<ul>
+					<li><a href="https://www.vectorstock.com/faq"><abbr title="Frequently Asked Questions">FAQs</abbr></a></li>
+					<li><a href="https://www.vectorstock.com/contact">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+
+		<!-- Account Menu Tabs -->
+		<aside id="nav_sidebar" class="tabs tabsDark">
+
+			<nav>
+				<ul role="tablist">
+					<li data-tab-id="signup" class=""><span role="tab"><span>Sign Up</span></span></li>
+					<li data-tab-id="login" class="selected"><span role="tab"><span>Log In</span></span></li>
+				</ul>
+			</nav>
+
+			<section id="sb_signup" data-tab-id="signup" class="">
+				<div class="primary">
+					<p>New to VectorStock?</p>
+					<p><em>We're the largest royalty-free, vector-only stock agency in the world.</em></p>
+					<p>Every week we add new premium graphics by the thousands.</p>
+				</div>
+				<div class="secondary">
+					<p>Whether you're a global ad&nbsp;agency or a freelance graphic designer, we have the vector graphics to make your project come to life.</p>
+					<p>Buy Vectors, sell Vectors or both. <a href="https://www.vectorstock.com/signup">Sign up now, it’s free.</a></p>
+				</div>
+				<div class="footer">
+					<button class="master">
+						<span class="title">Sign Up...</span>
+						<span class="value">
+							<span class="symbol signup"></span>
+						</span>
+					</button>
+				</div>
+			</section>
+
+			<section id="sb_login" data-tab-id="login" class="selected">
+				<form action="https://www.vectorstock.com/auth/login" method="post">
+
+
+					<fieldset class="">
+						<label for="vs_username">Email / Username</label>
+						<div class="textfield">
+							<input type="text" id="vs_username" name="vs_username" value="" autocomplete="on" tabindex="1">
+						</div>
+					</fieldset>
+					<fieldset class="">
+						<label for="vs_password">Password</label>
+						<button type="button" class="forgot">Forgot Password</button>
+						<div class="textfield">
+							<input type="password" id="vs_password" name="vs_password" value="" autocomplete="on" tabindex="2" maxlength="20">
+						</div>
+					</fieldset>
+					<fieldset>
+						<div class="checkbox checked">
+							<label class="selected" for="vs_remember">
+								<span class="title">Stay Logged In</span>
+								<span class="icon"></span>
+								<input type="checkbox" id="vs_remember" name="vs_remember" value="yes" tabindex="3" checked="">
+							</label>
+						</div>
+					</fieldset>
+
+
+					<button type="submit" tabindex="4">Log In</button>
+				</form>
+				<div class="alternatives">
+					<h6>Or Login With</h6>
+					<ul>
+						<li class="gp"><a href="https://www.vectorstock.com/">
+							<span class="title">Google</span>
+							<span class="icon"></span>
+						</a></li>
+						<li class="fb"><a href="https://www.vectorstock.com/">
+							<span class="title">Facebook</span>
+							<span class="icon"></span>
+						</a></li>
+					</ul>
+				</div>
+
+				
+			</section>
+		</aside>
+
+	<!-- Page -->
+	<article>
+		<section id="vs-asset" style="min-height: 669px; max-width: 965.382px;">
+
+			<!-- Aside -->
+			<div class="aside">
+				<ol itemscope="" itemtype="http://schema.org/BreadcrumbList">
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<a itemtype="http://schema.org/Thing" itemprop="item" itemscope="" href="https://www.vectorstock.com/royalty-free-vectors">
+							<span itemprop="name">Royalty Free Vectors</span>
+						</a>
+						<meta itemprop="position" content="1">
+					</li>
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<a itemtype="http://schema.org/Thing" itemprop="item" itemscope="" href="https://www.vectorstock.com/royalty-free-vectors/medical-data-healthcare-vectors">
+							<span itemprop="name">Medical Data Healthcare Vectors</span>
+						</a>
+						<meta itemprop="position" content="2">
+					</li>
+				</ol>
+
+				<h1>
+					Healthcare medical background with heart beat line vector&nbsp;image														</h1>
+
+				<figure style="padding-top: 73.235294117647%;" class="target reveal">
+					<div class="highres" data-src="https://cdn4.vectorstock.com/i/1000x1000/05/68/healthcare-medical-background-with-heart-beat-line-vector-19610568.jpg">
+						<noscript><img src="https://cdn4.vectorstock.com/i/1000x1000/05/68/healthcare-medical-background-with-heart-beat-line-vector-19610568.jpg" title="Healthcare medical background with heart beat line vector image" alt="Healthcare medical background with heart beat line"></noscript>
+					<img src="./dv-banner03_files/healthcare-medical-background-with-heart-beat-line-vector-19610568.jpg"></div>
+					<div class="lowres">
+						<img src="./dv-banner03_files/healthcare-medical-background-with-heart-beat-line-vector-19610568(1).jpg" title="Healthcare medical background with heart beat line vector image" alt="Healthcare medical background with heart beat line">
+					</div>
+					<div class="overlay"></div>
+				</figure>
+
+				<form data-loggedin="0" data-licenses="2" data-license="standard" data-status="" data-payments="3">
+					<input type="hidden" id="vector_id" value="19610568">
+					<input type="hidden" id="vector_title" value="Healthcare medical background with heart beat line">
+					<input type="hidden" id="vector_description" value="healthcare medical background with heart beat line. Download a Free Preview or High Quality Adobe Illustrator Ai, EPS, PDF and High Resolution JPEG versions.">
+					<input type="hidden" id="vector_url" value="https://www.vectorstock.com/royalty-free-vector/healthcare-medical-background-with-heart-beat-line-vector-19610568">
+					<input type="hidden" id="vector_media" value="https://cdn4.vectorstock.com/i/1000x1000/05/68/healthcare-medical-background-with-heart-beat-line-vector-19610568.jpg">
+					<input type="hidden" id="vector_ratio" value="0.73235294117647">
+					<input type="hidden" id="vector_license_status" value="">
+					<input type="hidden" id="artist_name" value="StarLineArts">
+					<input type="hidden" id="account_user" value="0">
+
+					<div class="options">
+						<!--
+						-- OPTION: License type
+						-->
+						<div class="option" data-type="license" data-license="standard" data-licenses="2">
+							<h6><span class="type">License</span><a href="https://www.vectorstock.com/faq/members/standard-license">Learn More</a></h6>
+							<div class="optgroup radgroup">
+								<fieldset>
+									<label for="f_license_standard" class="checked">
+										<input type="radio" id="f_license_standard" name="license" value="standard" checked="checked" tabindex="2">
+										<span class="label">Standard</span>
+										<span class="descr">For Print, Advertising, Design</span>
+									</label>
+								</fieldset>
+								<fieldset>
+									<label for="f_license_expanded">
+										<input type="radio" id="f_license_expanded" name="license" value="expanded" tabindex="4">
+										<span class="label">Expanded</span>
+										<span class="descr">For Resale &amp; Reproduction</span>
+									</label>
+								</fieldset>
+							</div>
+
+							<div class="help">
+								<p>The license type determines how you can use this image.</p>
+								<table>
+									<thead>
+										<tr>
+											<th></th>
+																						<th data-license="standard">Std.</th>																						<th data-license="expanded">Exp.</th>										</tr>
+									</thead>
+									<tbody>
+																				<tr>
+											<td>Print / Editorial</td>
+																						<td data-license="standard"><span class="yes"></span></td>
+											<td data-license="expanded"><span class="yes"></span></td>										</tr>
+										<tr>
+											<td>Graphic Design</td>
+																						<td data-license="standard"><span class="yes"></span></td>
+											<td data-license="expanded"><span class="yes"></span></td>										</tr>
+										<tr>
+											<td>Web Design</td>
+																						<td data-license="standard"><span class="yes"></span></td>
+											<td data-license="expanded"><span class="yes"></span></td>										</tr>
+										<tr>
+											<td>Social Media</td>
+																						<td data-license="standard"><span class="yes"></span></td>
+											<td data-license="expanded"><span class="yes"></span></td>										</tr>
+										<tr>
+											<td>Edit &amp; Modify</td>
+																						<td data-license="standard"><span class="yes"></span></td>
+											<td data-license="expanded"><span class="yes"></span></td>										</tr>
+										<tr>
+											<td>Multi-user</td>
+																						<td data-license="standard"><span class="no"></span></td>
+											<td data-license="expanded"><span class="yes"></span></td>										</tr>
+										<tr>
+											<td>Resale Items</td>
+																						<td data-license="standard"><span class="no"></span></td>
+											<td data-license="expanded"><span class="yes"></span></td>										</tr>
+										<tr>
+											<td>Unlimited Runs</td>
+																						<td data-license="standard"><span class="no"></span></td>
+											<td data-license="expanded"><span class="yes"></span></td>										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<!--
+						-- OPTION: Payment options (Standard)
+						-->
+						<div class="option" data-type="payment" data-license="standard">
+							<h6><span class="type">Ways to Buy</span><a href="https://www.vectorstock.com/faq/members/ways-to-buy">Compare</a></h6>
+							<div class="optgroup radgroup" data-license="standard">
+																<fieldset>
+									<label for="f_payment_standard_single-image" class="checked">
+										<input type="radio" id="f_payment_standard_single-image" name="payment_standard" data-cost="14.99" value="single-image" checked="checked" tabindex="5">
+										<span class="label">Single Image</span>
+										<span class="value"><small>$</small><var>14.99</var></span>
+									</label>
+								</fieldset>
+																<fieldset>
+									<label for="f_payment_standard_credits">
+										<input type="radio" id="f_payment_standard_credits" name="payment_standard" data-cost="1" value="credits" tabindex="6">
+										<span class="label">Credits</span>
+										<span class="value"><small>$</small><var>1.00</var></span>
+									</label>
+								</fieldset>
+								<fieldset>
+									<label for="f_payment_standard_subscription">
+										<input type="radio" id="f_payment_standard_subscription" name="payment_standard" data-cost="1" value="subscription" tabindex="7">
+										<span class="label">Subscription</span>
+										<span class="value"><small>$</small><var>0.69</var></span>
+									</label>
+								</fieldset>
+							</div>
+							<div class="help">
+								<p>There are three ways to pay for Standard licenses. Prices are $<abbr title="United States Dollars">US</abbr>.</p>
+
+								<table>
+									<thead>
+										<tr>
+											<th>Pay with</th>
+											<th>Image Price</th>
+										</tr>
+									</thead>
+									<tbody>
+																				<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Single Image</span>
+													<span class="dm"></span>
+													<span class="dd"><small>$</small>14.99</span>
+												</span>
+												<span class="byline">One-time payment</span>
+											</td>
+										</tr>
+																				<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Pay-As-You-Go Credits</span>
+													<span class="dm"></span>
+													<span class="dd"><small>$</small>1</span>
+												</span>
+												<span class="byline">Download images on-demand (1 credit = $1). Minimum purchase of 30.</span>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Subscription Plan</span>
+													<span class="dm"></span>
+													<span class="dd"><em>From</em> 69c</span>
+												</span>
+												<span class="byline">Choose a monthly plan. Unused downloads automatically roll into following month.</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!--
+						-- OPTION: Payment options (Expanded)
+						-->
+						<div class="option" data-type="payment" data-license="expanded">
+							<h6><span class="type">Ways to Buy</span><a href="https://www.vectorstock.com/faq/members/ways-to-buy">Compare</a></h6>
+							<div class="optgroup radgroup" data-license="expanded">
+																<fieldset>
+									<label for="f_payment_expanded_single-image" class="checked">
+										<input type="radio" id="f_payment_expanded_single-image" name="payment_expanded" data-cost="29.99" value="single-image" checked="checked" tabindex="8">
+										<span class="label">Single Image</span>
+										<span class="value"><small>$</small><var>29.99</var></span>
+									</label>
+								</fieldset>
+																<fieldset>
+									<label for="f_payment_expanded_credits">
+										<input type="radio" id="f_payment_expanded_credits" name="payment_expanded" data-cost="30" value="credits" tabindex="9">
+										<span class="label">Credits</span>
+										<span class="value"><small>$</small><var>30.00</var></span>
+									</label>
+								</fieldset>
+							</div>
+														<div class="help">
+								<p>There are two ways to pay for Expanded licenses. Prices are $<abbr title="United States Dollars">US</abbr>.</p>
+
+								<table>
+									<thead>
+										<tr>
+											<th>Pay with</th>
+											<th>Cost per Image</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Single Image</span>
+													<span class="dm"></span>
+													<span class="dd"><small>$</small>29.99</span>
+												</span>
+												<span class="byline">One-off payment, no signup needed.</span>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Credits</span>
+													<span class="dm"></span>
+													<span class="dd"><small>$</small>30</span>
+												</span>
+												<span class="byline">Download images on-demand (1 credit = $1).</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+													</div>
+					</div>
+					<div class="download">
+						<button type="button" data-action="download">
+							<span class="label">Download Image</span>
+							<span class="icon"></span>
+						</button>
+						<h6><span class="label">Files Included</span></h6>
+						<div class="help">
+							<span class="loading"><span class="label">Loading Details...</span></span>
+						</div>
+					</div>
+					<div class="download_options">
+						<div class="wrap">
+							<div class="optgroup" data-action="download">
+								<span class="header">Download File/s:</span>
+								<div class="dropdown" data-value="zip">
+									<div class="display">
+										<span class="label"><strong>ZIP Archive</strong></span>
+										<span class="icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><path d="M10.6,12.8 15,17.2 19.4,12.8"></path></svg></span>
+									</div>
+									<div class="select">
+										<select>
+											<optgroup label="All Files">
+												<option value="zip" data-label="ZIP Archive" data-details="" data-url="" selected="selected">ZIP Archive</option>											</optgroup>
+											<optgroup label="Image">
+												<option value="jpg" data-label="High-res JPG" data-details="300 DPI+" data-url="">High-res JPG (300 DPI+)</option>												<option value="png" data-label="High-res PNG" data-details="300 DPI+" data-url="">High-res PNG (300 DPI+)</option>											</optgroup>
+											<optgroup label="Vector">
+												<option value="ai" data-label="Adobe Illustrator" data-details="v10+" data-url="">Adobe Illustrator (v10+)</option>												<option value="eps" data-label="Vector EPS" data-details="v8+" data-url="">Vector EPS (v8+)</option>												<option value="pdf" data-label="Vector PDF" data-details="" data-url="">Vector PDF</option>											</optgroup>
+										</select>
+									</div>
+								</div>
+								<button type="button" data-action="download_file">
+									<span class="label">Download ZIP</span>
+									<span class="icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M23.6,21.2 23.6,9.5 16.4,9.5 16.4,21.3 10.8,21.3 11,21.5 20,30.5 29.2,21.3"></path></svg></span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<!-- Image -->
+			<div class="image">
+				<figure data-orientation="landscape" style="padding-top: 73.235294117647%;" class="target reveal">
+					<div class="highres" data-src="https://cdn4.vectorstock.com/i/1000x1000/05/68/healthcare-medical-background-with-heart-beat-line-vector-19610568.jpg">
+						<noscript><img src="https://cdn4.vectorstock.com/i/1000x1000/05/68/healthcare-medical-background-with-heart-beat-line-vector-19610568.jpg" title="Healthcare medical background with heart beat line vector image" alt="Healthcare medical background with heart beat line"></noscript>
+					<img src="./dv-banner03_files/healthcare-medical-background-with-heart-beat-line-vector-19610568.jpg"></div>
+					<div class="lowres">
+						<img src="./dv-banner03_files/healthcare-medical-background-with-heart-beat-line-vector-19610568(1).jpg" title="Healthcare medical background with heart beat line vector image" alt="Healthcare medical background with heart beat line">
+					</div>
+					<div class="overlay"></div>
+					<div class="panels">
+						<div class="share">
+							<h4>Share on</h4>
+							<ul>
+								<li class="pinterest"><button type="button" data-action="pinterest"><span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" focusable="false" role="img"><path d="M12.5,0C5.6,0,0,5.6,0,12.5c0,5.12,3.08,9.52,7.48,11.45c-0.03-0.87-0.01-1.92,0.22-2.87c0.24-1.01,1.61-6.81,1.61-6.81s-0.4-0.8-0.4-1.98c0-1.85,1.07-3.24,2.41-3.24c1.14,0,1.69,0.85,1.69,1.88c0,1.14-0.73,2.85-1.1,4.44c-0.31,1.33,0.67,2.41,1.97,2.41c2.37,0,3.96-3.04,3.96-6.65c0-2.74-1.85-4.79-5.2-4.79c-3.79,0-6.15,2.83-6.15,5.99c0,1.09,0.32,1.86,0.82,2.45c0.23,0.27,0.26,0.38,0.18,0.7c-0.06,0.23-0.2,0.78-0.25,1c-0.08,0.32-0.34,0.43-0.63,0.31c-1.75-0.71-2.56-2.62-2.56-4.77c0-3.55,3-7.81,8.93-7.81c4.77,0,7.91,3.45,7.91,7.16c0,4.9-2.73,8.57-6.75,8.57c-1.35,0-2.62-0.73-3.05-1.56c0,0-0.73,2.88-0.88,3.44c-0.27,0.96-0.78,1.93-1.26,2.68C10.08,24.82,11.27,25,12.5,25C19.4,25,25,19.4,25,12.5S19.4,0,12.5,0L12.5,0z"></path></svg></span><span class="label">Pinterest</span></span></button></li>
+								<li class="facebook"><button type="button" data-action="facebook"><span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" focusable="false" role="img"><path d="M22.44,1H2.56C1.7,1,1,1.7,1,2.56v19.88C1,23.3,1.7,24,2.56,24h10.41v-8.89H9.98v-3.46h2.99V9.1c0-2.96,1.81-4.58,4.45-4.58c1.27,0,2.35,0.09,2.67,0.14v3.1l-1.83,0c-1.44,0-1.72,0.68-1.72,1.69v2.21h3.43l-0.45,3.46h-2.98V24h5.89C23.3,24,24,23.3,24,22.44V2.56C24,1.7,23.3,1,22.44,1z"></path></svg></span><span class="label">Facebook</span></span></button></li>
+								<li class="twitter"><button type="button" data-action="twitter"><span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" focusable="false" role="img"><path d="M7.86,22.5c9.43,0,14.59-7.69,14.59-14.37c0-0.22,0-0.44-0.01-0.65c1-0.71,1.87-1.6,2.56-2.61c-0.92,0.4-1.91,0.67-2.95,0.79c1.06-0.62,1.87-1.61,2.26-2.79c-0.99,0.58-2.09,1-3.26,1.23c-0.94-0.98-2.27-1.6-3.74-1.6c-2.83,0-5.13,2.26-5.13,5.05c0,0.4,0.05,0.78,0.13,1.15C8.05,8.49,4.27,6.48,1.74,3.42C1.3,4.17,1.05,5.04,1.05,5.96c0,1.75,0.91,3.3,2.28,4.2C2.49,10.14,1.7,9.91,1,9.53C1,9.55,1,9.58,1,9.6c0,2.45,1.77,4.49,4.11,4.95c-0.43,0.12-0.88,0.18-1.35,0.18c-0.33,0-0.65-0.03-0.96-0.09c0.65,2.01,2.55,3.47,4.79,3.51C5.84,19.5,3.63,20.3,1.22,20.3c-0.41,0-0.82-0.02-1.22-0.07C2.27,21.66,4.97,22.5,7.86,22.5"></path></svg></span><span class="label">Twitter</span></span></button></li>
+							</ul>
+						</div>
+						<div class="composite">
+							<button type="button" data-action="download"><span><span class="label">Download JPG Preview Image</span></span></button>
+						</div>
+					</div>
+				</figure>
+				<div class="details">
+					<div class="meta">
+						<ul>
+							<li class="meta-id">
+								<dl><dt>Image ID</dt><dd>19610568</dd></dl>
+							</li>
+							<li class="meta-artist">
+								<dl>
+									<dt>Artist</dt>
+									<dd><a href="https://www.vectorstock.com/royalty-free-vectors/vectors-by_StarLineArts" rel="nofollow">StarLineArts</a><button type="button" data-action="follow" title="Follow Artists that you like to create a newsfeed of their recent images."><span class="label">Follow</span></button></dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+					<div class="options" data-total="2">
+						<ul>
+							<li class="opt-like">
+								<button type="button" data-action="like" data-count="0"><span class="icon">♥</span><span class="label">Like</span><span class="tally"></span></button>
+							</li>
+							<li class="opt-cart">
+								<button type="button" data-action="cart"><span class="icon">+</span><span class="label">Cart</span></button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Metadata -->
+			<div class="metadata">
+				<div itemtype="http://schema.org/Product" itemscope="">
+					<meta itemprop="sku" content="19610568">
+					<meta itemprop="productID" content="19610568">
+					<meta itemprop="name" content="Healthcare medical background with heart beat line">
+					<meta itemprop="description" content="healthcare medical background with heart beat line. Download a Free Preview or High Quality Adobe Illustrator Ai, EPS, PDF and High Resolution JPEG versions.">
+					<meta itemprop="releaseDate" content="2018-01-21">
+					<link itemprop="image" href="./dv-banner03_files/healthcare-medical-background-with-heart-beat-line-vector-19610568.jpg">
+					
+					<div itemprop="brand" itemtype="http://schema.org/Thing" itemscope="">
+						<meta itemprop="name" content="VectorStock">
+					</div>
+					<div itemprop="offers" itemtype="http://schema.org/Offer" itemscope="">
+						<link itemprop="url" href="https://www.vectorstock.com/royalty-free-vector/healthcare-medical-background-with-heart-beat-line-vector-19610568">
+						<meta itemprop="availability" content="https://schema.org/InStock">
+						<div itemprop="price">0.69</div>
+						<div itemprop="priceCurrency">USD</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="vs-related">
+			<div id="group-similar" class="group">
+				<h6><span class="icon"></span><strong>Similar Images</strong></h6>
+
+				<div class="gallery large">
+					<ul>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/19/69/medical-background-with-icons-to-treat-patients-vector-22721969.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/medical-background-with-icons-to-treat-patients-vector-22721969" title="medical background with icons to treat patients vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/19/69/medical-background-with-icons-to-treat-patients-vector-22721969.jpg" title="medical background with icons to treat patients" alt="medical background with icons to treat patients vector image"></noscript><img src="./dv-banner03_files/medical-background-with-icons-to-treat-patients-vector-22721969.jpg"></a></li>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/18/96/molecules-network-and-vector-20661896.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/molecules-network-and-vector-20661896" title="molecules network and vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/18/96/molecules-network-and-vector-20661896.jpg" title="molecules network and" alt="molecules network and vector image"></noscript><img src="./dv-banner03_files/molecules-network-and-vector-20661896.jpg"></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/30/24/health-or-fitness-tracker-app-on-mobile-phone-vector-22453024.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/health-or-fitness-tracker-app-on-mobile-phone-vector-22453024" title="health or fitness tracker app on mobile phone vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/30/24/health-or-fitness-tracker-app-on-mobile-phone-vector-22453024.jpg" title="health or fitness tracker app on mobile phone" alt="health or fitness tracker app on mobile phone vector image"></noscript><img src="./dv-banner03_files/health-or-fitness-tracker-app-on-mobile-phone-vector-22453024.jpg"></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/53/50/healthcare-medical-cartoon-vector-24445350.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/healthcare-medical-cartoon-vector-24445350" title="healthcare medical cartoon vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/53/50/healthcare-medical-cartoon-vector-24445350.jpg" title="healthcare medical cartoon" alt="healthcare medical cartoon vector image"></noscript><img src="./dv-banner03_files/healthcare-medical-cartoon-vector-24445350.jpg"></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/97/00/computer-diagnosis-logo-design-concept-template-vector-21259700.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/computer-diagnosis-logo-design-concept-template-vector-21259700" title="computer diagnosis logo design concept template vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/97/00/computer-diagnosis-logo-design-concept-template-vector-21259700.jpg" title="computer diagnosis logo design concept template" alt="computer diagnosis logo design concept template vector image"></noscript><img src="./dv-banner03_files/computer-diagnosis-logo-design-concept-template-vector-21259700.jpg"></a></li>
+						<li data-src="https://cdn4.vectorstock.com/i/thumb-large/85/93/heart-and-abstract-medicine-and-science-vector-23108593.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/heart-and-abstract-medicine-and-science-vector-23108593" title="heart and abstract medicine and science vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumb-large/85/93/heart-and-abstract-medicine-and-science-vector-23108593.jpg" title="heart and abstract medicine and science" alt="heart and abstract medicine and science vector image"></noscript><img src="./dv-banner03_files/heart-and-abstract-medicine-and-science-vector-23108593.jpg"></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/83/05/big-genomic-data-visualization-dna-helix-dna-vector-26228305.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/big-genomic-data-visualization-dna-helix-dna-vector-26228305" title="big genomic data visualization dna helix dna vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/83/05/big-genomic-data-visualization-dna-helix-dna-vector-26228305.jpg" title="big genomic data visualization dna helix dna" alt="big genomic data visualization dna helix dna vector image"></noscript><img src="./dv-banner03_files/big-genomic-data-visualization-dna-helix-dna-vector-26228305.jpg"></a></li>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/14/81/abstract-structure-molecule-and-communication-vector-21391481.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/abstract-structure-molecule-and-communication-vector-21391481" title="abstract structure molecule and communication vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/14/81/abstract-structure-molecule-and-communication-vector-21391481.jpg" title="abstract structure molecule and communication" alt="abstract structure molecule and communication vector image"></noscript><img src="./dv-banner03_files/abstract-structure-molecule-and-communication-vector-21391481.jpg"></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/63/62/medicine-and-health-in-circle-concept-line-vector-20616362.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/medicine-and-health-in-circle-concept-line-vector-20616362" title="medicine and health in circle - concept line vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/63/62/medicine-and-health-in-circle-concept-line-vector-20616362.jpg" title="medicine and health in circle - concept line" alt="medicine and health in circle - concept line vector image"></noscript><img src="./dv-banner03_files/medicine-and-health-in-circle-concept-line-vector-20616362.jpg"></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/81/17/clinical-reportmedical-data-icon-vector-2538117.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/clinical-reportmedical-data-icon-vector-2538117" title="Clinical reportmedical data icon vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/81/17/clinical-reportmedical-data-icon-vector-2538117.jpg" title="Clinical reportmedical data icon" alt="Clinical reportmedical data icon vector image"></noscript><img src="./dv-banner03_files/clinical-reportmedical-data-icon-vector-2538117.jpg"></a></li>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/49/51/ekg-symbol-on-white-medical-background-vector-20824951.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/ekg-symbol-on-white-medical-background-vector-20824951" title="ekg symbol on white - medical background vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/49/51/ekg-symbol-on-white-medical-background-vector-20824951.jpg" title="ekg symbol on white - medical background" alt="ekg symbol on white - medical background vector image"></noscript><img src="./dv-banner03_files/ekg-symbol-on-white-medical-background-vector-20824951.jpg"></a></li>
+						<li data-src="https://cdn4.vectorstock.com/i/thumb-large/31/88/medical-diagnosis-document-icon-doctor-records-vector-18573188.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/medical-diagnosis-document-icon-doctor-records-vector-18573188" title="medical diagnosis document icon doctor records vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumb-large/31/88/medical-diagnosis-document-icon-doctor-records-vector-18573188.jpg" title="medical diagnosis document icon doctor records" alt="medical diagnosis document icon doctor records vector image"></noscript><img src="./dv-banner03_files/medical-diagnosis-document-icon-doctor-records-vector-18573188.jpg"></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/05/47/medical-record-in-tablet-health-data-vector-20640547.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/medical-record-in-tablet-health-data-vector-20640547" title="medical record in tablet health data vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/05/47/medical-record-in-tablet-health-data-vector-20640547.jpg" title="medical record in tablet health data" alt="medical record in tablet health data vector image"></noscript><img src="./dv-banner03_files/medical-record-in-tablet-health-data-vector-20640547.jpg"></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/99/80/ecg-monitoring-system-vector-23919980.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/ecg-monitoring-system-vector-23919980" title="ecg monitoring system vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/99/80/ecg-monitoring-system-vector-23919980.jpg" title="ecg monitoring system" alt="ecg monitoring system vector image"></noscript><img src="./dv-banner03_files/ecg-monitoring-system-vector-23919980.jpg"></a></li>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/69/56/medical-and-healthcare-icons-design-for-vector-21776956.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/medical-and-healthcare-icons-design-for-vector-21776956" title="medical and healthcare icons design for vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/69/56/medical-and-healthcare-icons-design-for-vector-21776956.jpg" title="medical and healthcare icons design for" alt="medical and healthcare icons design for vector image"></noscript></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/64/05/smartwatch-heart-monitor-icon-outline-style-vector-23226405.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/smartwatch-heart-monitor-icon-outline-style-vector-23226405" title="smartwatch heart monitor icon outline style vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/64/05/smartwatch-heart-monitor-icon-outline-style-vector-23226405.jpg" title="smartwatch heart monitor icon outline style" alt="smartwatch heart monitor icon outline style vector image"></noscript></a></li>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/73/71/stethoscope-with-a-heart-beat-line-sketch-icon-vector-26117371.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/stethoscope-with-a-heart-beat-line-sketch-icon-vector-26117371" title="stethoscope with a heart beat line sketch icon vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/73/71/stethoscope-with-a-heart-beat-line-sketch-icon-vector-26117371.jpg" title="stethoscope with a heart beat line sketch icon" alt="stethoscope with a heart beat line sketch icon vector image"></noscript></a></li>
+						<li data-src="https://cdn4.vectorstock.com/i/thumb-large/52/73/blue-heartbeat-icon-isolated-on-background-modern-vector-21455273.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/blue-heartbeat-icon-isolated-on-background-modern-vector-21455273" title="blue heartbeat icon isolated on background modern vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumb-large/52/73/blue-heartbeat-icon-isolated-on-background-modern-vector-21455273.jpg" title="blue heartbeat icon isolated on background modern" alt="blue heartbeat icon isolated on background modern vector image"></noscript></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/93/65/medical-cross-beat-pulse-logo-vector-26039365.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/medical-cross-beat-pulse-logo-vector-26039365" title="medical cross beat pulse logo vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/93/65/medical-cross-beat-pulse-logo-vector-26039365.jpg" title="medical cross beat pulse logo" alt="medical cross beat pulse logo vector image"></noscript></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/11/85/heartbeat-flat-icon-vector-7561185.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/heartbeat-flat-icon-vector-7561185" title="Heartbeat flat icon vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/11/85/heartbeat-flat-icon-vector-7561185.jpg" title="Heartbeat flat icon" alt="Heartbeat flat icon vector image"></noscript></a></li>
+					</ul>
+				</div>
+				<div class="gallery small more">
+					<ul>
+						<li data-id="3611072" data-title="cardio icon" data-src="https://cdn3.vectorstock.com/i/thumbs/10/72/cardio-icon-vector-3611072.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/cardio-icon-vector-3611072" title="cardio icon vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/10/72/cardio-icon-vector-3611072.jpg" title="cardio icon" alt="cardio icon vector image"></noscript></a></li>
+						<li data-id="21956676" data-title="medical christmas banner 2019 happy new year" data-src="https://cdn2.vectorstock.com/i/thumbs/66/76/medical-christmas-banner-2019-happy-new-year-vector-21956676.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/medical-christmas-banner-2019-happy-new-year-vector-21956676" title="medical christmas banner 2019 happy new year vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/66/76/medical-christmas-banner-2019-happy-new-year-vector-21956676.jpg" title="medical christmas banner 2019 happy new year" alt="medical christmas banner 2019 happy new year vector image"></noscript></a></li>
+						<li data-id="21167517" data-title="heart pulse logo icon template" data-src="https://cdn3.vectorstock.com/i/thumbs/75/17/heart-pulse-logo-icon-template-vector-21167517.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/heart-pulse-logo-icon-template-vector-21167517" title="heart pulse logo icon template vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/75/17/heart-pulse-logo-icon-template-vector-21167517.jpg" title="heart pulse logo icon template" alt="heart pulse logo icon template vector image"></noscript></a></li>
+						<li data-id="20536477" data-title="heartbeat" data-src="https://cdn3.vectorstock.com/i/thumbs/64/77/heartbeat-vector-20536477.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/heartbeat-vector-20536477" title="heartbeat vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/64/77/heartbeat-vector-20536477.jpg" title="heartbeat" alt="heartbeat vector image"></noscript></a></li>
+						<li data-id="20882474" data-title="heart pulse seamless minimal pattern" data-src="https://cdn5.vectorstock.com/i/thumbs/24/74/heart-pulse-seamless-minimal-pattern-vector-20882474.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/heart-pulse-seamless-minimal-pattern-vector-20882474" title="heart pulse seamless minimal pattern vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/24/74/heart-pulse-seamless-minimal-pattern-vector-20882474.jpg" title="heart pulse seamless minimal pattern" alt="heart pulse seamless minimal pattern vector image"></noscript></a></li>
+						<li data-id="23872380" data-title="medical pulse or wave logo design concepthealth" data-src="https://cdn1.vectorstock.com/i/thumbs/23/80/medical-pulse-or-wave-logo-design-concepthealth-vector-23872380.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/medical-pulse-or-wave-logo-design-concepthealth-vector-23872380" title="medical pulse or wave logo design concepthealth vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/23/80/medical-pulse-or-wave-logo-design-concepthealth-vector-23872380.jpg" title="medical pulse or wave logo design concepthealth" alt="medical pulse or wave logo design concepthealth vector image"></noscript></a></li>
+						<li data-id="25469235" data-title="pulse cardiogram icon" data-src="https://cdn1.vectorstock.com/i/thumbs/92/35/pulse-cardiogram-icon-vector-25469235.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/pulse-cardiogram-icon-vector-25469235" title="pulse cardiogram icon vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/92/35/pulse-cardiogram-icon-vector-25469235.jpg" title="pulse cardiogram icon" alt="pulse cardiogram icon vector image"></noscript></a></li>
+						<li data-id="25322683" data-title="electrocardiogram icon" data-src="https://cdn4.vectorstock.com/i/thumbs/26/83/electrocardiogram-icon-vector-25322683.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/electrocardiogram-icon-vector-25322683" title="electrocardiogram icon vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/26/83/electrocardiogram-icon-vector-25322683.jpg" title="electrocardiogram icon" alt="electrocardiogram icon vector image"></noscript></a></li>
+						<li data-id="22900924" data-title="laboratory health medicine care logo template" data-src="https://cdn5.vectorstock.com/i/thumbs/09/24/laboratory-health-medicine-care-logo-template-vector-22900924.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/laboratory-health-medicine-care-logo-template-vector-22900924" title="laboratory health medicine care logo template vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/09/24/laboratory-health-medicine-care-logo-template-vector-22900924.jpg" title="laboratory health medicine care logo template" alt="laboratory health medicine care logo template vector image"></noscript></a></li>
+						<li data-id="4306693" data-title="Human heart with white heartbeats cardiogram" data-src="https://cdn4.vectorstock.com/i/thumbs/66/93/human-heart-with-white-heartbeats-cardiogram-vector-4306693.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/human-heart-with-white-heartbeats-cardiogram-vector-4306693" title="Human heart with white heartbeats cardiogram vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/66/93/human-heart-with-white-heartbeats-cardiogram-vector-4306693.jpg" title="Human heart with white heartbeats cardiogram" alt="Human heart with white heartbeats cardiogram vector image"></noscript></a></li>
+						<li data-id="437148" data-title="blue heart beat EKG graph" data-src="https://cdn4.vectorstock.com/i/thumbs/71/48/blue-heart-beat-ekg-graph-vector-437148.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/blue-heart-beat-ekg-graph-vector-437148" title="blue heart beat EKG graph vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/71/48/blue-heart-beat-ekg-graph-vector-437148.jpg" title="blue heart beat EKG graph" alt="blue heart beat EKG graph vector image"></noscript></a></li>
+						<li data-id="23668070" data-title="cardiogram icon flat" data-src="https://cdn1.vectorstock.com/i/thumbs/80/70/cardiogram-icon-flat-vector-23668070.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/cardiogram-icon-flat-vector-23668070" title="cardiogram icon flat vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/80/70/cardiogram-icon-flat-vector-23668070.jpg" title="cardiogram icon flat" alt="cardiogram icon flat vector image"></noscript></a></li>
+						<li data-id="21104091" data-title="health monitor hand drawn outline doodle icon" data-src="https://cdn2.vectorstock.com/i/thumbs/40/91/health-monitor-hand-drawn-outline-doodle-icon-vector-21104091.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/health-monitor-hand-drawn-outline-doodle-icon-vector-21104091" title="health monitor hand drawn outline doodle icon vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/40/91/health-monitor-hand-drawn-outline-doodle-icon-vector-21104091.jpg" title="health monitor hand drawn outline doodle icon" alt="health monitor hand drawn outline doodle icon vector image"></noscript></a></li>
+						<li data-id="20735667" data-title="heartbeat icon with pulse chart on white" data-src="https://cdn3.vectorstock.com/i/thumbs/56/67/heartbeat-icon-with-pulse-chart-on-white-vector-20735667.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/heartbeat-icon-with-pulse-chart-on-white-vector-20735667" title="heartbeat icon with pulse chart on white vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/56/67/heartbeat-icon-with-pulse-chart-on-white-vector-20735667.jpg" title="heartbeat icon with pulse chart on white" alt="heartbeat icon with pulse chart on white vector image"></noscript></a></li>
+						<li data-id="13391065" data-title="molecules background" data-src="https://cdn1.vectorstock.com/i/thumbs/10/65/molecules-background-vector-13391065.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/molecules-background-vector-13391065" title="molecules background vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/10/65/molecules-background-vector-13391065.jpg" title="molecules background" alt="molecules background vector image"></noscript></a></li>
+						<li data-id="19151305" data-title="medical symbols" data-src="https://cdn1.vectorstock.com/i/thumbs/13/05/medical-symbols-vector-19151305.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/medical-symbols-vector-19151305" title="medical symbols vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/13/05/medical-symbols-vector-19151305.jpg" title="medical symbols" alt="medical symbols vector image"></noscript></a></li>
+						<li data-id="17790687" data-title="ecg machine line icon medicine" data-src="https://cdn3.vectorstock.com/i/thumbs/06/87/ecg-machine-line-icon-medicine-vector-17790687.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/ecg-machine-line-icon-medicine-vector-17790687" title="ecg machine line icon medicine vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/06/87/ecg-machine-line-icon-medicine-vector-17790687.jpg" title="ecg machine line icon medicine" alt="ecg machine line icon medicine vector image"></noscript></a></li>
+						<li data-id="24796351" data-title="glowing neon medicine concept sign with medicine" data-src="https://cdn2.vectorstock.com/i/thumbs/63/51/glowing-neon-medicine-concept-sign-with-medicine-vector-24796351.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/glowing-neon-medicine-concept-sign-with-medicine-vector-24796351" title="glowing neon medicine concept sign with medicine vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/63/51/glowing-neon-medicine-concept-sign-with-medicine-vector-24796351.jpg" title="glowing neon medicine concept sign with medicine" alt="glowing neon medicine concept sign with medicine vector image"></noscript></a></li>
+						<li data-id="13943998" data-title="heart with cardiogram on blue" data-src="https://cdn4.vectorstock.com/i/thumbs/39/98/heart-with-cardiogram-on-blue-vector-13943998.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/heart-with-cardiogram-on-blue-vector-13943998" title="heart with cardiogram on blue vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/39/98/heart-with-cardiogram-on-blue-vector-13943998.jpg" title="heart with cardiogram on blue" alt="heart with cardiogram on blue vector image"></noscript></a></li>
+						<li data-id="1600225" data-title="Heart beat" data-src="https://cdn1.vectorstock.com/i/thumbs/02/25/heart-beat-vector-1600225.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/heart-beat-vector-1600225" title="Heart beat vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/02/25/heart-beat-vector-1600225.jpg" title="Heart beat" alt="Heart beat vector image"></noscript></a></li>
+						<li data-id="21947271" data-title="a heartbeat icon with simple life wave line" data-src="https://cdn2.vectorstock.com/i/thumbs/72/71/a-heartbeat-icon-with-simple-life-wave-line-vector-21947271.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/a-heartbeat-icon-with-simple-life-wave-line-vector-21947271" title="a heartbeat icon with simple life wave line vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/72/71/a-heartbeat-icon-with-simple-life-wave-line-vector-21947271.jpg" title="a heartbeat icon with simple life wave line" alt="a heartbeat icon with simple life wave line vector image"></noscript></a></li>
+						<li data-id="22701247" data-title="leukemia awareness image" data-src="https://cdn3.vectorstock.com/i/thumbs/12/47/leukemia-awareness-image-vector-22701247.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/leukemia-awareness-image-vector-22701247" title="leukemia awareness image vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/12/47/leukemia-awareness-image-vector-22701247.jpg" title="leukemia awareness image" alt="leukemia awareness image vector image"></noscript></a></li>
+						<li data-id="24475355" data-title="cardiogram heart red rhythm on monitor screen" data-src="https://cdn1.vectorstock.com/i/thumbs/53/55/cardiogram-heart-red-rhythm-on-monitor-screen-vector-24475355.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/cardiogram-heart-red-rhythm-on-monitor-screen-vector-24475355" title="cardiogram heart red rhythm on monitor screen vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/53/55/cardiogram-heart-red-rhythm-on-monitor-screen-vector-24475355.jpg" title="cardiogram heart red rhythm on monitor screen" alt="cardiogram heart red rhythm on monitor screen vector image"></noscript></a></li>
+						<li data-id="14464442" data-title="red heart icon with sign heartbeat" data-src="https://cdn3.vectorstock.com/i/thumbs/44/42/red-heart-icon-with-sign-heartbeat-vector-14464442.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/red-heart-icon-with-sign-heartbeat-vector-14464442" title="red heart icon with sign heartbeat vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/44/42/red-heart-icon-with-sign-heartbeat-vector-14464442.jpg" title="red heart icon with sign heartbeat" alt="red heart icon with sign heartbeat vector image"></noscript></a></li>
+						<li data-id="18459307" data-title="healthcare medical background with heart" data-src="https://cdn3.vectorstock.com/i/thumbs/93/07/healthcare-medical-background-with-heart-vector-18459307.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/healthcare-medical-background-with-heart-vector-18459307" title="healthcare medical background with heart vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/93/07/healthcare-medical-background-with-heart-vector-18459307.jpg" title="healthcare medical background with heart" alt="healthcare medical background with heart vector image"></noscript></a></li>
+						<li data-id="21292457" data-title="medical pulse" data-src="https://cdn3.vectorstock.com/i/thumbs/24/57/medical-pulse-vector-21292457.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/medical-pulse-vector-21292457" title="medical pulse vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/24/57/medical-pulse-vector-21292457.jpg" title="medical pulse" alt="medical pulse vector image"></noscript></a></li>
+						<li data-id="22509745" data-title="heartbeat - icon heartbeat line heartbeat icon" data-src="https://cdn1.vectorstock.com/i/thumbs/97/45/heartbeat-icon-heartbeat-line-heartbeat-icon-vector-22509745.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/heartbeat-icon-heartbeat-line-heartbeat-icon-vector-22509745" title="heartbeat - icon heartbeat line heartbeat icon vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/97/45/heartbeat-icon-heartbeat-line-heartbeat-icon-vector-22509745.jpg" title="heartbeat - icon heartbeat line heartbeat icon" alt="heartbeat - icon heartbeat line heartbeat icon vector image"></noscript></a></li>
+						<li data-id="23227610" data-title="pulse icon medical" data-src="https://cdn1.vectorstock.com/i/thumbs/76/10/pulse-icon-medical-vector-23227610.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/pulse-icon-medical-vector-23227610" title="pulse icon medical vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/76/10/pulse-icon-medical-vector-23227610.jpg" title="pulse icon medical" alt="pulse icon medical vector image"></noscript></a></li>
+						<li data-id="8070183" data-title="ECG Monitor icon" data-src="https://cdn4.vectorstock.com/i/thumbs/01/83/ecg-monitor-icon-vector-8070183.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/ecg-monitor-icon-vector-8070183" title="ECG Monitor icon vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/01/83/ecg-monitor-icon-vector-8070183.jpg" title="ECG Monitor icon" alt="ECG Monitor icon vector image"></noscript></a></li>
+						<li data-id="23822917" data-title="heart with cardiogram medical symbol" data-src="https://cdn3.vectorstock.com/i/thumbs/29/17/heart-with-cardiogram-medical-symbol-vector-23822917.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/heart-with-cardiogram-medical-symbol-vector-23822917" title="heart with cardiogram medical symbol vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/29/17/heart-with-cardiogram-medical-symbol-vector-23822917.jpg" title="heart with cardiogram medical symbol" alt="heart with cardiogram medical symbol vector image"></noscript></a></li>
+						<li class="more"><div><a href="https://www.vectorstock.com/royalty-free-vectors/medical-data-healthcare-vectors"><span class="lrg">More Medical Data Healthcare Images…</span><span class="sml">More</span></a></div></li>
+					</ul>
+				</div>
+			</div>
+			<div id="group-artist" class="group">
+				<h6><span class="icon"></span><strong>More by <a href="https://www.vectorstock.com/royalty-free-vectors/vectors-by_StarLineArts" rel="nofollow">StarLineArts</a></strong></h6>
+
+				<div class="gallery large">
+					<ul>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/05/77/healthcare-and-medical-background-concept-vector-19610577.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/healthcare-and-medical-background-concept-vector-19610577" title="healthcare and medical background concept vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/05/77/healthcare-and-medical-background-concept-vector-19610577.jpg" title="healthcare and medical background concept" alt="healthcare and medical background concept vector image"></noscript></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/05/62/healthcare-and-medical-background-with-hexagonal-vector-19610562.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/healthcare-and-medical-background-with-hexagonal-vector-19610562" title="healthcare and medical background with hexagonal vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/05/62/healthcare-and-medical-background-with-hexagonal-vector-19610562.jpg" title="healthcare and medical background with hexagonal" alt="healthcare and medical background with hexagonal vector image"></noscript></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/05/74/background-for-healthcare-and-medical-science-vector-19610574.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/background-for-healthcare-and-medical-science-vector-19610574" title="background for healthcare and medical science vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/05/74/background-for-healthcare-and-medical-science-vector-19610574.jpg" title="background for healthcare and medical science" alt="background for healthcare and medical science vector image"></noscript></a></li>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/05/71/abstract-healthcare-medical-poster-design-vector-19610571.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/abstract-healthcare-medical-poster-design-vector-19610571" title="abstract healthcare medical poster design vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/05/71/abstract-healthcare-medical-poster-design-vector-19610571.jpg" title="abstract healthcare medical poster design" alt="abstract healthcare medical poster design vector image"></noscript></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/05/65/medical-background-with-heartbeat-line-vector-19610565.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/medical-background-with-heartbeat-line-vector-19610565" title="medical background with heartbeat line vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/05/65/medical-background-with-heartbeat-line-vector-19610565.jpg" title="medical background with heartbeat line" alt="medical background with heartbeat line vector image"></noscript></a></li>
+						<li data-src="https://cdn4.vectorstock.com/i/thumb-large/05/58/blue-medical-background-concept-poster-design-vector-19610558.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/blue-medical-background-concept-poster-design-vector-19610558" title="blue medical background concept poster design vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumb-large/05/58/blue-medical-background-concept-poster-design-vector-19610558.jpg" title="blue medical background concept poster design" alt="blue medical background concept poster design vector image"></noscript></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/05/60/medical-background-with-heartbeat-line-vector-19610560.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/medical-background-with-heartbeat-line-vector-19610560" title="medical background with heartbeat line vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/05/60/medical-background-with-heartbeat-line-vector-19610560.jpg" title="medical background with heartbeat line" alt="medical background with heartbeat line vector image"></noscript></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/05/67/blue-medical-science-background-vector-19610567.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/blue-medical-science-background-vector-19610567" title="blue medical science background vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/05/67/blue-medical-science-background-vector-19610567.jpg" title="blue medical science background" alt="blue medical science background vector image"></noscript></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/05/64/blue-medical-and-science-background-with-vector-19610564.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/blue-medical-and-science-background-with-vector-19610564" title="blue medical and science background with vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/05/64/blue-medical-and-science-background-with-vector-19610564.jpg" title="blue medical and science background with" alt="blue medical and science background with vector image"></noscript></a></li>
+						<li data-src="https://cdn4.vectorstock.com/i/thumb-large/77/88/medical-pharmacy-or-healthcare-background-with-vector-15367788.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/medical-pharmacy-or-healthcare-background-with-vector-15367788" title="medical pharmacy or healthcare background with vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumb-large/77/88/medical-pharmacy-or-healthcare-background-with-vector-15367788.jpg" title="medical pharmacy or healthcare background with" alt="medical pharmacy or healthcare background with vector image"></noscript></a></li>
+					</ul>
+				</div>
+				<div class="gallery small more">
+					<ul>
+						<li data-id="14302238" data-title="life line heartbeat medical background" data-src="https://cdn4.vectorstock.com/i/thumbs/22/38/life-line-heartbeat-medical-background-vector-14302238.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/life-line-heartbeat-medical-background-vector-14302238" title="life line heartbeat medical background vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/22/38/life-line-heartbeat-medical-background-vector-14302238.jpg" title="life line heartbeat medical background" alt="life line heartbeat medical background vector image vector image"></noscript></a></li>
+						<li data-id="15367790" data-title="medical background for pharmacy or healthcare" data-src="https://cdn1.vectorstock.com/i/thumbs/77/90/medical-background-for-pharmacy-or-healthcare-vector-15367790.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/medical-background-for-pharmacy-or-healthcare-vector-15367790" title="medical background for pharmacy or healthcare vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/77/90/medical-background-for-pharmacy-or-healthcare-vector-15367790.jpg" title="medical background for pharmacy or healthcare" alt="medical background for pharmacy or healthcare vector image vector image"></noscript></a></li>
+						<li data-id="15367784" data-title="clean medical and healthcare background with" data-src="https://cdn5.vectorstock.com/i/thumbs/77/84/clean-medical-and-healthcare-background-with-vector-15367784.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/clean-medical-and-healthcare-background-with-vector-15367784" title="clean medical and healthcare background with vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/77/84/clean-medical-and-healthcare-background-with-vector-15367784.jpg" title="clean medical and healthcare background with" alt="clean medical and healthcare background with vector image vector image"></noscript></a></li>
+						<li data-id="15367786" data-title="medical healthcare or pharmacy background with" data-src="https://cdn2.vectorstock.com/i/thumbs/77/86/medical-healthcare-or-pharmacy-background-with-vector-15367786.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/medical-healthcare-or-pharmacy-background-with-vector-15367786" title="medical healthcare or pharmacy background with vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/77/86/medical-healthcare-or-pharmacy-background-with-vector-15367786.jpg" title="medical healthcare or pharmacy background with" alt="medical healthcare or pharmacy background with vector image vector image"></noscript></a></li>
+						<li data-id="15367787" data-title="abstract medical and healthcare background with" data-src="https://cdn3.vectorstock.com/i/thumbs/77/87/abstract-medical-and-healthcare-background-with-vector-15367787.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/abstract-medical-and-healthcare-background-with-vector-15367787" title="abstract medical and healthcare background with vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/77/87/abstract-medical-and-healthcare-background-with-vector-15367787.jpg" title="abstract medical and healthcare background with" alt="abstract medical and healthcare background with vector image vector image"></noscript></a></li>
+						<li data-id="15367793" data-title="abstract molecule medical healthcare or pharmacy" data-src="https://cdn4.vectorstock.com/i/thumbs/77/93/abstract-molecule-medical-healthcare-or-pharmacy-vector-15367793.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/abstract-molecule-medical-healthcare-or-pharmacy-vector-15367793" title="abstract molecule medical healthcare or pharmacy vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/77/93/abstract-molecule-medical-healthcare-or-pharmacy-vector-15367793.jpg" title="abstract molecule medical healthcare or pharmacy" alt="abstract molecule medical healthcare or pharmacy vector image vector image"></noscript></a></li>
+						<li data-id="15367785" data-title="mecial background with electrocardiogram heart" data-src="https://cdn1.vectorstock.com/i/thumbs/77/85/mecial-background-with-electrocardiogram-heart-vector-15367785.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/mecial-background-with-electrocardiogram-heart-vector-15367785" title="mecial background with electrocardiogram heart vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/77/85/mecial-background-with-electrocardiogram-heart-vector-15367785.jpg" title="mecial background with electrocardiogram heart" alt="mecial background with electrocardiogram heart vector image vector image"></noscript></a></li>
+						<li data-id="14302234" data-title="heartbeat science and medical background" data-src="https://cdn5.vectorstock.com/i/thumbs/22/34/heartbeat-science-and-medical-background-vector-14302234.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/heartbeat-science-and-medical-background-vector-14302234" title="heartbeat science and medical background vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/22/34/heartbeat-science-and-medical-background-vector-14302234.jpg" title="heartbeat science and medical background" alt="heartbeat science and medical background vector image vector image"></noscript></a></li>
+						<li data-id="24611441" data-title="cardio heartbeat medical background design" data-src="https://cdn2.vectorstock.com/i/thumbs/14/41/cardio-heartbeat-medical-background-design-vector-24611441.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/cardio-heartbeat-medical-background-design-vector-24611441" title="cardio heartbeat medical background design vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/14/41/cardio-heartbeat-medical-background-design-vector-24611441.jpg" title="cardio heartbeat medical background design" alt="cardio heartbeat medical background design vector image vector image"></noscript></a></li>
+						<li data-id="24611436" data-title="medical background cardiograph heartbeat diagram" data-src="https://cdn2.vectorstock.com/i/thumbs/14/36/medical-background-cardiograph-heartbeat-diagram-vector-24611436.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/medical-background-cardiograph-heartbeat-diagram-vector-24611436" title="medical background cardiograph heartbeat diagram vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/14/36/medical-background-cardiograph-heartbeat-diagram-vector-24611436.jpg" title="medical background cardiograph heartbeat diagram" alt="medical background cardiograph heartbeat diagram vector image vector image"></noscript></a></li>
+						<li data-id="14302241" data-title="medical background with molecules and chemical" data-src="https://cdn2.vectorstock.com/i/thumbs/22/41/medical-background-with-molecules-and-chemical-vector-14302241.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/medical-background-with-molecules-and-chemical-vector-14302241" title="medical background with molecules and chemical vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/22/41/medical-background-with-molecules-and-chemical-vector-14302241.jpg" title="medical background with molecules and chemical" alt="medical background with molecules and chemical vector image vector image"></noscript></a></li>
+						<li data-id="14302244" data-title="bright medical background with molecules" data-src="https://cdn5.vectorstock.com/i/thumbs/22/44/bright-medical-background-with-molecules-vector-14302244.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/bright-medical-background-with-molecules-vector-14302244" title="bright medical background with molecules vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/22/44/bright-medical-background-with-molecules-vector-14302244.jpg" title="bright medical background with molecules" alt="bright medical background with molecules vector image vector image"></noscript></a></li>
+						<li data-id="15367782" data-title="abstract medical pharmacy background template" data-src="https://cdn3.vectorstock.com/i/thumbs/77/82/abstract-medical-pharmacy-background-template-vector-15367782.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/abstract-medical-pharmacy-background-template-vector-15367782" title="abstract medical pharmacy background template vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/77/82/abstract-medical-pharmacy-background-template-vector-15367782.jpg" title="abstract medical pharmacy background template" alt="abstract medical pharmacy background template vector image vector image"></noscript></a></li>
+						<li data-id="14302228" data-title="moclecules and particles medical background" data-src="https://cdn4.vectorstock.com/i/thumbs/22/28/moclecules-and-particles-medical-background-vector-14302228.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/moclecules-and-particles-medical-background-vector-14302228" title="moclecules and particles medical background vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/22/28/moclecules-and-particles-medical-background-vector-14302228.jpg" title="moclecules and particles medical background" alt="moclecules and particles medical background vector image vector image"></noscript></a></li>
+						<li data-id="14302227" data-title="medical health care background" data-src="https://cdn3.vectorstock.com/i/thumbs/22/27/medical-health-care-background-vector-14302227.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/medical-health-care-background-vector-14302227" title="medical health care background vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/22/27/medical-health-care-background-vector-14302227.jpg" title="medical health care background" alt="medical health care background vector image vector image"></noscript></a></li>
+						<li data-id="14302223" data-title="background for science and medical" data-src="https://cdn4.vectorstock.com/i/thumbs/22/23/background-for-science-and-medical-vector-14302223.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/background-for-science-and-medical-vector-14302223" title="background for science and medical vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/22/23/background-for-science-and-medical-vector-14302223.jpg" title="background for science and medical" alt="background for science and medical vector image vector image"></noscript></a></li>
+						<li data-id="14302226" data-title="medical science background with particles" data-src="https://cdn2.vectorstock.com/i/thumbs/22/26/medical-science-background-with-particles-vector-14302226.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/medical-science-background-with-particles-vector-14302226" title="medical science background with particles vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/22/26/medical-science-background-with-particles-vector-14302226.jpg" title="medical science background with particles" alt="medical science background with particles vector image vector image"></noscript></a></li>
+						<li data-id="15367779" data-title="medical health care pharmacy concept template" data-src="https://cdn5.vectorstock.com/i/thumbs/77/79/medical-health-care-pharmacy-concept-template-vector-15367779.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/medical-health-care-pharmacy-concept-template-vector-15367779" title="medical health care pharmacy concept template vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/77/79/medical-health-care-pharmacy-concept-template-vector-15367779.jpg" title="medical health care pharmacy concept template" alt="medical health care pharmacy concept template vector image vector image"></noscript></a></li>
+						<li data-id="14302229" data-title="medical background with molecules" data-src="https://cdn5.vectorstock.com/i/thumbs/22/29/medical-background-with-molecules-vector-14302229.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/medical-background-with-molecules-vector-14302229" title="medical background with molecules vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/22/29/medical-background-with-molecules-vector-14302229.jpg" title="medical background with molecules" alt="medical background with molecules vector image vector image"></noscript></a></li>
+						<li data-id="15367777" data-title="medical care blue background with hexagonal" data-src="https://cdn3.vectorstock.com/i/thumbs/77/77/medical-care-blue-background-with-hexagonal-vector-15367777.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/medical-care-blue-background-with-hexagonal-vector-15367777" title="medical care blue background with hexagonal vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/77/77/medical-care-blue-background-with-hexagonal-vector-15367777.jpg" title="medical care blue background with hexagonal" alt="medical care blue background with hexagonal vector image vector image"></noscript></a></li>
+						<li class="more"><div><a href="https://www.vectorstock.com/royalty-free-vectors/vectors-by_StarLineArts" rel="nofollow"><span class="lrg">More Images…</span><span class="sml">More</span></a></div></li>
+					</ul>
+				</div>
+			</div>
+			<div id="group-keywords" class="group">
+				<h6><span class="icon"></span><strong>Related Searches</strong></h6>
+				<ul>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/medical-vectors">Medical</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/data-vectors">Data</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/healthcare-vectors">Healthcare</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/beat-vectors">Beat</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/heart-vectors">Heart</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/line-vectors">Line</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/science-vectors">Science</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/laboratory-vectors">Laboratory</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/medicine-vectors">Medicine</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/health-vectors">Health</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/molecule-vectors">Molecule</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/organic-vectors">Organic</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/technology-vectors">Technology</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/microscopic-vectors">Microscopic</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/blue-vectors">Blue</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/life-vectors">Life</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/chemistry-vectors">Chemistry</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/chemist-vectors">Chemist</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/research-vectors">Research</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/pharmacy-vectors">Pharmacy</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/bio-vectors">Bio</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/chemical-vectors">Chemical</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/chart-vectors">Chart</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/treatment-vectors">Treatment</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/scientific-vectors">Scientific</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/healthy-vectors">Healthy</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/concept-vectors">Concept</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/care-vectors">Care</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/abstract-vectors">Abstract</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/electrocardiogram-vectors">Electrocardiogram</a></li>
+				</ul>
+			</div>
+		</section>
+	</article>
+
+	<!-- Footer -->
+	<footer>
+
+		<div>
+		<div class="column c1">
+			<nav class="company">
+				<h4>VectorStock</h4>
+				<ul>
+					<li><a href="https://www.vectorstock.com/" title="Home">Home</a></li>
+					<li class="sel"><a href="https://www.vectorstock.com/free-vectors" title="Free Vectors">Free Vectors</a></li>
+					<li class="sel"><a href="https://www.vectorstock.com/royalty-free-vectors" title="All Royalty-Free Vectors">All Vectors</a></li>
+				</ul>
+				<ul>
+					<li><a href="https://www.vectorstock.com/what-is-a-vector" title="What is a Vector?">What is a Vector?</a></li>
+				</ul>
+				<ul>
+					<li class="sel"><a href="https://www.vectorstock.com/faq" title="Frequently Asked Questions"><span class="long">Frequently Asked Questions</span><span class="short">FAQs</span></a></li>
+					<li><a href="https://www.vectorstock.com/faq/members/terms-of-use" title="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
+					<li class="sel"><a href="https://www.vectorstock.com/contact" title="Contact Us">Contact Us</a></li>
+									</ul>
+			</nav>
+		</div>
+		<div class="column c2">
+			<nav class="account">
+					<h4><span class="title">Account</span><span class="icon"></span></h4>
+					<ul>
+						<li><a href="https://www.vectorstock.com/signup" title="Join Now">Join Now</a></li>
+						<li><a href="https://www.vectorstock.com/signup?contributor" title="Become a VectorStock Contributor">Contributor Sign Up</a></li>
+						<li><a href="https://www.vectorstock.com/faq/artists/why-sell-at-vectorstock" title="Contributor FAQ">Contributor FAQ</a></li>
+					</ul>
+			</nav>
+		</div>
+		<div class="column c3">
+			<nav class="social">
+				<h4>Social</h4>
+				<ul>
+					<li class="facebook sel"><a href="http://www.facebook.com/VectorStock" target="_blank"><span class="title">Facebook</span><span class="icon"></span></a></li>
+					<li class="pinterest sel"><a href="http://pinterest.com/vectorstock/" target="_blank"><span class="title">Pinterest</span><span class="icon"></span></a></li>
+					<li class="twitter sel"><a href="https://twitter.com/VectorStock" target="_blank"><span class="title">Twitter</span><span class="icon"></span></a></li>
+				</ul>
+			</nav>
+			<div class="signoff">
+				<h5><a href="https://www.vectorstock.com/" title="VectorStock®">VectorStock®</a></h5>
+				<p>VectorStock and the VectorStock logo are registered trademarks of VectorStock Media.<br>
+				© 2019. <span>All Rights Reserved.</span></p>
+			</div>
+		</div>
+	</div></footer>
+
+
+	<script src="./dv-banner03_files/f.txt"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"02e09611df","applicationID":"156179534","transactionName":"ZV0ENRYCC0RYAkVbDVwXJRQXFwpaFhNeSwNeTB9MAhEAUhQXVFEWXUpJCQECCUNRAlBABx9VAwUNAARbFANQUQlVSgkUCgdIQFAVWR8KV1kUFUkBAFZNTF1bDFcVEAQHFwpFFFAIBFMCDVBZ","queueTime":0,"applicationTime":33,"atts":"SRoHQ14YGEo=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+
+<div id="sqseobar2" class="sqseobar2-white sqseobar2-horizontal"><div class="sqseobar2-inner"><img src="chrome-extension://akdgnmcogleenhbclghghlkkdndkjdjc/static/svg/seoquake-icon.svg" class="sqseobar2-logo"><a class="sqseobar2-link sqseobar2-reloadButton sqseobar2-item-hidden"><span>Load all parameters</span></a><div class="sqseobar2-parameters"><div class="sqmore-container" style="width: 1196px;"><div class="sqseobar2-parameters-container"><div class="sqseobar2-parameterItemInline"><span class="sqicn sqicn-google"></span><span class="sqseobar2-parameterItemInline-title sqseobar2-parameterItemInline-title-full">Google index</span><span class="sqseobar2-parameterItemInline-title">I</span><a href="https://www.google.com/search?hl=en&amp;safe=off&amp;q=site%3Awww.vectorstock.com&amp;btnG=Search&amp;gws_rd=cr" target="_blank" class="seoquake-params-request">10.2M</a></div><div class="sqseobar2-parameterItemInline"><span class="sqicn sqicn-semrush"></span><span class="sqseobar2-parameterItemInline-title sqseobar2-parameterItemInline-title-full">SEMrush backlinks</span><span class="sqseobar2-parameterItemInline-title">L</span><a href="https://www.semrush.com/analytics/backlinks/backlinks/?q=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vector%2Fhealthcare-medical-background-with-heart-beat-line-vector-19610568&amp;searchType=url?utm_source=seoquake&amp;utm_medium=toolbar&amp;utm_campaign=params&amp;ref=174537735" target="_blank" class="seoquake-params-request">0</a></div><div class="sqseobar2-parameterItemInline"><span class="sqicn sqicn-semrush"></span><span class="sqseobar2-parameterItemInline-title sqseobar2-parameterItemInline-title-full">SEMrush subdomain backlinks</span><span class="sqseobar2-parameterItemInline-title">LD</span><a href="https://www.semrush.com/analytics/backlinks/backlinks/www.vectorstock.com:domain?utm_source=seoquake&amp;utm_medium=toolbar&amp;utm_campaign=params&amp;ref=174537735" target="_blank" class="seoquake-params-request">646K</a></div><div class="sqseobar2-parameterItemInline"><span class="sqicn sqicn-bing"></span><span class="sqseobar2-parameterItemInline-title sqseobar2-parameterItemInline-title-full">Bing index</span><span class="sqseobar2-parameterItemInline-title">I</span><a href="https://www.bing.com/search?q=site%3Awww.vectorstock.com&amp;FORM=QBRE" target="_blank" class="seoquake-params-request">605K</a></div><div class="sqseobar2-parameterItemInline"><span class="sqicn sqicn-alexa"></span><span class="sqseobar2-parameterItemInline-title sqseobar2-parameterItemInline-title-full">Alexa rank</span><span class="sqseobar2-parameterItemInline-title">Rank</span><a href="https://www.alexa.com/siteinfo/www.vectorstock.com" target="_blank" class="seoquake-params-request">2.34K</a></div><div class="sqseobar2-parameterItemInline"><span class="sqicn sqicn-webarchive"></span><span class="sqseobar2-parameterItemInline-title sqseobar2-parameterItemInline-title-full">Webarchive age</span><span class="sqseobar2-parameterItemInline-title">Age</span><a href="https://web.archive.org/web/*/https://www.vectorstock.com" target="_blank" class="seoquake-params-request">2005|11|22</a></div><div class="sqseobar2-parameterItemInline"><span class="sqicn sqicn-facebook"></span><span class="sqseobar2-parameterItemInline-title sqseobar2-parameterItemInline-title-full">Facebook likes</span><span class="sqseobar2-parameterItemInline-title">l</span><a href="https://www.facebook.com/v2.5/plugins/like.php?layout=button_count&amp;href=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vector%2Fhealthcare-medical-background-with-heart-beat-line-vector-19610568" target="_blank" class="seoquake-params-request">0</a></div><div class="sqseobar2-parameterItemInline"><span class="sqicn sqicn-user"></span><a href="https://whois.domaintools.com/www.vectorstock.com?utm_source=seoquake&amp;utm_medium=seoquake&amp;utm_campaign=seoquake&amp;ref=174537735" target="_blank" class="seoquake-params-request">whois</a></div><div class="sqseobar2-parameterItemInline"><span class="sqicn sqicn-source"></span><a href="view-source:https://www.vectorstock.com/royalty-free-vector/healthcare-medical-background-with-heart-beat-line-vector-19610568" target="_blank" class="seoquake-params-request">source</a></div><div class="sqseobar2-parameterItemInline"><span class="sqicn sqicn-semrush"></span><span class="sqseobar2-parameterItemInline-title sqseobar2-parameterItemInline-title-full">SEMrush Rank</span><span class="sqseobar2-parameterItemInline-title">Rank</span><a href="https://www.semrush.com/info/www.vectorstock.com?ref=174537735&amp;utm_source=seoquake&amp;utm_medium=toolbar&amp;utm_campaign=params" target="_blank" class="seoquake-params-request">7.87K</a></div><div class="sqseobar2-parameterItemInline"><span class="sqicn sqicn-semrush"></span><span class="sqseobar2-parameterItemInline-title sqseobar2-parameterItemInline-title-full">SEMrush advertiser display ads</span><span class="sqseobar2-parameterItemInline-title">Adv Disp Ads</span><a href="https://www.semrush.com/analytics/da/creatives/vectorstock.com?platformName=asAdvertiser&amp;ref=174537735&amp;utm_source=seoquake&amp;utm_medium=serpoverlay&amp;utm_campaign=display_advertising" target="_blank" class="seoquake-params-request">2.77K</a></div></div></div><button class="sqseobar2-button-more" style="visibility: visible;">More data</button></div><div class="sqseobar2-right-container"><div class="sqseobar2-right-container-buttons"><a class="sqseobar2-link sqseobar2-link-pageinfo"><span>Summary report</span></a><a class="sqseobar2-link sqseobar2-link-diagnosis"><span>Diagnosis</span></a><a class="sqseobar2-link sqseobar2-link-density"><span>Density</span></a><a class="sqseobar2-link sqseobar2-link-external"><span>External links</span><span class="sqseobar2-link-value">3</span></a><a class="sqseobar2-link sqseobar2-link-internal"><span>Internal links</span><span class="sqseobar2-link-value">137</span></a><a class="sqseobar2-link sqseobar2-link-siteaudit" href="https://www.vectorstock.com/royalty-free-vector/healthcare-medical-background-with-heart-beat-line-vector-19610568#"><span>Site audit</span><span class="sqseobar2-link-value">n/a</span></a></div><button class="sqseobar2-button-close" title="Close panel"></button><button class="sqseobar2-button-configure" title="Configure panel"></button></div></div></div></body></html>

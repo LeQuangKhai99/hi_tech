@@ -1,0 +1,202 @@
+
+a{
+    color: #0b2e13;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #2c2c2c;
+    overflow-x: hidden;
+    top: 0 !important;
+}
+li{
+    list-style-type: none !important;
+}
+.titH3 {
+    font-size: 24px;
+    line-height: 36px;
+    margin: 0;
+    text-transform: uppercase;
+    color: #2a3341;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.detail {
+    display: table;
+    width: 100%;
+    margin: 15px 0;
+}
+
+
+.content-dv .top p {
+    color: #2a3341;
+    line-height: 30px;
+}
+
+.detail > p:first-child {
+    border: 0;
+    padding-left: 0 !important;
+}
+
+.detail > p {
+    display: table-cell !important;
+    padding: 0 25px;
+    border-left: 1px solid #c4c4c4;
+    line-height: 16px !important;
+    font-size: 14px;
+}
+
+.view-sp .view-detail {
+    line-height: 36px;
+}
+
+.view-sp .view-detail ul {
+    list-style: none;
+    padding: 0;
+}
+
+.view-sp .view-detail > ul > li {
+    position: relative;
+    padding-left: 15px;
+}
+
+.view-sp .view-detail > ul > li p{
+    font-size: 14px;
+}
+.view-detail > ul > li:before {
+    position: absolute;
+    width: 4.5px;
+    height: 4.5px;
+    content: '';
+    background: #184388;
+    top: 16px;
+    left: 0;
+    border-radius: 6px;
+}
+
+.view-sp .view-detail > ul > li i {
+    padding-right: 9px;
+    color: #184388;
+    font-size: 6px;
+    display: none;
+}
+
+.view-sp .view-detail {
+    line-height: 36px;
+}
+
+.view-detail{
+    margin-top: 20px;
+}
+
+.content-sp .view-sp .view-detail > ul > li i {
+    padding-right: 9px;
+    color: #184388;
+    font-size: 6px;
+    display: none;
+}
+
+.view-sp .view-detail > ul > li:before {
+    position: absolute;
+    width: 4.5px;
+    height: 4.5px;
+    content: '';
+    background: #184388;
+    top: 16px;
+    left: 0;
+    border-radius: 6px;
+}
+
+.view-mxh {
+    background: url(https://tmhitech.vn/content/html/images/img-bgmxh.png);
+    padding: 12px 0;
+    width: 100%;
+    display: table;
+    margin-bottom: 30px !important;
+}
+
+.link_mxh {
+    display: inline-block;
+}
+
+.likeshare ul {
+    padding-left: 0 !important;
+}
+
+.likeshare ul li {
+    display: inline-block;
+}
+
+
+.likeshare ul li a {
+    width: 26px;
+    height: 26px;
+    display: block;
+    text-align: center;
+    line-height: 26px;
+    transition: all 0.5s ease;
+}
+
+.likeshare ul li a i{
+    font-size: 26px;
+    margin-top: 10px;
+}
+
+.view-mxh > a {
+    font-size: 15px;
+
+    color: #fff;
+    text-transform: uppercase;
+    background: #ff7c13;
+    padding: 9px 15px;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 0 15px;
+}
+.view-mxh > a i {
+    padding-right: 8px !important;
+}
+
+.tag {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #1c498d;
+    font-size: 14px !important;
+}
+
+.content-sp .view-sp a {
+    color: #2a3341 !important;
+    font-size: 14px !important;
+}
+
+.detail-sp, .dongloai {
+    margin-top: 15px;
+}
+
+.titPgCt {
+    border-bottom: 3px solid #1c498d;
+}
+
+.titP4 {
+    font-size: 18px !important;
+    line-height: 36px !important;
+    margin: 0 !important;
+    color: #fff !important;
+    background: #1c498d;
+    padding: 0 15px;
+    border-radius: 3px 3px 0 0;
+    overflow: initial !important;
+}
+
+.img-main{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddd;
+}
+
+.img-detail{
+    margin-top: 10px;
+    width: 90px;
+    height: 90px;
+    border: 1px solid #000000;
+}

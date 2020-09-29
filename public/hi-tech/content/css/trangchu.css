@@ -1,0 +1,222 @@
+.sw
+{
+	margin: 20px !important ;
+	border: 1px solid gray;
+	border-radius: 15px;
+	padding: 0px 0px !important;
+}
+.content_sw
+{
+	padding: 0px 55px;
+}
+.btnsw
+{
+	background: white;
+	width: 74px !important;
+	margin-left: -10px !important;
+	color: gray !important;
+	margin-right: -14px !important;
+	height: 96px !important;
+	margin-top: -50px!important;
+}
+.btnprenext
+{
+	height: 9px;
+}
+.img_sw
+{
+	padding-top: 15px;
+	width: 55%;
+}
+
+.swiper-button-prev:after,.swiper-button-next:after{
+    font-size: 18px !important;
+    font-weight: bold;
+}
+.swiper-slide { width: 14% !important; }
+
+.text-brand{
+    margin-top: 7px;
+    background: #fff;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: bold;
+    color: #21385d;
+    position: absolute;
+    left: 45px;
+    z-index: 99;
+    text-transform: uppercase;
+    padding: 0 9px;
+}
+
+.device{
+    margin-bottom: 15px !important;
+    overflow: hidden;
+}
+
+.anim-left{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 35%;
+    opacity: 0.9;
+    display: table;
+}
+
+.anim-right{
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 100%;
+    width: 35%;
+    opacity: 0.9;
+    display: table;
+}
+
+.left-content{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.left-content p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.left-content h3{
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 10px 0 20px;
+    display: block;
+
+}
+
+.left-content a{
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    line-height: 36px;
+    padding: 10px 14px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+.left-content a:hover{
+    background: #fff;
+    color: #21385e;
+    text-decoration: none;
+}
+
+.anim-left {
+    animation-name: anim-left;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    z-index: 9999;
+    margin-left: 15px;
+  }
+
+  @keyframes anim-left {
+    0%   {left:-1000px; top:0px;}
+    100% {left:0px; top:0px;}
+  }
+
+  .anim-right {
+    animation-name: anim-right;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    z-index: 9999;
+  }
+
+  @keyframes anim-right {
+    0%   {right:-1000px; top:0px;}
+    100% {right:0px; top:0px;}
+  }
+
+
+
+  .knowledge-title{
+    padding: 10px 22px 22px 22px;
+  }
+  .knowledge-title h3{
+    color: #1c498d;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 36px;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    margin: 0;
+  }
+
+  .slide-content-item{
+      padding: 0px 10px !important;
+  }
+
+  .card-body{
+    padding: 38px 20px !important;
+    background-color: #f4f4f4;
+    height: 250px;
+  }
+
+  .card{
+    border: none;
+    display: table-cell;
+  }
+
+  .card a{
+    font-size: 16px;
+    line-height: 20px;
+    color: #21385e;
+    text-decoration: none;
+    padding-bottom: 18px !important;
+  }
+
+  .card a:hover{
+      text-decoration: none !important;
+  }
+
+  .card p{
+      padding-top: 20px;
+  }
+
+  .card img{
+    height: 220px;
+  }
+
+  .slide-knowledge{
+      position: absolute;
+      top: -40px !important;
+      right: -600px !important;
+      left: 98% !important;
+  }
+
+  .slide-knowledge li{
+    border: 1px solid #21385e !important;
+    width: 7px !important;
+    height: 7px !important;
+    margin: 0px 5px !important;
+    background: #21385e !important;
+  }
+
+  .slide-knowledge .active{
+      background-color: #000000;
+  }
+
+  .radius-top{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+  }
+
+  .radius-bottom{
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }

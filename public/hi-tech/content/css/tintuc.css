@@ -1,0 +1,99 @@
+.content > p {
+    margin: 0!important;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.time{
+    margin-top: 10px;
+    padding-bottom: 15px;
+}
+
+.row{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.likeshare ul {
+    padding-left: 0 !important;
+    margin-top: 20px;
+}
+
+.likeshare ul li {
+    display: inline-block;
+}
+
+.likeshare ul li a{
+    display: block;
+    text-align: center;
+    line-height: 26px;
+    transition: all 0.5s ease;
+}
+
+.likeshare ul li a i{
+    font-size: 26px;
+}
+
+.title-other p {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 30px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #cccccc;
+    color: #2a3341;
+    line-height: 30px;
+}
+
+.lst-other-news ul {
+    padding-left: 0 !important;
+}
+
+.lst-other-news ul li {
+    list-style: none;
+    position: relative;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    padding-top: 3px;
+    margin-bottom: 0 !important;
+}
+
+.lst-other-news ul li a {
+    color: #242424;
+}
+
+.lst-other-news ul li:before {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #016537;
+    left: 0;
+    top: 10px;
+    content: '';
+    border-radius: 50%;
+}
+
+.title-news-detail{
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 36px;
+    color: #2a3341;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.news-summary{
+    font-size: 18px;
+    color: #2a3341;
+    line-height: 30px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
