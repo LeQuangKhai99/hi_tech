@@ -26,7 +26,7 @@ class AuthController extends Controller
     public function index(){
         $user = $this->user->whereNull('deleted_at')->latest()->paginate(5);
         $roles = $this->role->whereNull('deleted_at')->get();
-        return view('admin.user.index', ['users'=>$user, 'roles'=>$roles]);
+        return view('admin.user.index', ['users'=>$user, 'roles'=>$roles, 'page'=>'user']);
     }
 
     public function update($id){
