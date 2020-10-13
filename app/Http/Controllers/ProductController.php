@@ -37,6 +37,15 @@ class ProductController extends Controller
         ]);
     }
 
+    public function search(Request $request){
+        $products = $this->product->whereNull('deleted_at')->where('name', 'like', '%'.$request->key.'%')->latest()->paginate(5);
+        return view('admin.product.search', [
+            'products'=>$products,
+            'page'=>'product',
+            'key'=>$request->key
+        ]);
+    }
+
     public function view($id){
         $product = $this->product->find($id);
         $cates = $this->cate->whereNull('deleted_at')->get();

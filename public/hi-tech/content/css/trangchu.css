@@ -52,6 +52,7 @@
 .device{
     margin-bottom: 15px !important;
     overflow: hidden;
+    padding: 0 7.5px !important;
 }
 
 .anim-left{
@@ -67,7 +68,7 @@
 .anim-right{
     position: absolute;
     top:0;
-    right: 0;
+    right: 7px;
     height: 100%;
     width: 35%;
     opacity: 0.9;
@@ -122,7 +123,7 @@
     animation-duration: 2.5s;
     animation-iteration-count: 1;
     z-index: 9999;
-    margin-left: 15px;
+    
   }
 
   @keyframes anim-left {

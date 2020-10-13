@@ -84,6 +84,11 @@ Route::group(['prefix'=>'admin', 'middleware'=>['check_login']],function () {
             'uses'=>'ProductController@index',
             'middleware'=>'can:product-list'
         ]);
+        Route::get('/search',[
+            'as'=>'product.search',
+            'uses'=>'ProductController@search',
+            'middleware'=>'can:product-list'
+        ]);
         Route::get('/view/{id}', [
            'as'=>'product.view',
            'uses'=>"ProductController@view",

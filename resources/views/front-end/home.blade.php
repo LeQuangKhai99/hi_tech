@@ -87,7 +87,7 @@
 
                                                 <div class="card-body radius-bottom">
                                                     <b><a href="{{route('front-end.detail-news', ['slug'=>$post->slug])}}" >{{$post->title}}</a></b>
-                                                    <p>{{\Illuminate\Support\Str::limit($post->summary, 180)}}</p>
+                                                    <p>{{\Illuminate\Support\Str::limit($post->summary, 100)}}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -96,7 +96,7 @@
                                             <div class="card">
                                                 <div class="card-body radius-top">
                                                     <b><a href="{{route('front-end.detail-news', ['slug'=>$post->slug])}}" >{{$post->title}}</a></b>
-                                                    <p>{{\Illuminate\Support\Str::limit($post->summary, 180)}}</p>
+                                                    <p>{{\Illuminate\Support\Str::limit($post->summary, 100)}}</p>
                                                 </div>
                                                 <a href="{{route('front-end.detail-news', ['slug'=>$post->slug])}}">
                                                     <img src="{{$post->image_path}}" class="card-img-top radius-bottom" alt="...">

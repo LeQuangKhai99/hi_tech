@@ -68,6 +68,14 @@
 <script>
     $.widget.bridge('uibutton', $.ui.button)
 </script>
+<script>
+    $('.form-search').submit(function (e){
+        if($('#search').val().trim() == ''){
+            alert('Chưa nhập nội dung tìm kiếm!');
+            e.preventDefault();
+        }
+    });
+</script>
 <!-- Bootstrap 4 -->
 <script src="/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- ChartJS -->
