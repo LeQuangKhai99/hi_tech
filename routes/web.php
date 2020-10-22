@@ -100,27 +100,6 @@ Route::group(['prefix' => '', 'namespace'=>'Frontend'], function () {
 
 });
 
-Route::get('/login', function (){
-   return view('admin.auth.login');
-})->name('login');
-
-Route::post('/postLogin', function (Request $request){
-
-    if (auth()->attempt([
-        'email'=>$request->email,
-        'password'=>$request->pass
-    ])){
-        return redirect()->route('category.index');
-    }
-    else{
-        return redirect()->route('login')->with('mess', 'Sai thông tin đăng nhập');
-    }
-})->name('login');
-
-Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

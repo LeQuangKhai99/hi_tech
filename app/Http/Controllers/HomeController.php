@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Post;
+use App\Product;
+use App\Project;
+use App\User;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -13,7 +17,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+
     }
 
     /**
@@ -23,7 +27,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home',[
-            'page'=>'home']);
+        $totalUser = User::all();
+        return view('admin/home',[
+            'page'=>'control',
+            'totalUser'=>$totalUser,
+            'totalNews'=>Post::all(),
+            'totalProject'=>Project::all(),
+            'totalProduct'=>Product::all()
+        ]);
     }
 }

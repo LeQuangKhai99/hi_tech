@@ -26,9 +26,10 @@ Route::prefix('auth')->group(function () {
     ]);
 });
 Route::group(['prefix'=>'admin', 'middleware'=>['check_login']],function () {
-    Route::get('/', function () {
-        return view('admin/home', ['page'=>'control']);
-    })->name('trang-chu');
+    Route::get('/', [
+        'as'=>'trang-chu',
+        'uses'=>'HomeController@index'
+    ]);
 
 
     Route::prefix('category')->group(function () {

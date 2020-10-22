@@ -20,14 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="698f14cc-0fd5-4cd6-b6ab-da41989ab431" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/product/search.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/hi-tech/content/css/trangchu.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/hi-tech/content/css/trangchu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/menu-top.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/menu-top.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front-end/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front-end/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin-route.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin-route.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,7 +275,13 @@
       <workItem from="1602411848237" duration="81000" />
       <workItem from="1602508952768" duration="2122000" />
       <workItem from="1602515255913" duration="596000" />
-      <workItem from="1602553475732" duration="302000" />
+      <workItem from="1602553475732" duration="499000" />
+      <workItem from="1602562243060" duration="310000" />
+      <workItem from="1602641556043" duration="2186000" />
+      <workItem from="1603116850018" duration="2188000" />
+      <workItem from="1603123869900" duration="1301000" />
+      <workItem from="1603338707270" duration="56000" />
+      <workItem from="1603339511040" duration="56000" />
     </task>
     <servers />
   </component>
@@ -310,10 +313,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1600874666935" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1602411926577">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1603338761331">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1602411926577" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1603338761331" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1599185330066">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -330,9 +333,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1600678530898" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1602514525898">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1603116968068">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1602514525898" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1603116968068" />
   </component>
 </project>
