@@ -14,10 +14,10 @@
 @section('content')
     <section id="nav-link" class="w-100">
         <a href="{{route('home')}}">Trang chủ</a>
-        <i class="fa fa-angle-right" aria-hidden="true"></i>
-        <a href="{{route('front-end.list-cate-product', ['slug'=>$cate->parentCate()->whereNull('deleted_at')->first()->slug])}}">{{$cate->parentCate()->whereNull('deleted_at')->first()->name}}</a>
-        <i class="fa fa-angle-right" aria-hidden="true"></i>
-        <a href="{{route('front-end.list-product', ['slug'=>$cate->slug])}}">{{$cate->name}}</a>
+{{--        <i class="fa fa-angle-right" aria-hidden="true"></i>--}}
+{{--        <a href="{{route('front-end.list-cate-product', ['slug'=>$cate->parentCate()->whereNull('deleted_at')->first()->slug])}}">{{$cate->parentCate()->whereNull('deleted_at')->first()->name}}</a>--}}
+{{--        <i class="fa fa-angle-right" aria-hidden="true"></i>--}}
+{{--        <a href="{{route('front-end.list-product', ['slug'=>$cate->slug])}}">{{$cate->name}}</a>--}}
         <i class="fa fa-angle-right" aria-hidden="true"></i>
         <a>{{$product->name}}</a>
     </section>

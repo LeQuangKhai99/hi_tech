@@ -1,7 +1,6 @@
 @extends('front-end.layout.main')
 @section('css')
     <link rel="stylesheet" href="/hi-tech/content/css/lienhe.css">
-
 @endsection
 @section('js')
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>

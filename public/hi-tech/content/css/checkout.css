@@ -1,0 +1,209 @@
+.checkout-content .checkout-section input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Firefox */
+.checkout-content .checkout-section input[type=number] {
+    -moz-appearance: textfield;
+}
+.checkout-content {
+    padding-top: 3em;
+}
+.checkout-section {
+    margin-bottom: 1em;
+}
+
+/* Checkout left content */
+.checkout-left-content {
+    padding-right: 4em !important;
+}
+.checkout-title {
+    text-transform: capitalize;
+    font-size: 1.28571em;
+    font-weight: normal;
+}
+.field-wrap {
+    position: relative;
+    padding: 0.45em 0;
+    color: #757575;
+}
+.field-input{
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: 1px solid #DADCE0;
+    transition: all 0.2s ease-out;
+    color: #333333;
+    font-weight: 500;
+}
+.field-input:focus, .field-select:focus {
+    box-shadow: 0 0 0 2px #bd945f;
+    outline: none;
+}
+.field-wrap label {
+    /* Position the label */
+    left: 20px;
+    position: absolute;
+    top: 8px;
+    padding: 0 8px;
+    /* Hide it by default */
+    opacity: 0;
+    transition: all .2s ease 0s;
+}
+/* Show the label at desired position when the placeholder of input isn't shown */
+.field-input:not(:placeholder-shown) + label, .field-select:not(:placeholder-shown) + label {
+    background: #FFF;
+    transform: translate(0, -50%);
+    opacity: 1;
+}
+
+.field-select-wrap {
+    color: #757575;
+}
+.field-select-wrap:first-child label{
+    left: 5px;
+}
+.field-select {
+    padding: 10px 9px;
+    border-radius: 4px;
+    border: 1px solid #DADCE0;
+    transition: all 0.2s ease-out;
+}
+
+.shipping-method-content {
+    box-shadow: 0 0 0 1px #d9d9d9;
+    border-radius: 4px;
+    background: #fff;
+    color: #737373;
+    margin-top: 1em;
+}
+.blank-slate {
+    white-space: pre-line;
+    padding: 1.5em;
+    text-align: center;
+}
+.icon.icon-closed-box {
+    width: 108px;
+    height: 85px;
+    background-image: url(../images/AnhCat/close-box.png),none;
+}
+.blank-slate .blank-slate-icon {
+    margin-bottom: 1em;
+}
+.icon {
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.continue-btn {
+    background: #bd945f!important;
+    color: #fff!important;
+    padding: 2%!important;
+}
+
+/* Checkout Right Content */
+.checkout-right-content {
+    padding-left: 3em !important;
+    border-left: 1px solid #dadce0;
+}
+.order-content {
+    border-top: 1px solid;
+    padding: 1em 0;
+    border-color: #e1e1e1;
+}
+.order-prd-list {
+    border-top: none;
+    padding-top: .6em;
+}
+.discount-content {
+    line-height: 1.3em;
+}
+.product-thumbnail {
+    width: 4.6em;
+    height: 4.6em;
+    border-radius: 8px;
+    background: #fff;
+    position: relative;
+}
+.product-thumbnail-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.product-thumbnail-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+.product-thumbnail-quantity {
+    font-size: 0.85714em;
+    font-weight: 500;
+    white-space: nowrap;
+    padding: 0.15em 0.65em;
+    border-radius: 2em;
+    background-color: rgba(153,153,153,0.9);
+    color: #fff;
+    position: absolute;
+    right: -0.75em;
+    top: -0.75em;
+    z-index: 2;
+}
+.product-table td {
+    padding-left: 1em;
+}
+.product-image {
+    padding: 0!important;
+}
+
+.discount-btn {
+    width: 100%;
+    background-color: #bd945f!important;
+    color: #fff!important;
+    margin-left: 1em;
+    padding: 0.608rem .75rem!important;
+}
+
+.total td {
+    padding-top: 0.75em;
+}
+.total-table td:last-child, th:last-child {
+    text-align: right;
+}
+.total-table-footer .total td {
+    padding-top: 3em;
+    position: relative;
+}
+.total-table-footer .total td::before {
+    background-color: #e1e1e1;
+    content: '';
+    position: absolute;
+    top: 1.5em;
+    left: 0;
+    width: 100%;
+    height: 1px;
+}
+.payment-due-label .payment-due-label-total {
+    font-size: 1.2em;
+    color: #4b4b4b;
+}
+.payment-due .payment-due-currency {
+    font-size: 0.85714em;
+    vertical-align: 0.2em;
+    margin-right: 0.5em;
+    color: #969696;
+}
+.payment-due .payment-due-price {
+    font-size: 1.71429em;
+    font-weight: 500;
+    letter-spacing: -0.04em;
+    color: #4b4b4b;
+    line-height: 1em;
+}

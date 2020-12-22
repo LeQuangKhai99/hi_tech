@@ -20,6 +20,8 @@ Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']
 });
 
 Route::group(['prefix' => '', 'namespace'=>'Frontend'], function () {
+    Route::get('/trang-chu', 'HomeController@index')->name('home');
+
     Route::get('/', [
         'as'=>'front-end.home',
         'uses'=>'HomeController@index'
@@ -98,8 +100,14 @@ Route::group(['prefix' => '', 'namespace'=>'Frontend'], function () {
         ]);
     });
 
+    Route::get('/gio-hang', [
+        'as'=>'front-end.cart',
+        'uses'=>'CartController@index'
+    ]);
+
+    Route::get('/thanh-toan', [
+        'as'=>'front-end.checkout',
+        'uses'=>'CartController@checkout'
+    ]);
+
 });
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Route::get('/home', 'HomeController@index')->name('home');

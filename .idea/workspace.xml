@@ -20,10 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="698f14cc-0fd5-4cd6-b6ab-da41989ab431" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/hi-tech/content/css/cart.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/hi-tech/content/css/checkout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/front-end/cart.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/front-end/checkout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin-route.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin-route.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/ProductPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/ProductPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front-end/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front-end/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front-end/detail-product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front-end/detail-product.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -166,6 +173,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -181,6 +189,8 @@
       <recent name="D:\Xampp\xam4\htdocs\php\hitech\resources\views\admin\role" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Xampp\xam1\htdocs\hitech\resources\views\front-end" />
+      <recent name="D:\Xampp\xam1\htdocs\hitech\app\Http\Controllers\Frontend" />
       <recent name="D:\Xampp\xam4\htdocs\php\hitech\resources\views\admin" />
       <recent name="D:\Xampp\xam4\htdocs\php\hitech\public\admin_file\js\category" />
       <recent name="D:\Xampp\xam4\htdocs\php\hitech\resources\views\admin\layout" />
@@ -282,6 +292,22 @@
       <workItem from="1603123869900" duration="1301000" />
       <workItem from="1603338707270" duration="56000" />
       <workItem from="1603339511040" duration="56000" />
+      <workItem from="1603384886396" duration="141000" />
+      <workItem from="1603428386600" duration="6337000" />
+      <workItem from="1603506991593" duration="4345000" />
+      <workItem from="1603556932236" duration="33000" />
+      <workItem from="1603559035121" duration="1208000" />
+      <workItem from="1603628424000" duration="4000" />
+      <workItem from="1603711136094" duration="71000" />
+      <workItem from="1603900566577" duration="215000" />
+      <workItem from="1604472054293" duration="801000" />
+      <workItem from="1604504697129" duration="3204000" />
+      <workItem from="1604538027895" duration="925000" />
+      <workItem from="1607853997604" duration="46000" />
+      <workItem from="1607866037892" duration="1577000" />
+      <workItem from="1608458987269" duration="5222000" />
+      <workItem from="1608521944570" duration="647000" />
+      <workItem from="1608547482484" duration="8728000" />
     </task>
     <servers />
   </component>
@@ -299,43 +325,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1599117806904">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1599117806904" />
-    <state x="372" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1600678587149">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="372" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1600678587149" />
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600874666935">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1600874666935" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1603338761331">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1603338761331" />
-    <state x="184" y="9" key="SettingsEditor" timestamp="1599185330066">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1599185330066" />
-    <state width="506" height="446" key="SwitcherDM" timestamp="1600267757288">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="506" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1600267757288" />
-    <state x="390" y="0" width="585" height="728" key="find.popup" timestamp="1598841145566">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="390" y="0" width="585" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1598841145566" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1600678530898">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1600678530898" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1603116968068">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1603116968068" />
   </component>
 </project>
