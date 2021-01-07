@@ -2,17 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 @include ('admin-route.php');
 
 Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
@@ -105,9 +94,29 @@ Route::group(['prefix' => '', 'namespace'=>'Frontend'], function () {
         'uses'=>'CartController@index'
     ]);
 
+    Route::get('/them-vao-gio-hang/{id}', [
+        'as'=>'front-end.add-cart',
+        'uses'=>'CartController@add'
+    ]);
+
+    Route::get('/giam-so-luong/{id}', [
+        'as'=>'front-end.sub-cart',
+        'uses'=>'CartController@sub'
+    ]);
+
+    Route::get('/xoa-khoi-gio-hang/{id}', [
+        'as'=>'front-end.del-cart',
+        'uses'=>'CartController@delete'
+    ]);
+
     Route::get('/thanh-toan', [
         'as'=>'front-end.checkout',
         'uses'=>'CartController@checkout'
+    ]);
+
+    Route::post('/thanh-toan', [
+        'as'=>'front-end.postCheckout',
+        'uses'=>'CartController@postCheckout'
     ]);
 
 });

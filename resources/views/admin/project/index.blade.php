@@ -70,7 +70,7 @@
                                     <td>{{++$i}}</td>
                                     <td>{{\Illuminate\Support\Str::limit($value->title, 50)}}</td>
                                     <td>{{\Illuminate\Support\Str::limit($value->summary, 50)}}</td>
-                                    <td>{{$value->user->name}}</td>
+                                    <td>{{$value->user->name ?? 'trống'}}</td>
                                     <td>
                                         @if($value->image_path != null)
                                             <img style="height: 100px; width: 90px" src="{{$value->image_path}}" alt="">

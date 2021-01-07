@@ -1,6 +1,6 @@
 @extends("admin.layout.main")
 @section('title')
-    <title>Danh sách tag đã xóa</title>
+    <title>Danh sách user đã xóa</title>
 @endsection
 @section('css')
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
@@ -14,7 +14,7 @@
     <!-- Content Header (Page header) -->
 
     <!-- /.content-header -->
-    @include('admin.layout.content-header', ['title'=>"Danh sách tag đã xóa", 'path_chird'=>['tag', 'trash'], 'route'=>['tag.index', 'tag.trash']])
+    @include('admin.layout.content-header', ['title'=>"Danh sách tag đã xóa", 'path_chird'=>['user', 'trash'], 'route'=>['user.index', 'user.trash']])
     <!-- Main content -->
     <div class="container-fluid">
         <div class="row">
@@ -23,18 +23,13 @@
 
                     <!-- /.card-header -->
                     <div class="card-body">
-                        <button class="btn btn-primary float-lg-right mb-3" data-toggle="modal" data-target="#myModal">
-                            <i class="fas fa-plus-square"></i> Thêm sản phẩm
-                        </button>
-                        <a href="{{route('category.trash')}}" class="btn btn-primary float-lg-right mb-3 mr-4">
-                            <i class="fas fa-trash-alt"></i> Thùng rác
-                        </a>
                         <table id="example2" class="table table-bordered table-hover">
                             <thead>
                             <tr>
                                 <th>STT</th>
                                 <th>Tên</th>
-                                <th>Người tạo</th>
+                                <th>Email</th>
+                                <th>Vai trò</th>
                                 <th>Hành động</th>
                             </tr>
                             </thead>
@@ -43,14 +38,25 @@
                             @php
                                 $i = 0;
                             @endphp
-                            @foreach($tags as $value)
+                            @foreach($users as $value)
                                 <tr>
                                     <td>{{++$i}}</td>
                                     <td>{{$value->name}}</td>
-                                    <td>{{$value->user->name}}</td>
+                                    <td>{{$value->email}}</td>
+                                    <td>
+                                        @if(count($value->roles) == 0)
+                                            {{'Trống'}}
+                                        @else
+                                            @foreach($value->roles as $role)
+                                                <div>
+                                                    {{'-- '.$role->name}}
+                                                </div>
+                                            @endforeach
+                                        @endif
+                                    </td>
                                     <td width="25%">
-                                        <button type="button" data-url="{{route('tag.restore', ['id'=>$value->id])}}" class="btn btn-success act-restore"><i class="fas fa-sync-alt"></i> Khôi phục</button>
-                                        <button type="button" data-url="{{route('tag.forceDelete', ['id'=>$value->id])}}" class="btn btn-danger act-del"><i class="fas fa-trash-alt"></i> Xóa</button>
+                                        <button type="button" data-url="{{route('user.restore', ['id'=>$value->id])}}" class="btn btn-success act-restore"><i class="fas fa-sync-alt"></i> Khôi phục</button>
+                                        <button type="button" data-url="{{route('user.forceDelete', ['id'=>$value->id])}}" class="btn btn-danger act-del"><i class="fas fa-trash-alt"></i> Xóa</button>
                                     </td>
                                 </tr>
                             @endforeach
@@ -59,7 +65,7 @@
                         </table>
                         <nav aria-label="Page navigation example" class="float-right mt-3">
                             <ul class="pagination">
-                                {{$tags->links()}}
+                                {{$users->links()}}
                             </ul>
                         </nav>
                     </div>

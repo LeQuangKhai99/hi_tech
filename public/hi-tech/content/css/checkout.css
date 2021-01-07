@@ -22,6 +22,7 @@ input::-webkit-inner-spin-button {
     text-transform: capitalize;
     font-size: 1.28571em;
     font-weight: normal;
+    margin-bottom: 20px !important;
 }
 .field-wrap {
     position: relative;
@@ -97,7 +98,7 @@ input::-webkit-inner-spin-button {
 }
 
 .continue-btn {
-    background: #bd945f!important;
+    background: #19438c!important;
     color: #fff!important;
     padding: 2%!important;
 }
@@ -165,7 +166,9 @@ input::-webkit-inner-spin-button {
 
 .discount-btn {
     width: 100%;
-    background-color: #bd945f!important;
+    background-color: #19438c!important;
+    border-color: #19438c;
+    line-height: 1.8;
     color: #fff!important;
     margin-left: 1em;
     padding: 0.608rem .75rem!important;

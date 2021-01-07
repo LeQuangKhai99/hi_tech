@@ -659,4 +659,37 @@ Route::group(['prefix'=>'admin', 'middleware'=>['check_login']],function () {
             'middleware'=>'can:project-force-delete'
         ]);
     });
+
+    Route::prefix('order')->group(function () {
+        Route::get('/',[
+            'as'=>'order.index',
+            'uses'=>'OrderController@index'
+        ]);
+//        Route::get('/view/{id}', [
+//            'as'=>'project.view',
+//            'uses'=>"ProjectController@view",
+//            'middleware'=>'can:project-view'
+//        ]);
+        Route::get('/update/{id}', [
+            'as'=>'order.update',
+            'uses'=>'OrderController@update'
+        ]);
+
+        Route::get('/delete/{id}', [
+            'as'=>'order.delete',
+            'uses'=>'OrderController@delete'
+        ]);
+        Route::get('/trash', [
+            'as'=>'order.trash',
+            'uses'=>'OrderController@trash'
+        ]);
+        Route::get('/restore/{id}', [
+            'as'=>'order.restore',
+            'uses'=>'OrderController@restore'
+        ]);
+        Route::get('/forceDelete/{id}', [
+            'as'=>'order.forceDelete',
+            'uses'=>'OrderController@forceDelete'
+        ]);
+    });
 });

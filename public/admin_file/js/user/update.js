@@ -6,9 +6,12 @@ $('.act_update').on('click', function (e){
         type:'GET',
         url: url,
         success: function (data){
+            console.log(data)
             $('.name-user').val(data.user.name);
+            $('.phone-user').val(data.user.phone);
             $('.email-user').val(data.user.email);
             $('.id-user').val(data.user.id);
+            $('.address-user').val(data.user.address);
 
             var html = '';
             var roleOfUser = [];
@@ -24,9 +27,12 @@ $('.act_update').on('click', function (e){
                 }
             };
             $('.select-role').html(html);
+            for (let i = 0; i < data.infos.length; i++) {
+                var html = '<input name="address2[]" value="' + data.infos[i].address + '" style="margin-bottom: 10px" placeholder="Nhập địa chỉ" type=text" class="form-control">';
+                $('.mul-address').append(html);
+            }
 
             $('#myModal2').modal('show');
-
         },
         error: function (e){
             Swal.fire(
@@ -37,3 +43,9 @@ $('.act_update').on('click', function (e){
         }
     })
 });
+
+var html = '<input name="address2[]" style="margin-bottom: 10px" placeholder="Nhập địa chỉ" type=text" class="form-control">';
+$('.btn-add-address').on('click', function (){
+    $('.mul-address').append(html);
+});
+

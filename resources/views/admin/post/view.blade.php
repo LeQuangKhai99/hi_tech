@@ -73,7 +73,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Người tạo</label>
-                                <input type="text" class="form-control" disabled value="{{auth()->user()->name}}"/>
+                                <input type="text" class="form-control" disabled value="{{$post->user->name ?? 'trống'}}"/>
                             </div>
                         </div>
                     </div>

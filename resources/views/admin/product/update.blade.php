@@ -79,6 +79,10 @@
                                 <input  value="{{$product->name}}" name="name" type="text" class="form-control">
                             </div>
                             <div class="form-group">
+                                <label>Giá</label>
+                                <input  value="{{$product->price}}" name="price" type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
                                 <label>Model</label>
                                 <input  value="{{$product->model}}" name="model" type="text" class="form-control">
                             </div>
@@ -117,7 +121,7 @@
                                             <div class="del-img-{{$image->id}} del-img" onclick="delImg({{$image->id}})">
                                                 <i class="fas fa-times"></i>
                                             </div>
-                                            <img src="{{$image->image_path}}" style="height: 200px; width: 150px;" alt="">
+                                            <img src="{{$image->image}}" style="height: 200px; width: 150px;" alt="">
                                             <input type="hidden" value="{{$image->id}}" name="id_imgs[]">
                                         </div>
                                     @endforeach
@@ -148,7 +152,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Người tạo</label>
-                                <input disabled type="text" class="form-control"  value="{{$product->user->name}}"/>
+                                <input disabled type="text" class="form-control"  value="{{$value->user->name ?? 'trống'}}"/>
                             </div>
 
                             <input type="submit" class="btn btn-primary" value="Submit"/>
@@ -161,7 +165,6 @@
             <!-- /.col -->
         </div>
         <!-- /.row -->
-
     </div>
     <!-- /.content -->
 @endsection

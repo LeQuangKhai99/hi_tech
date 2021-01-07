@@ -40,6 +40,15 @@
                     </p>
                 </a>
             </li>
+            <li class="nav-header">Đơn hàng</li>
+            <li class="nav-item">
+                <a href="{{route('order.index')}}" class="nav-link {{$page == 'order' ? 'active' : ''}}">
+                    <i class="nav-icon fas fa-shopping-cart"></i>
+                    <p>
+                        Quản lý đơn hàng
+                    </p>
+                </a>
+            </li>
             <li class="nav-header">Bài viết</li>
             <li class="nav-item">
                 <a href="{{route('post-cate.index')}}" class="nav-link {{$page == 'post_cate' ? 'active' : ''}}">

@@ -80,6 +80,7 @@ class ProductController extends Controller
             DB::beginTransaction();
             $product = $this->product->create([
                 'name'=>$request->name,
+                'price'=>$request->price,
                 'slug'=>Str::slug($request->name),
                 'model'=>$request->model,
                 'made_by'=>$request->made_by,
@@ -173,6 +174,7 @@ class ProductController extends Controller
 
             $product->update([
                 'name'=>$request->name,
+                'price'=>$request->price,
                 'slug'=>Str::slug($request->name),
                 'model'=>$request->model,
                 'made_by'=>$request->made_by,

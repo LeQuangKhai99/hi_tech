@@ -143,6 +143,20 @@
                         <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
                         <div class="form-group">
+                            <label>Phone</label>
+                            <input name="phone" placeholder="Nhập số điện thoại" type=email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Address</label>
+                            <input name="address" placeholder="Nhập địa chỉ" type=email" class="form-control">
+                        </div>
+                        <div class="mul-address">
+
+                        </div>
+                        <div style="text-align: center">
+                            <button type="button" class="btn btn-success btn-add-address">Thêm địa chỉ </button>
+                        </div>
+                        <div class="form-group">
                             <label>Mật khẩu</label>
                             <input name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
                         </div>
@@ -188,7 +202,16 @@
                             <div class="alert alert-danger">{{ $message }}</div>
                             @enderror
                         </div>
+                        <div class="form-group">
+                            <label>Address</label>
+                            <input name="address" placeholder="Nhập địa chỉ" type=text" class="form-control address-user">
+                        </div>
+                        <div class="mul-address">
 
+                        </div>
+                        <div style="text-align: center">
+                            <button type="button" class="btn btn-success btn-add-address">Thêm địa chỉ </button>
+                        </div>
                         <div class="form-group">
                             <label>Email</label>
                             <input name="email" placeholder="Nhập email" type=email" class="form-control email-user">
@@ -197,10 +220,14 @@
                         <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
                         <div class="form-group">
+                            <label>Phone</label>
+                            <input name="phone" placeholder="Nhập số điện thoại" type=text" class="form-control phone-user">
+                        </div>
+                        <div class="form-group">
                             <label>Role</label>
                             <select class="form-control select-role" name="roles[]" multiple>
                                 @foreach($roles as $role)
-                                    <option  value="{{$role->name}}">{{$role->name}}</option>
+                                    <option value="{{$role->name}}">{{$role->name}}</option>
                                 @endforeach
                             </select>
                         </div>

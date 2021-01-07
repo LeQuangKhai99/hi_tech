@@ -28,7 +28,6 @@
                 'success'
             )
         </script>
-
     @endif
 @endsection
 @section('content')

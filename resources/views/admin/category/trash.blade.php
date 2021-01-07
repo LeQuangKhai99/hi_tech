@@ -56,7 +56,7 @@
                                     @else
                                         <td>{{$value->parentCate->name}}</td>
                                     @endif
-                                    <td>{{$value->user->name}}</td>
+                                    <td>{{$value->user->name ?? 'trống'}}</td>
                                     <td>
                                         @if($value->image_path == null)
                                             Trống

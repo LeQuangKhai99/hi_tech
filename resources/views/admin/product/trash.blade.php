@@ -53,7 +53,7 @@
                                     <td>{{$value->model}}</td>
                                     <td>{{$value->brand == null ? 'Trống' : $value->brand->name}}</td>
                                     <td>{{$value->category  == null ? 'Trống' : $value->category->name}}</td>
-                                    <td>{{$value->user->name}}</td>
+                                    <td>{{$value->user->name ?? 'trống'}}</td>
                                     <td>
                                         @if($value->image_path != null)
                                             <img style="height: 100px; width: 90px" src="{{$value->image_path}}" alt="">

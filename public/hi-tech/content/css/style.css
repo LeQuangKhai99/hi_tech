@@ -4,6 +4,10 @@
 	margin-bottom:0 !important;
 }
 
+a{
+    cursor: pointer;
+}
+
 /*font face*/
 @font-face {
   font-family: "OpenSans-Bold";

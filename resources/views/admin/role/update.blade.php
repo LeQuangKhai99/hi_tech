@@ -96,7 +96,6 @@
             <!-- /.col -->
         </div>
         <!-- /.row -->
-
     </div>
     <!-- /.content -->
 @endsection

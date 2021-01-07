@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\RegisterRequest;
+use App\info;
 use App\Role;
 use Illuminate\Http\Request;
 use App\User;
@@ -11,16 +12,17 @@ use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
-    private $user, $role;
+    private $user, $role, $info;
 
     /**
      * AuthController constructor.
      * @param $user
      */
-    public function __construct(User $user, Role $role)
+    public function __construct(User $user, Role $role, info $info)
     {
         $this->user = $user;
         $this->role = $role;
+        $this->info = $info;
     }
 
     public function index(){
@@ -33,20 +35,35 @@ class AuthController extends Controller
         $user = $this->user->find($id);
         $roles = $this->role->whereNull('deleted_at')->get();
         $roleOfUser = $user->roles;
+        $infos = $user->infos;
         return response()->json([
             'user'=>$user,
             'roles'=>$roles,
-            'roleOfUser'=>$roleOfUser
+            'roleOfUser'=>$roleOfUser,
+            'infos'=>$infos
         ]);
     }
 
     public function postUpdate(Request $request){
         $user = $this->user->find($request->id);
+        $user->infos()->delete();
         $user->update([
             'name' => $request->name,
+            'phone' => $request->phone,
             'email' => $request->email,
+            'address' => $request->address,
             'password' => Hash::make($request->password),
         ]);
+        if (isset($request->address2)) {
+            foreach ($request->address2 as $address){
+                if ($address != null) {
+                    $this->info->create([
+                        'address'=>$address,
+                        'user_id'=>$user->id
+                    ]);
+                }
+            }
+        }
         $user->roles()->sync($request->roles);
         return redirect()->route('user.index')->with(['add-oke'=>'oke']);
     }
@@ -71,7 +88,10 @@ class AuthController extends Controller
 
     public function trash(){
         $user = $this->user->whereNotNull('deleted_at')->latest()->paginate(5);
-        return view('admin.user.trash', ['users'=>$user]);
+        return view('admin.user.trash', [
+            'users'=>$user,
+            'page'=>'user'
+        ]);
     }
 
     public function restore($id){
@@ -129,13 +149,27 @@ class AuthController extends Controller
         return view('admin.auth.register');
     }
 
-    protected function create(RegisterRequest $request)
+    public function create(RegisterRequest $request)
     {
-        $user= $this->user->create([
+        $user = $this->user->create([
             'name' => $request->name,
             'email' => $request->email,
-            'password' => Hash::make($request->password),
+            'phone' => $request->phone,
+            'address' => $request->address,
+            'password' => Hash::make($request->password)
         ]);
+
+        if (isset($request->address2)) {
+            foreach ($request->address2 as $address){
+                if ($address != null) {
+                    $this->info->create([
+                        'address'=>$address,
+                        'user_id'=>$user->id
+                    ]);
+                }
+            }
+        }
+
         if ($request->roles != null){
             $user->roles()->sync($request->roles);
         }

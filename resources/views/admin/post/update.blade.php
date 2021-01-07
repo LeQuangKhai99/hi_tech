@@ -97,7 +97,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Người tạo</label>
-                                <input disabled type="text" class="form-control"  value="{{$post->user->name}}"/>
+                                <input disabled type="text" class="form-control"  value="{{$value->user->name ?? 'trống'}}"/>
                             </div>
 
                             <input type="submit" class="btn btn-primary" value="Submit"/>

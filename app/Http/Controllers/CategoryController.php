@@ -53,7 +53,7 @@ class CategoryController extends Controller
         $html = '<option value="0">Đây là danh mục cha</option>';
         $html .= $recusive->Option('', 0, $cate->parent_id);
 
-        $user = $cate->user->name;
+        $user = $value->user->name ?? 'trống';
         return response()->json([
             'cate'=>$cate,
             'html'=>$html,
@@ -90,7 +90,7 @@ class CategoryController extends Controller
         try {
             $cate = $this->cate->find($id);
             $cate->update([
-                'deleted_at'=>date('Y-m-d H:i:s')
+                'deleted_at'=>"a"
             ]);
             return response()->json([
                 'code'=>'200',

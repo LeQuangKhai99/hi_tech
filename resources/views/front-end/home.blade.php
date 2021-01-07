@@ -3,6 +3,11 @@
     <link rel="stylesheet" href="/hi-tech/content/css/trangchu.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 @endsection
+@if(Session::get('mess') == 'oke')
+    <script>
+        alert('Đặt hàng thành công, vui long đợi nhân viên gọi điện thoại xác nhận')
+    </script>
+@endif
 @section('content')
 @include('front-end.layout.brand')
     <div class="row">

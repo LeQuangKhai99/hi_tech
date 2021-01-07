@@ -43,7 +43,7 @@
                             @foreach($slides as $value)
                                 <tr>
                                     <td>{{++$i}}</td>
-                                    <td>{{$value->user->name}}</td>
+                                    <td>{{$value->user->name ?? 'trống'}}</td>
                                     <td>
                                         @if($value->image_path == null)
                                             Trống

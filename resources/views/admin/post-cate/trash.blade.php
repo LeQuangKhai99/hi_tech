@@ -44,7 +44,7 @@
                                 <tr>
                                     <td>{{++$i}}</td>
                                     <td>{{$value->name}}</td>
-                                    <td>{{$value->user == null ? 'Trống' : $value->user->name}}</td>
+                                    <td>{{$value->user->name ?? 'trống'}}</td>
                                     <td width="25%">
                                         <button type="button" data-url="{{route('post-cate.restore', ['id'=>$value->id])}}" class="btn btn-success act-restore"><i class="fas fa-sync-alt"></i> Khôi phục</button>
                                         <button type="button" data-url="{{route('post-cate.forceDelete', ['id'=>$value->id])}}" class="btn btn-danger act-del"><i class="fas fa-trash-alt"></i> Xóa</button>

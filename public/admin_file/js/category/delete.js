@@ -42,7 +42,7 @@ $('.act-del').on('click', function (e){
                         'error'
                     )
                 }
-            })
+            });
         }
-    })
-})
+    });
+});

@@ -17,7 +17,7 @@ class UserPolicy
      */
     public function viewAny(User $user)
     {
-        return $user->CheckPermissionAccess('slide-list');
+        return $user->CheckPermissionAccess('user-list');
     }
 
     /**
@@ -29,7 +29,7 @@ class UserPolicy
      */
     public function view(User $user)
     {
-        return $user->CheckPermissionAccess('slide-view');
+        return $user->CheckPermissionAccess('user-view');
     }
 
     /**
@@ -40,7 +40,7 @@ class UserPolicy
      */
     public function create(User $user)
     {
-        return $user->CheckPermissionAccess('slide-add');
+        return $user->CheckPermissionAccess('user-add');
     }
 
     /**
@@ -52,7 +52,7 @@ class UserPolicy
      */
     public function update(User $user)
     {
-        return $user->CheckPermissionAccess('slide-update');
+        return $user->CheckPermissionAccess('user-update');
     }
 
     /**
@@ -64,17 +64,17 @@ class UserPolicy
      */
     public function delete(User $user)
     {
-        return $user->CheckPermissionAccess('slide-delete');
+        return $user->CheckPermissionAccess('user-delete');
     }
 
     public function restore(User $user)
     {
-        return $user->CheckPermissionAccess('slide-restore');
+        return $user->CheckPermissionAccess('user-restore');
     }
 
     public function forceDelete(User $user)
     {
-        return $user->CheckPermissionAccess('slide-force-delete');
+        return $user->CheckPermissionAccess('user-force-delete');
     }
 
     public function trash(User $user){
