@@ -3,8 +3,22 @@
     <link rel="stylesheet" href="/hi-tech/content/css/cart.css">
 @endsection
 @section('js')
-    @if(Session::get('mess') == 'oke')
-        <script src="/hi-tech/content/js/ToastMess.js"></script>
+    <script src="/hi-tech/content/js/ToastMess.js"></script>
+    @if(Session::get('err') != null)
+        <script>
+            Toast.fire({
+                icon: 'error',
+                title: "<?php echo Session::get('err')?>"
+            })
+        </script>
+    @endif
+    @if(Session::get('success') != null)
+        <script>
+            Toast.fire({
+                icon: 'success',
+                title: "<?php echo Session::get('success')?>"
+            })
+        </script>
     @endif
     <script src="/hi-tech/content/js/updateCart.js"></script>
 @endsection
@@ -49,6 +63,7 @@
                         </td>
                         <td><span class="price">{{number_format($item->price)}}</span> vnđ</td>
                         <input type="hidden" class="price2" value="{{$item->price}}">
+                        <input type="hidden" class="inventory" value="{{$item->options['inventory']}}">
                         <td class="quantity">
                             <div class="input-group mb-3">
                                 <input data-url="{{route('front-end.add-cart', ['id'=>$item->id])}}" type="button" class="quantity up" value="+">

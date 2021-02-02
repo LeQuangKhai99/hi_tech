@@ -54,10 +54,9 @@
                             <tr>
                                 <th>STT</th>
                                 <th>Tên</th>
-                                <th>Mẫu</th>
-                                <th>Thương hiệu</th>
+                                <th>Giá</th>
+                                <th>Tồn kho</th>
                                 <th>Loại sản phẩm</th>
-                                <th>Người tạo</th>
                                 <th>Hình ảnh</th>
                                 <th>Hành động</th>
                             </tr>
@@ -71,10 +70,9 @@
                                 <tr>
                                     <td>{{++$i}}</td>
                                     <td>{{$value->name}}</td>
-                                    <td>{{$value->model == null ? 'Trống' : $value->model}}</td>
-                                    <td>{{$value->brand == null ? 'Trống' : $value->brand->name}}</td>
+                                    <td>{{$value->price}}</td>
+                                    <td>{{$value->inventory}}</td>
                                     <td>{{$value->category == null ? 'Trống' : $value->category->name}}</td>
-                                    <td>{{$value->user->name ?? 'trống'}}</td>
                                     <td>
                                         @if($value->image_path != null)
                                             <img style="height: 100px; width: 90px" src="{{$value->image_path}}" alt="">

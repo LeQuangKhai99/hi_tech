@@ -89,34 +89,36 @@ Route::group(['prefix' => '', 'namespace'=>'Frontend'], function () {
         ]);
     });
 
-    Route::get('/gio-hang', [
-        'as'=>'front-end.cart',
-        'uses'=>'CartController@index'
-    ]);
+    Route::group(['prefix'=>'/', 'middleware'=>['check_login']],function () {
+        Route::get('/gio-hang', [
+            'as'=>'front-end.cart',
+            'uses'=>'CartController@index'
+        ]);
 
-    Route::get('/them-vao-gio-hang/{id}', [
-        'as'=>'front-end.add-cart',
-        'uses'=>'CartController@add'
-    ]);
+        Route::get('/them-vao-gio-hang/{id}', [
+            'as'=>'front-end.add-cart',
+            'uses'=>'CartController@add'
+        ]);
 
-    Route::get('/giam-so-luong/{id}', [
-        'as'=>'front-end.sub-cart',
-        'uses'=>'CartController@sub'
-    ]);
+        Route::get('/giam-so-luong/{id}', [
+            'as'=>'front-end.sub-cart',
+            'uses'=>'CartController@sub'
+        ]);
 
-    Route::get('/xoa-khoi-gio-hang/{id}', [
-        'as'=>'front-end.del-cart',
-        'uses'=>'CartController@delete'
-    ]);
+        Route::get('/xoa-khoi-gio-hang/{id}', [
+            'as'=>'front-end.del-cart',
+            'uses'=>'CartController@delete'
+        ]);
 
-    Route::get('/thanh-toan', [
-        'as'=>'front-end.checkout',
-        'uses'=>'CartController@checkout'
-    ]);
+        Route::get('/thanh-toan', [
+            'as'=>'front-end.checkout',
+            'uses'=>'CartController@checkout'
+        ]);
 
-    Route::post('/thanh-toan', [
-        'as'=>'front-end.postCheckout',
-        'uses'=>'CartController@postCheckout'
-    ]);
+        Route::post('/thanh-toan', [
+            'as'=>'front-end.postCheckout',
+            'uses'=>'CartController@postCheckout'
+        ]);
+    });
 
 });

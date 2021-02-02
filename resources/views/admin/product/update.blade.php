@@ -83,6 +83,10 @@
                                 <input  value="{{$product->price}}" name="price" type="text" class="form-control">
                             </div>
                             <div class="form-group">
+                                <label>Tồn kho</label>
+                                <input  value="{{$product->inventory}}" name="inventory" type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
                                 <label>Model</label>
                                 <input  value="{{$product->model}}" name="model" type="text" class="form-control">
                             </div>

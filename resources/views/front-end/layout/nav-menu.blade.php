@@ -67,14 +67,23 @@
             <li class="nav-item {{$page == 'contact' ? 'active' : ''}}">
                 <a class="nav-link" href="{{route('front-end.contact')}}">LIÊN HỆ</a>
             </li>
+            <li class="nav-item {{$page == 'cart ' ? 'active' : ''}}">
+                <a href="{{route('front-end.cart')}}" class="nav-link" href="">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </li>
+            <li class="nav-item {{$page == 'info ' ? 'active' : ''}}">
+                <a class="nav-link" href="">
+                    <i class="fas fa-user"></i>
+                </a>
+            </li>
         </ul>
-        <form action="{{route('front-end.search-product')}}" method="get" class="form-inline my-2 my-lg-0 search">
-            <input class="form-control mr-sm-2 key-word" type="search" name="key" placeholder="Tìm kiếm sản phẩm..." aria-label="">
-            <button class="btn  my-2 my-sm-0 " type="submit">
+        <form action="{{route('front-end.search-product')}}" method="get" style="float: right" class="form-inline my-2 my-lg-0 search">
+            <input class="form-control key-word" type="search" name="key" placeholder="Tìm kiếm sản phẩm..." aria-label="">
+            <button class="btn my-2 my-sm-0 " type="submit" style="margin-right: 10px">
                 <i class="fas fa-search"></i>
             </button>
         </form>
-
     </div>
 
 </nav>

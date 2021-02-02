@@ -14,10 +14,6 @@ class AuthController extends Controller
 {
     private $user, $role, $info;
 
-    /**
-     * AuthController constructor.
-     * @param $user
-     */
     public function __construct(User $user, Role $role, info $info)
     {
         $this->user = $user;
@@ -138,7 +134,7 @@ class AuthController extends Controller
             'password'=>$request->password
         ]);
         if ($isLogin){
-            return redirect()->route('trang-chu');
+            return redirect()->route('home');
         }
         else{
             return redirect()->route('auth.login')->with(['mess-err'=>'Sai tài khoản hoặc mật khẩu']);

@@ -9,8 +9,3 @@ const Toast = Swal.mixin({
         toast.addEventListener('mouseleave', Swal.resumeTimer)
     }
 })
-
-Toast.fire({
-    icon: 'success',
-    title: 'Thêm sản phẩm vào giỏ hàng thành công'
-})

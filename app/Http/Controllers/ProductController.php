@@ -81,6 +81,7 @@ class ProductController extends Controller
             $product = $this->product->create([
                 'name'=>$request->name,
                 'price'=>$request->price,
+                'inventory' => $request->inventory,
                 'slug'=>Str::slug($request->name),
                 'model'=>$request->model,
                 'made_by'=>$request->made_by,

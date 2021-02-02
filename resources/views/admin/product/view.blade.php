@@ -61,6 +61,18 @@
                                 <input disabled value="{{$product->name}}" name="name" type="text" class="form-control">
                             </div>
                             <div class="form-group">
+                                <label>Giá</label>
+                                <input disabled value="{{$product->price}}" name="model" type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Tồn kho</label>
+                                <input disabled value="{{$product->inventory}}" name="model" type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Model</label>
+                                <input disabled value="{{$product->model}}" name="model" type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
                                 <label>Model</label>
                                 <input disabled value="{{$product->model}}" name="model" type="text" class="form-control">
                             </div>

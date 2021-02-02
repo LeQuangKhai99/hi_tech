@@ -67,8 +67,8 @@ function updateCart(){
         var inp_total =  box_qty.find('.total');
         var inp_total2 =  box_qty.find('.total2');
         var inp_price = box_qty.find('.price2');
-
-        if (parseInt(inp_product.val()) < 10){
+        var inventory = box_qty.find('.inventory');
+        if (inventory.val() > inp_product.val()){
             inp_product.val(parseInt(inp_product.val()) + 1);
             getTotalPrice(inp_price.val(), 'up');
             inp_total.html((inp_price.val() * inp_product.val()).format());
@@ -76,7 +76,10 @@ function updateCart(){
             up(btn);
         }
         else {
-            alert('Số lượng sản phẩm không được vượt quá 10');
+            Toast.fire({
+                icon: 'error',
+                title: 'Số lượng đã đặt giới hạn'
+            })
         }
     });
 

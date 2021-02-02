@@ -4,6 +4,15 @@
     <link rel="stylesheet" href="/hi-tech/content/css/product-detail.css">
 @endsection
 @section('js')
+    <script src="/hi-tech/content/js/ToastMess.js"></script>
+    @if(Session::get('err') != null)
+        <script>
+            Toast.fire({
+                icon: 'error',
+                title: "<?php echo Session::get('err')?>"
+            })
+        </script>
+    @endif
     <script>
         $('.img-detail').on('click', function (){
             var src = $(this).attr('src');

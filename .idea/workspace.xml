@@ -23,60 +23,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="698f14cc-0fd5-4cd6-b6ab-da41989ab431" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/admin_file/js/order/update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/hi-tech/content/js/ToastMess.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/hi-tech/content/js/updateCart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/order/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/order/trash.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/hitech.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hitech.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/CartController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/OrderDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/OrderDetail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/UserPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/UserPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin_file/js/category/delete.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin_file/js/category/delete.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin_file/js/user/update.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin_file/js/user/update.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/hi-tech/content/css/cart.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/hi-tech/content/css/cart.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/hi-tech/content/css/checkout.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/hi-tech/content/css/checkout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/hi-tech/content/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/hi-tech/content/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/brand/trash.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/brand/trash.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/trash.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/trash.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/menu-left.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/menu-left.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/post-cate/trash.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/post-cate/trash.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/post/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/post/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/post/trash.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/post/trash.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/post/update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/post/update.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/post/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/post/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/hi-tech/content/js/ToastMess.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/hi-tech/content/js/ToastMess.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/hi-tech/content/js/updateCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/hi-tech/content/js/updateCart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/product/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product/add.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/product/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/product/search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product/search.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/product/trash.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product/trash.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/product/update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product/update.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/product/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product/view.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/project/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/project/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/project/trash.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/project/trash.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/project/update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/project/update.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/project/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/project/view.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/recruitment/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/recruitment/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/role/trash.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/role/trash.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/role/update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/role/update.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/service/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/service/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/slide/trash.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/slide/trash.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/tag/trash.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/tag/trash.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/user/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/user/trash.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/user/trash.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front-end/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front-end/cart.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front-end/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front-end/checkout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front-end/detail-product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front-end/detail-product.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front-end/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front-end/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front-end/layout/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front-end/layout/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front-end/layout/nav-menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front-end/layout/nav-menu.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin-route.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin-route.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -386,7 +348,26 @@
       <workItem from="1609985491167" duration="502000" />
       <workItem from="1610005063932" duration="4719000" />
       <workItem from="1610019421790" duration="3544000" />
-      <workItem from="1610023322201" duration="4398000" />
+      <workItem from="1610023322201" duration="5224000" />
+      <workItem from="1610350405272" duration="1244000" />
+      <workItem from="1610438959434" duration="75000" />
+      <workItem from="1610461473603" duration="15000" />
+      <workItem from="1610504913223" duration="1471000" />
+      <workItem from="1610762451573" duration="29000" />
+      <workItem from="1610795789928" duration="505000" />
+      <workItem from="1610796330128" duration="46000" />
+      <workItem from="1610876759795" duration="77000" />
+      <workItem from="1610881568756" duration="40000" />
+      <workItem from="1611541576457" duration="840000" />
+      <workItem from="1611669492258" duration="113000" />
+      <workItem from="1611669960067" duration="4947000" />
+      <workItem from="1611713792388" duration="121000" />
+      <workItem from="1611755787192" duration="2174000" />
+      <workItem from="1611842807877" duration="7589000" />
+      <workItem from="1611892647620" duration="308000" />
+      <workItem from="1611932560085" duration="88000" />
+      <workItem from="1612073293218" duration="6389000" />
+      <workItem from="1612108551893" duration="2713000" />
     </task>
     <servers />
   </component>
@@ -398,7 +379,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

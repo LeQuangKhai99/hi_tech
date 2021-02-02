@@ -76,6 +76,10 @@
                                 <input name="price" type="number" class="form-control">
                             </div>
                             <div class="form-group">
+                                <label>Số lượng sản phẩm</label>
+                                <input name="inventory" type="number" class="form-control">
+                            </div>
+                            <div class="form-group">
                                 <label>Model</label>
                                 <input name="model" type="text" class="form-control">
                             </div>

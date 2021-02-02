@@ -33,8 +33,20 @@ class CartController extends Controller
 
     public function add($id){
         $product = $this->product->find($id);
-        Cart::add($product->id, $product->name, 1, $product->price, 0, ['image' => $product->image_path]);
-        return redirect()->route('front-end.cart')->with('mess', 'oke');
+        if ($product->inventory > 0){
+            $cart = Cart::add($product->id, $product->name, 1, $product->price, 0, ['image' => $product->image_path, 'inventory' => $product->inventory]);
+
+            if ($cart->qty > $product->inventory){
+                Cart::update($cart->rowId, $product->inventory);
+                return redirect()->route('front-end.cart')->with('err', 'Số lượng đã đạt giới hạn');
+            }
+            else {
+                return redirect()->route('front-end.cart')->with('success', 'Thêm sản phẩm vào giỏ hàng thành công');
+            }
+        }
+        else{
+            return redirect()->back()->with('err', 'Sản phẩm này hiện đang hết');
+        }
     }
 
     public function sub($id) {

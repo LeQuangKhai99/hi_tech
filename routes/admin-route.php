@@ -28,7 +28,8 @@ Route::prefix('auth')->group(function () {
 Route::group(['prefix'=>'admin', 'middleware'=>['check_login']],function () {
     Route::get('/', [
         'as'=>'trang-chu',
-        'uses'=>'HomeController@index'
+        'uses'=>'HomeController@index',
+        'middleware'=>'can:dashboard'
     ]);
 
 
