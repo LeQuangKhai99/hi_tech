@@ -11,18 +11,12 @@
     <script src="/admin_file/js/order/update.js"></script>
 @endsection
 @section('content')
-    <!-- Content Header (Page header) -->
-
-    <!-- /.content-header -->
-    @include('admin.layout.content-header', ['title'=>"Danh sách loại sản phẩm", 'path_chird'=>['category'], 'route'=>['category.index']])
-    <!-- Main content -->
+    @include('admin.layout.content-header', ['title'=>"Danh sách đơn hàng", 'path_chird'=>['order'], 'route'=>['order.index']])
 
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
                 <div class="card">
-
-                    <!-- /.card-header -->
                     <div class="card-body">
                         <a href="{{route('order.trash')}}" class="btn btn-primary float-lg-right mb-3 mr-4">
                             <i class="fas fa-trash-alt"></i> Thùng rác
@@ -62,11 +56,11 @@
                                             @break
                                     @endswitch
                                     <td style="text-align: center;" width="20%">
+                                        <a href="{{route('order.view', ['id' => $value->id])}}" title="Xem chi tiết" type="button" class="btn btn-success"><i class="fas fa-eye"></i></a>
                                         <button title="Xóa" type="button" data-url="{{route('order.delete', ['id'=>$value->id])}}" class="btn btn-danger act-del"><i class="fas fa-trash-alt"></i></button>
                                     </td>
                                 </tr>
                             @endforeach
-
                             </tbody>
                         </table>
                         <nav aria-label="Page navigation example" class="float-right mt-3">
@@ -75,12 +69,8 @@
                             </ul>
                         </nav>
                     </div>
-                    <!-- /.card-body -->
                 </div>
-                <!-- /.card -->
             </div>
-            <!-- /.col -->
         </div>
-        <!-- /.row -->
     </div>
 @endsection

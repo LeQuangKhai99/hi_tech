@@ -19,7 +19,7 @@
                 <div class="support">
                     <div class="breas">
                         @foreach($products as $product)
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding: 0 !important; overflow: hidden">
                                 <div class="breas-item">
                                     <a class="titA3" href="javascript:" rel="nofollow">{{$product->brand == null ? '' : $product->brand->name}}</a>
                                     <div class="img" style="height: 213px;">

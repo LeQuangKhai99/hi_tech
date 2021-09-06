@@ -666,11 +666,10 @@ Route::group(['prefix'=>'admin', 'middleware'=>['check_login']],function () {
             'as'=>'order.index',
             'uses'=>'OrderController@index'
         ]);
-//        Route::get('/view/{id}', [
-//            'as'=>'project.view',
-//            'uses'=>"ProjectController@view",
-//            'middleware'=>'can:project-view'
-//        ]);
+        Route::get('/view/{id}', [
+            'as'=>'order.view',
+            'uses'=>"OrderController@view",
+        ]);
         Route::get('/update/{id}', [
             'as'=>'order.update',
             'uses'=>'OrderController@update'

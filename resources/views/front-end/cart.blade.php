@@ -24,11 +24,11 @@
 @endsection
 @section('content')
     <div class="banner-abt-wrap">
-        <div class="banner-content d-flex justify-content-center align-items-center w-100 h-100">
+        <div class="banner-content d-flex justify-content-center align-items-center">
             <h1 class="text-center">Giỏ hàng của bạn</h1>
         </div>
     </div>
-
+@if(count($cart) > 0)
     <div class="container">
         <div class="row">
             <div class="table-responsive">
@@ -101,4 +101,9 @@
             </div>
         </div>
     </div>
+@else
+    <div style="text-align: center">
+        <h3>Bạn chưa mua gì</h3>
+    </div>
+@endif
 @endsection

@@ -7,9 +7,12 @@
     <script src="/hi-tech/content/js/ToastMess.js"></script>
     @if(Session::get('err') != null)
         <script>
-            Toast.fire({
+            Swal.fire({
+                position: 'top-end',
                 icon: 'error',
-                title: "<?php echo Session::get('err')?>"
+                title: "<?php echo Session::get('err')?>",
+                showConfirmButton: false,
+                timer: 1500
             })
         </script>
     @endif
@@ -23,10 +26,6 @@
 @section('content')
     <section id="nav-link" class="w-100">
         <a href="{{route('home')}}">Trang chủ</a>
-        <i class="fa fa-angle-right" aria-hidden="true"></i>
-        <a href="{{route('front-end.list-cate-product', ['slug'=>$cate->parentCate()->whereNull('deleted_at')->first()->slug])}}">{{$cate->parentCate()->whereNull('deleted_at')->first()->name}}</a>
-        <i class="fa fa-angle-right" aria-hidden="true"></i>
-        <a href="{{route('front-end.list-product', ['slug'=>$cate->slug])}}">{{$cate->name}}</a>
         <i class="fa fa-angle-right" aria-hidden="true"></i>
         <a>{{$product->name}}</a>
     </section>
@@ -56,25 +55,19 @@
                             <p class="col-md-6"><b>Nước sản xuất :</b>{{$product->made_by == null ? 'Trống' : $product->made_by}}</p>
                             <p class="col-md-6"><b>Loại sản phẩm :</b>{{$product->category == null ? 'Trống' : $product->category->name}}</p>
                         </div>
+                        <div class="detail">
+                            <p class="col-md-6"><b>Giá sản phẩm :</b>{{ number_format($product->price)}} VND</p>
+                            <p class="col-md-6"><b>Số lượng : </b>{{$product->inventory}} sản phẩm</p>
+                        </div>
 
                         <div class="view-detail">
                             {!! $product->des !!}
                         </div>
                         <div class="view-mxh">
-                            <a style="color: #ffffff !important;" href="javascript:" class="btn-book add-to-cart" id="booking" data-id="171" data-name="Hệ thống Monitor trung tâm Omni (Mỹ)" data-quality="1">
-                                <i class="fa fa-envelope" aria-hidden="true"></i>Liên hệ với chúng tôi
+                            <a style="color: #ffffff !important;" href="{{route('front-end.contact')}}" class="btn-book add-to-cart" id="booking" data-id="171" data-name="Hệ thống Monitor trung tâm Omni (Mỹ)" data-quality="1">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>Liên hệ
                             </a>
-                            <div class="link_mxh">
-                                <div class="likeshare">
-                                    <div class="share share-container">
-                                        <ul>
-                                            <li><a style="color: #125ab1 !important;" rel="nofollow" href="javascript:;" title=""><i class="fab fa-facebook-square"></i></a></li>
-                                            <li><a rel="nofollow" href="javascript:;" title=""><i style="color: #1da1f2" class="fab fa-twitter-square"></i></a></li>
-                                            <li><a rel="nofollow" href="javascript:;" title=""><i style="color: #dd4b39" class="fab fa-google-plus-square"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                            <a href="{{route('front-end.add-cart', ['id'=>$product->id])}}" class="btn" style="background: #0d95e8 !important; color: white !important;">Thêm sản phẩm vào giỏ hàng <i class="fas fa-cart-plus"></i></a>
                         </div>
                         <p>
                             <span class="tag">Tags:</span>
@@ -82,7 +75,6 @@
                             <a title="Hệ thống Monitor trung tâm Omni">{{$tag->name.', '}}</a>
                             @endforeach
                         </p>
-                        <a href="{{route('front-end.add-cart', ['id'=>$product->id])}}" class="btn btn-success">Success</a>
                     </div>
                 </div>
                 <div>

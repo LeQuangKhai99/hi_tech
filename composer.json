@@ -8,7 +8,7 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^7.4",
+        "php": "^7.2",
         "bumbummen99/shoppingcart": "^3.2",
         "ckfinder/ckfinder-laravel-package": "v3.5.1.5",
         "fideloper/proxy": "^4.2",
@@ -17,6 +17,7 @@
         "laravel/framework": "^7.24",
         "laravel/tinker": "^2.0",
         "laravel/ui": "2.4",
+        "maatwebsite/excel": "^3.1",
         "unisharp/laravel-filemanager": "^2.1"
     },
     "require-dev": {

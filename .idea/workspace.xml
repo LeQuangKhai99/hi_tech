@@ -23,21 +23,382 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="698f14cc-0fd5-4cd6-b6ab-da41989ab431" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/login/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/login/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/login/css/bootstrap/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/login/css/bootstrap/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/login/css/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/login/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/login/images/bg_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/login/images/undraw_file_sync_ot38.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/login/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/login/js/jquery-3.3.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/login/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/login/js/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/login/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/order/view.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/front-end/change-pass.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/front-end/edit-info.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/front-end/order-info.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/hitech.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hitech.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/CartController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/hi-tech/content/js/ToastMess.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/hi-tech/content/js/ToastMess.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/RegisterRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/RegisterRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/.browserslistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/.eslintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/.github/ISSUE_TEMPLATE/bug-report-for-adminlte-v3-x.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/.github/ISSUE_TEMPLATE/feature-request-for-adminlte-v3-x.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/.github/workflows/node-install.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/config/postcss.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/config/rollup.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/js/.jscsrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/js/AdminLTE.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/js/CardRefresh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/js/CardWidget.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/js/ControlSidebar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/js/DirectChat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/js/Dropdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/js/Layout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/js/PushMenu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/js/SiteSearch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/js/Toasts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/js/TodoList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/js/Treeview.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/npm/DocsPlugins.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/npm/DocsPublish.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/npm/Plugins.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/npm/Publish.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/.csslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/AdminLTE-components.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/AdminLTE-core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/AdminLTE-extra-components.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/AdminLTE-pages.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/AdminLTE-plugins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/AdminLTE-raw.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/AdminLTE.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/_alerts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/_bootstrap-variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/_brand.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/_callout.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/_cards.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/_carousel.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/_colors.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/_control-sidebar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/_direct-chat.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/_dropdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/_elevation.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/_forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/_info-box.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/_layout.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/_main-header.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/_main-sidebar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/_miscellaneous.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/_modals.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/_navs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/_print.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/_products.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/_progress-bars.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/_sidebar-mini.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/_small-box.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/_social-widgets.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/_table.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/_text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/_timeline.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/_toasts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/_users-list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/mixins/_accent.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/mixins/_backgrounds.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/mixins/_cards.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/mixins/_custom-forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/mixins/_direct-chat.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/mixins/_miscellaneous.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/mixins/_navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/mixins/_sidebar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/mixins/_toasts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/pages/_404_500_errors.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/pages/_e-commerce.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/pages/_invoice.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/pages/_lockscreen.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/pages/_login_and_register.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/pages/_mailbox.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/pages/_profile.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/pages/_projects.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/parts/_components.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/parts/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/parts/_extra-components.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/parts/_miscellaneous.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/parts/_pages.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/parts/_plugins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/plugins/_bootstrap-slider.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/plugins/_bootstrap-switch.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/plugins/_fullcalendar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/plugins/_icheck-bootstrap.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/plugins/_jqvmap.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/plugins/_mapael.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/plugins/_miscellaneous.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/plugins/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/plugins/_pace.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/plugins/_select2.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/plugins/_sweetalert2.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/build/scss/plugins/_toastr.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/Gemfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/_config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/_includes/foot.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/_includes/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/_includes/head.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/_includes/navbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/_includes/sidebar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/_layouts/default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/_layouts/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/_layouts/page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/_layouts/post.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/css/adminlte.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/css/adminlte.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/css/adminlte.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/css/adminlte.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/css/alt/adminlte.components.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/css/alt/adminlte.components.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/css/alt/adminlte.components.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/css/alt/adminlte.components.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/css/alt/adminlte.core.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/css/alt/adminlte.core.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/css/alt/adminlte.core.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/css/alt/adminlte.core.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/css/alt/adminlte.extra-components.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/css/alt/adminlte.extra-components.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/css/alt/adminlte.extra-components.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/css/alt/adminlte.extra-components.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/css/alt/adminlte.pages.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/css/alt/adminlte.pages.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/css/alt/adminlte.pages.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/css/alt/adminlte.pages.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/css/alt/adminlte.plugins.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/css/alt/adminlte.plugins.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/css/alt/adminlte.plugins.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/css/alt/adminlte.plugins.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/css/docs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/css/highlighter.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/img/AdminLTELogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/img/logo-xl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/img/logo-xs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/img/user1-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/img/user3-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/img/user4-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/img/user5-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/img/user6-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/img/user7-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/img/user8-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/js/adminlte.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/js/adminlte.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/js/adminlte.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/js/adminlte.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/js/demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/js/pages/dashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/js/pages/dashboard2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/js/pages/dashboard3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/bootstrap/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/bootstrap/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/bootstrap/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/bootstrap/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/bootstrap/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/fontawesome-free/css/all.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/fontawesome-free/css/all.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/fontawesome-free/css/brands.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/fontawesome-free/css/brands.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/fontawesome-free/css/fontawesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/fontawesome-free/css/fontawesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/fontawesome-free/css/regular.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/fontawesome-free/css/regular.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/fontawesome-free/css/solid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/fontawesome-free/css/solid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/fontawesome-free/css/svg-with-js.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/fontawesome-free/css/svg-with-js.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/fontawesome-free/css/v4-shims.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/fontawesome-free/css/v4-shims.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/fontawesome-free/webfonts/fa-brands-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/fontawesome-free/webfonts/fa-brands-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/fontawesome-free/webfonts/fa-brands-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/fontawesome-free/webfonts/fa-brands-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/fontawesome-free/webfonts/fa-brands-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/fontawesome-free/webfonts/fa-regular-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/fontawesome-free/webfonts/fa-regular-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/fontawesome-free/webfonts/fa-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/fontawesome-free/webfonts/fa-regular-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/fontawesome-free/webfonts/fa-regular-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/fontawesome-free/webfonts/fa-solid-900.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/fontawesome-free/webfonts/fa-solid-900.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/fontawesome-free/webfonts/fa-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/fontawesome-free/webfonts/fa-solid-900.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/fontawesome-free/webfonts/fa-solid-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/jquery/core.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/jquery/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/jquery/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/jquery/jquery.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/jquery/jquery.slim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/jquery/jquery.slim.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/jquery/jquery.slim.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/overlayScrollbars/css/OverlayScrollbars.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/overlayScrollbars/js/OverlayScrollbars.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/overlayScrollbars/js/OverlayScrollbars.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/popper/esm/popper-utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/popper/esm/popper-utils.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/popper/esm/popper-utils.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/popper/esm/popper-utils.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/popper/esm/popper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/popper/esm/popper.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/popper/esm/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/popper/esm/popper.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/popper/popper-utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/popper/popper-utils.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/popper/popper-utils.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/popper/popper-utils.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/popper/popper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/popper/popper.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/popper/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/popper/popper.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/popper/umd/popper-utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/popper/umd/popper-utils.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/popper/umd/popper-utils.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/popper/umd/popper-utils.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/popper/umd/popper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/popper/umd/popper.js.flow" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/popper/umd/popper.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/popper/umd/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/popper/umd/popper.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/assets/plugins/popper/umd/poppper.js.flow" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/browser-support.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/components/boxes.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/components/cards.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/components/control-sidebar.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/components/direct-chat.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/components/main-header.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/components/main-sidebar.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/components/miscellaneous.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/components/plugins.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/components/ribbons.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/components/timeline.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/dependencies.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/faq.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/implementations.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/javascript/card-refresh.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/javascript/card-widget.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/javascript/control-sidebar.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/javascript/direct-chat.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/javascript/layout.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/javascript/push-menu.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/javascript/toasts.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/javascript/todo-list.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/javascript/treeview.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/layout.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/license.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/docs/upgrade-guide.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/index2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/index3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/UI/buttons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/UI/general.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/UI/icons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/UI/modals.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/UI/navbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/UI/ribbons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/UI/sliders.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/UI/timeline.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/calendar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/charts/chartjs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/charts/flot.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/charts/inline.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/examples/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/examples/500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/examples/blank.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/examples/contacts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/examples/e-commerce.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/examples/forgot-password.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/examples/invoice-print.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/examples/invoice.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/examples/language-menu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/examples/legacy-user-menu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/examples/lockscreen.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/examples/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/examples/pace.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/examples/profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/examples/project-add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/examples/project-detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/examples/project-edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/examples/projects.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/examples/recover-password.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/examples/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/forms/advanced.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/forms/editors.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/forms/general.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/forms/validation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/gallery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/layout/boxed.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/layout/collapsed-sidebar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/layout/fixed-footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/layout/fixed-sidebar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/layout/fixed-topnav.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/layout/top-nav-sidebar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/layout/top-nav.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/mailbox/compose.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/mailbox/mailbox.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/mailbox/read-mail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/tables/data.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/tables/jsgrid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/tables/simple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/pages/widgets.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminlte/starter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/hi-tech/content/css/list-product-cate.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/hi-tech/content/css/list-product-cate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/hi-tech/content/css/product-detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/hi-tech/content/css/product-detail.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/hi-tech/content/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/hi-tech/content/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/hi-tech/content/css/trangchu.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/hi-tech/content/css/trangchu.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/hi-tech/content/js/updateCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/hi-tech/content/js/updateCart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/menu-left.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/menu-left.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/order/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/order/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/product/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product/add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/product/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/product/trash.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product/trash.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/product/update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product/update.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/product/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front-end/brand-list-product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front-end/brand-list-product.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front-end/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front-end/cart.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front-end/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front-end/checkout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front-end/detail-product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front-end/detail-product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front-end/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front-end/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front-end/layout/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front-end/layout/footer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front-end/layout/nav-menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front-end/layout/nav-menu.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin-route.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin-route.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
@@ -60,6 +421,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
@@ -179,6 +548,16 @@
       <path value="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter" />
       <path value="$PROJECT_DIR$/vendor/mtdowling/jmespath.php" />
       <path value="$PROJECT_DIR$/vendor/bumbummen99/shoppingcart" />
+      <path value="$PROJECT_DIR$/vendor/scrivo/highlight.php" />
+      <path value="$PROJECT_DIR$/vendor/maennchen/zipstream-php" />
+      <path value="$PROJECT_DIR$/vendor/maatwebsite/excel" />
+      <path value="$PROJECT_DIR$/vendor/ezyang/htmlpurifier" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/php-enum" />
+      <path value="$PROJECT_DIR$/vendor/markbaker/complex" />
+      <path value="$PROJECT_DIR$/vendor/markbaker/matrix" />
+      <path value="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
     </include_path>
   </component>
   <component name="ProjectId" id="1gqOjqFgTzkEzPZ3D18AvArSUFm" />
@@ -193,18 +572,25 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../xam1/htdocs/icarm_web" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\hitech\public\login" />
       <recent name="D:\Xampp\xam4\htdocs\php\hitech\resources\views\admin\project" />
       <recent name="D:\Xampp\xam4\htdocs\php\hitech\resources\views\admin\service" />
       <recent name="D:\Xampp\xam4\htdocs\php\hitech\public" />
       <recent name="D:\Xampp\xam4\htdocs\php\hitech\resources\views\admin\permission" />
-      <recent name="D:\Xampp\xam4\htdocs\php\hitech\resources\views\admin\role" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Xampp\xam1\htdocs\hitech\resources\views\front-end" />
@@ -368,6 +754,48 @@
       <workItem from="1611932560085" duration="88000" />
       <workItem from="1612073293218" duration="6389000" />
       <workItem from="1612108551893" duration="2713000" />
+      <workItem from="1612253533149" duration="908000" />
+      <workItem from="1612258620752" duration="3006000" />
+      <workItem from="1612262258807" duration="895000" />
+      <workItem from="1612263228794" duration="7943000" />
+      <workItem from="1612272385242" duration="178000" />
+      <workItem from="1612313772918" duration="645000" />
+      <workItem from="1612316017643" duration="16828000" />
+      <workItem from="1612349592919" duration="896000" />
+      <workItem from="1612420314189" duration="499000" />
+      <workItem from="1612427424405" duration="1229000" />
+      <workItem from="1612431410507" duration="606000" />
+      <workItem from="1612576170655" duration="14145000" />
+      <workItem from="1612613762111" duration="1898000" />
+      <workItem from="1612616108427" duration="686000" />
+      <workItem from="1612687731000" duration="2667000" />
+      <workItem from="1612697182027" duration="3753000" />
+      <workItem from="1612710619383" duration="749000" />
+      <workItem from="1613196344973" duration="6325000" />
+      <workItem from="1613204736683" duration="1395000" />
+      <workItem from="1613208291046" duration="192000" />
+      <workItem from="1613208549858" duration="113000" />
+      <workItem from="1613208673622" duration="71000" />
+      <workItem from="1613208748376" duration="11000" />
+      <workItem from="1613208776251" duration="69000" />
+      <workItem from="1613208862047" duration="9865000" />
+      <workItem from="1613316186315" duration="1694000" />
+      <workItem from="1613815583801" duration="832000" />
+      <workItem from="1613820094670" duration="2074000" />
+      <workItem from="1613836913436" duration="2815000" />
+      <workItem from="1614174063744" duration="78000" />
+      <workItem from="1614174227014" duration="24000" />
+      <workItem from="1614174589705" duration="2314000" />
+      <workItem from="1614352540315" duration="535000" />
+      <workItem from="1614443086322" duration="877000" />
+      <workItem from="1614483345219" duration="762000" />
+      <workItem from="1614505555649" duration="1342000" />
+      <workItem from="1614563779182" duration="1072000" />
+      <workItem from="1615300266030" duration="85000" />
+      <workItem from="1615390209835" duration="1789000" />
+      <workItem from="1615421622217" duration="931000" />
+      <workItem from="1616317906001" duration="687000" />
+      <workItem from="1617629055285" duration="95000" />
     </task>
     <servers />
   </component>

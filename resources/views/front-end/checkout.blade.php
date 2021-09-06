@@ -5,7 +5,7 @@
 @section('content')
 <!-- BANNER -->
 <div class="banner-abt-wrap">
-    <div class="banner-content d-flex justify-content-center align-items-center w-100 h-100">
+    <div class="banner-content d-flex justify-content-center align-items-center">
         <h1 class="text-center">Thanh toán</h1>
     </div>
 </div>
@@ -52,12 +52,8 @@
                     </div>
                     <div class="field-wrap col-12 px-0">
                         <!-- The input -->
-                        <select name="address" class="field-input w-100">
-                            <option value="{{auth()->user()->address}}">{{auth()->user()->address}}</option>
-                            @foreach($address as $add)
-                                <option value="{{$add->address}}">{{$add->address}}</option>
-                            @endforeach
-                        </select>
+                        <input class="field-input w-100" value="{{auth()->user()->address}}" type="text" placeholder="Địa chỉ" id="name"
+                               name="address" />
                         <!-- The label -->
                         <label class="field-label" for="address">Địa chỉ</label>
                     </div>
@@ -100,39 +96,13 @@
                     </table>
                 </div>
 
-                <div class="order-discount order-content">
-                    <div class="fieldset">
-                        <div class="field-wrap discount-content d-flex justify-content-between align-items-center">
-                            <div class="discount-input-wrap">
-                                <input placeholder="Mã giảm giá" class="field-input" autocomplete="off"
-                                       autocapitalize="off" spellcheck="false" size="30" type="text" id="discount"
-                                       name="discount" value="">
-                                <label class="field-label" for="discount">Mã giảm giá</label>
-                            </div>
-                            <button type="submit" class="discount-btn btn btn-default">
-                                <span class="btn-content">Sử dụng</span>
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-
                 <div class="order-total order-content">
                     <table class="total-table w-100">
                         <tbody>
-                        <tr class="total total-subtotal">
-                            <td class="total-name">Tạm tính</td>
-                            <td class="total-price">
-                                        <span class="order-summary-emphasis">
-                                            300,000vnđ
-                                        </span>
-                            </td>
-                        </tr>
-
                         <tr class="total total-shipping">
                             <td class="total-name">Phí vận chuyển</td>
                             <td class="total-price">
-                                <span class="order-summary-emphasis">—</span>
+                                <span class="order-summary-emphasis">Miễn phí</span>
                             </td>
                         </tr>
 

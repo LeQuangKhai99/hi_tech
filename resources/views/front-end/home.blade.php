@@ -3,15 +3,60 @@
     <link rel="stylesheet" href="/hi-tech/content/css/trangchu.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 @endsection
-@if(Session::get('mess') == 'oke')
-    <script>
-        alert('Đặt hàng thành công, vui long đợi nhân viên gọi điện thoại xác nhận')
-    </script>
-@endif
+@section('js')
+    <script src="/hi-tech/content/js/ToastMess.js"></script>
+    @if(Session::get('mess') == 'oke')
+        <script>
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Đặt hàng thành công vui lòng đợi nhân viên gọi điện thoại xác nhận',
+                showConfirmButton: false,
+                timer: 1500
+            })
+        </script>
+    @endif
+    @if(Session::get('error') != null)
+        <script>
+            Swal.fire({
+                position: 'top-end',
+                icon: 'error',
+                title: '<?php echo Session::get('error'); ?>',
+                showConfirmButton: false,
+                timer: 1500
+            })
+        </script>
+    @endif
+@endsection
 @section('content')
 @include('front-end.layout.brand')
-    <div class="row">
+<!-- Load Facebook SDK for JavaScript -->
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            xfbml            : true,
+            version          : 'v9.0'
+        });
+    };
 
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your Chat Plugin code -->
+<div class="fb-customerchat"
+     attribution="setup_tool"
+     page_id="110270704128934"
+     logged_in_greeting="Xin chào, tôi có thể giúp gì cho bạn ?"
+     logged_out_greeting="Xin chào, tôi có thể giúp gì cho bạn ?">
+</div>
+    <div class="row">
         @php
             $x = 0;
             $position = 'anim-right';

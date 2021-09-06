@@ -4,15 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Order;
 use App\OrderDetail;
+use App\Product;
 use Illuminate\Http\Request;
 
 class OrderController extends Controller
 {
-    private $order, $orderDetail;
+    private $order, $orderDetail, $product;
 
-    public function __construct(Order $order, OrderDetail $orderDetail){
+    public function __construct(Order $order, OrderDetail $orderDetail, Product $product){
         $this->order = $order;
         $this->orderDetail = $orderDetail;
+        $this->product = $product;
     }
 
     public function index(){
@@ -20,6 +22,25 @@ class OrderController extends Controller
         return view('admin.order.index', [
             'orders'=>$orders,
             'page'=>'order'
+        ]);
+    }
+
+    public function view($id){
+        $order = $this->order->find($id);
+        $orderDetails = array();
+        $i = 0;
+        foreach ($order->orderDetails as $item)
+        {
+            $product = $this->product->find($item->product_id);
+            $orderDetails[$i]['name'] = $product->name;
+            $orderDetails[$i]['qty'] = $item->quantity;
+            $orderDetails[$i]['price'] = $product->price;
+            $orderDetails[$i]['total'] = $product->price * $item->quantity;
+            $i++;
+        }
+        return view('admin.order.view', [
+            'order' => $order,
+            'orderDetails' => $orderDetails
         ]);
     }
 

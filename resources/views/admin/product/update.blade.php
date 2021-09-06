@@ -111,7 +111,7 @@
                                                 <i class="fas fa-times"></i>
                                             </div>
                                             <input type="hidden" name="is_isset_image" value="yes">
-                                            <img src="{{$product->image_path}}" style="width: 20%; margin: 0 0 20px 0" height="20%" alt="">
+                                            <img src="{{$product->image_path}}" style="height: 200px; margin: 0 0 20px 0" height="20%" alt="">
                                         </div>
                                     </div>
                                 @endif
@@ -120,12 +120,13 @@
                             <div class="form-group">
                                 <label>Hình ảnh chi tiết</label>
                                 <div style="display: flex">
+
                                     @foreach($product->images as $image)
                                         <div class="img-file" style="position: relative; margin: 0 20px 20px 0px">
                                             <div class="del-img-{{$image->id}} del-img" onclick="delImg({{$image->id}})">
                                                 <i class="fas fa-times"></i>
                                             </div>
-                                            <img src="{{$image->image}}" style="height: 200px; width: 150px;" alt="">
+                                            <img src="{{$image->image_path}}" style="height: 200px; width: 150px;" alt="">
                                             <input type="hidden" value="{{$image->id}}" name="id_imgs[]">
                                         </div>
                                     @endforeach

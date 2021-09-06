@@ -15,7 +15,7 @@ use phpDocumentor\Reflection\Types\Nullable;
 class CategoryController extends Controller
 {
     use StorageImageTrait;
-    private Categories $cate;
+    private $cate;
     public function __construct(Categories $cate){
         $this->cate = $cate;
     }

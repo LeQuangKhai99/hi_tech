@@ -39,10 +39,9 @@
                                     </ul>
                                 </div>
                             @endif
-
                         @endforeach
                     </div>
-                    <img src="/hi-tech/images/menu4.png" alt="">
+                    <img style="width: 100%;" src="/hi-tech/images/menu4.png" alt="">
                 </div>
             </li>
             <li class="nav-item {{$page == 'project' ? 'active' : ''}}">
@@ -67,14 +66,24 @@
             <li class="nav-item {{$page == 'contact' ? 'active' : ''}}">
                 <a class="nav-link" href="{{route('front-end.contact')}}">LIÊN HỆ</a>
             </li>
-            <li class="nav-item {{$page == 'cart ' ? 'active' : ''}}">
+            @if(auth()->user() != null)
+                <li class="w3-container nav-item btn-list-news {{$page == 'info' ? 'active' : ''}}">
+                    <div class="w3-dropdown-hover" style="background-color: #ffffff">
+                        <a class="nav-link "><i class="fas fa-user"></i></a>
+                        <div class="w3-dropdown-content w3-bar-block w3-border">
+                            <a href="{{route('front-end.edit-info')}}" class="w3-bar-item w3-button">Cập nhật thông tin</a>
+                            <a href="{{route('auth.logout')}}" class="w3-bar-item w3-button">Đăng xuất</a>
+                        </div>
+                    </div>
+                </li>
+            @else
+                <li class="nav-item ">
+                    <a class="nav-link" href="{{route('auth.login')}}">ĐĂNG NHẬP</a>
+                </li>
+            @endif
+            <li class="nav-item {{$page == 'cart' ? 'active' : ''}}">
                 <a href="{{route('front-end.cart')}}" class="nav-link" href="">
                     <i class="fas fa-shopping-cart"></i>
-                </a>
-            </li>
-            <li class="nav-item {{$page == 'info ' ? 'active' : ''}}">
-                <a class="nav-link" href="">
-                    <i class="fas fa-user"></i>
                 </a>
             </li>
         </ul>
@@ -85,6 +94,5 @@
             </button>
         </form>
     </div>
-
 </nav>
 

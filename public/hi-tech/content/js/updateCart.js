@@ -18,6 +18,11 @@ function removeCartItem(btn){
             success : function (){
                 btn.parent().parent().parent().remove();
                 getTotalPrice();
+                if ($('.total2').length == 0){
+                    $('.container').html('<div style="text-align: center">\n' +
+                        '        <h3>Bạn chưa mua gì</h3>\n' +
+                        '    </div>');
+                }
             }
         });
     }
@@ -68,7 +73,7 @@ function updateCart(){
         var inp_total2 =  box_qty.find('.total2');
         var inp_price = box_qty.find('.price2');
         var inventory = box_qty.find('.inventory');
-        if (inventory.val() > inp_product.val()){
+        if (parseInt(inventory.val()) > parseInt(inp_product.val())){
             inp_product.val(parseInt(inp_product.val()) + 1);
             getTotalPrice(inp_price.val(), 'up');
             inp_total.html((inp_price.val() * inp_product.val()).format());

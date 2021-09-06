@@ -69,40 +69,39 @@
                             @csrf
                             <div class="form-group">
                                 <label>Tên sản phẩm</label>
-                                <input name="name" type="text" class="form-control">
+                                <input name="name" value="{{old('name')}}" type="text" class="form-control">
                             </div>
+                            @error('name')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                             <div class="form-group">
                                 <label>Giá sản phẩm</label>
-                                <input name="price" type="number" class="form-control">
+                                <input name="price" value="{{old('price')}}" type="number" class="form-control">
                             </div>
+                            @error('price')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                             <div class="form-group">
                                 <label>Số lượng sản phẩm</label>
-                                <input name="inventory" type="number" class="form-control">
+                                <input name="inventory" type="number" value="{{old('inventory')}}" class="form-control">
                             </div>
+                            @error('inventory')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                             <div class="form-group">
                                 <label>Model</label>
-                                <input name="model" type="text" class="form-control">
+                                <input name="model" value="{{old('model')}}" type="text" class="form-control">
                             </div>
+                            @error('model')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                             <div class="form-group">
                                 <label>Made by</label>
-                                <input name="made_by" type="text" class="form-control">
+                                <input name="made_by" value="{{old('made_by')}}" type="text" class="form-control">
                             </div>
-                            <div class="form-group">
-                                <label>Mô tả</label>
-                                <textarea rows="5" name="des" type="text" id="editor1" class="form-control"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label>Nội dung</label>
-                                <textarea rows="5" name="content1" id="editor2" type="text" class="form-control"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label>Hình ảnh chính</label>
-                                <input name="image" type="file" class="form-control-file"/>
-                            </div>
-                            <div class="form-group">
-                                <label>Hình ảnh chi tiết</label>
-                                <input name="images[]" type="file" class="form-control-file mul-file" multiple/>
-                            </div>
+                            @error('made_by')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                             <div class="form-group">
                                 <label>Loại sản phẩm</label>
                                 <select class="form-control select-cate" name="cate">
@@ -116,6 +115,28 @@
                                         <option value="{{$brand->id}}">{{$brand->name}}</option>
                                     @endforeach
                                 </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Mô tả</label>
+                                <textarea rows="5" name="des" type="text" id="editor1" class="form-control">{{old('des')}}</textarea>
+                            </div>
+                            @error('des')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
+                            <div class="form-group">
+                                <label>Nội dung</label>
+                                <textarea rows="5" name="content1" id="editor2" type="text" class="form-control"></textarea>
+                            </div>
+                            @error('content')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
+                            <div class="form-group">
+                                    <label>Hình ảnh chính</label>
+                                    <input name="image" type="file" class="form-control-file"/>
+                                </div>
+                            <div class="form-group">
+                                <label>Hình ảnh chi tiết</label>
+                                <input name="images[]" type="file" class="form-control-file mul-file" multiple/>
                             </div>
                             <div class="form-group">
                                 <label>Tags</label>

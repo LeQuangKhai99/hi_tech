@@ -43,6 +43,10 @@ class User extends Authenticatable
         return $this->hasMany('App\info');
     }
 
+    public function orders(){
+        return $this->hasMany('App\Order');
+    }
+
     public function CheckPermissionAccess($key_code){
         // lấy đc tất cả các quyền của user đang login trong hệ thống
         $roles = auth()->user()->roles()->get();

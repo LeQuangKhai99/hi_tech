@@ -1,120 +1,89 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AdminLTE 3 | Registration Page</title>
-    <!-- Tell the browser to be responsive to screen width -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="/adminlte/plugins/fontawesome-free/css/all.min.css">
-    <!-- Ionicons -->
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- icheck bootstrap -->
-    <link rel="stylesheet" href="/adminlte/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-    <!-- Theme style -->
-    <link rel="stylesheet" href="/adminlte/dist/css/adminlte.min.css">
-    <!-- Google Font: Source Sans Pro -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="/login/css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/login/css/bootstrap.min.css">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="/login/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <title>Đăng Ký</title>
 </head>
-<body class="hold-transition register-page">
-<div class="register-box">
-    <div class="register-logo">
-        <a href="/adminlte/index2.html"><b>Admin</b>LTE</a>
-    </div>
-
-    <div class="card">
-        <div class="card-body register-card-body">
-            <p class="login-box-msg">Register a new membership</p>
-
-            <form action="{{route('auth.create')}}" method="post">
-                @csrf
-                <div class="input-group mb-3">
-                    <input value="{{old('name')}}" type="text" name="name" class="form-control" placeholder="Full name">
-
-                    <div class="input-group-append">
-                        <div class="input-group-text">
-                            <span class="fas fa-user"></span>
-                        </div>
-                    </div>
-                </div>
-                @error('name')
-                <div class="alert alert-danger">{{ $message }}</div>
-                @enderror
-                <div class="input-group mb-3">
-                    <input value="{{old('email')}}" name="email" type="email" class="form-control" placeholder="Email">
-
-                    <div class="input-group-append">
-                        <div class="input-group-text">
-                            <span class="fas fa-envelope"></span>
-                        </div>
-                    </div>
-                </div>
-                @error('email')
-                <div class="alert alert-danger">{{ $message }}</div>
-                @enderror
-                <div class="input-group mb-3">
-                    <input value="{{old('password')}}" name="password" type="password" class="form-control" placeholder="Password">
-
-                    <div class="input-group-append">
-                        <div class="input-group-text">
-                            <span class="fas fa-lock"></span>
-                        </div>
-                    </div>
-                </div>
-                @error('password')
-                <div class="alert alert-danger">{{ $message }}</div>
-                @enderror
-                <div class="input-group mb-3">
-                    <input name="password_confirmation" type="password" class="form-control" placeholder="Retype password">
-                    <div class="input-group-append">
-                        <div class="input-group-text">
-                            <span class="fas fa-lock"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-8">
-                        <div class="icheck-primary">
-                            <input type="checkbox" id="agreeTerms" name="terms" value="agree">
-                            <label for="agreeTerms">
-                                I agree to the <a href="#">terms</a>
-                            </label>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                    <div class="col-4">
-                        <button type="submit" class="btn btn-primary btn-block">Register</button>
-                    </div>
-                    <!-- /.col -->
-                </div>
-            </form>
-
-            <div class="social-auth-links text-center">
-                <p>- OR -</p>
-                <a href="#" class="btn btn-block btn-primary">
-                    <i class="fab fa-facebook mr-2"></i>
-                    Sign up using Facebook
-                </a>
-                <a href="#" class="btn btn-block btn-danger">
-                    <i class="fab fa-google-plus mr-2"></i>
-                    Sign up using Google+
-                </a>
+<body>
+<div class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 order-md-2">
+                <img src="/login/images/undraw_file_sync_ot38.svg" alt="Image" class="img-fluid">
             </div>
-
-            <a href="{{route('auth.login')}}" class="text-center">I already have a membership</a>
+            <div class="col-md-6 contents">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="mb-4">
+                            <h3>Đăng ký</h3>
+                        </div>
+                        <form action="{{route('auth.create')}}" method="post">
+                            @csrf
+                            <div class="form-group first">
+                                <label for="fullname">Họ tên</label>
+                                <input type="text" class="form-control" id="fullname" value="{{old('name')}}" name="name">
+                            </div>
+                            @error('name')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
+                            <div class="form-group first">
+                                <label for="username">Email</label>
+                                <input type="text" class="form-control" id="username" value="{{old('email')}}" name="email">
+                            </div>
+                            @error('email')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
+                            <div class="form-group last mb-4">
+                                <label for="password">Mật khẩu</label>
+                                <input type="password" class="form-control" id="password" name="password" value="{{old('password')}}">
+                            </div>
+                            @error('password')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
+                            <div class="form-group last mb-4">
+                                <label for="password">Xác nhận mật khẩu</label>
+                                <input type="password" class="form-control" id="password" name="password_confirmation" value="{{old('password_confirmation')}}">
+                            </div>
+                            <div class="form-group last mb-4">
+                                <label for="password">Địa chỉ</label>
+                                <input type="text" class="form-control" name="address" value="{{old('address')}}">
+                            </div>
+                            @error('address')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
+                            <div class="form-group last mb-4">
+                                <label for="password">Số điện thoại</label>
+                                <input type="text" class="form-control" name="phone" value="{{old('phone')}}">
+                            </div>
+                            @error('phone')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
+                            <input type="submit" value="Đăng ký" class="btn text-white btn-block btn-primary">
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- /.form-box -->
-    </div><!-- /.card -->
+    </div>
 </div>
-<!-- /.register-box -->
 
-<!-- jQuery -->
-<script src="/adminlte/plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- AdminLTE App -->
-<script src="/adminlte/dist/js/adminlte.min.js"></script>
+
+<script src="/login/js/jquery-3.3.1.min.js"></script>
+<script src="/login/js/popper.min.js"></script>
+<script src="/login/js/bootstrap.min.js"></script>
+<script src="/login/js/main.js"></script>
 </body>
 </html>

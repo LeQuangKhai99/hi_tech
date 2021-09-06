@@ -35,7 +35,6 @@ class CartController extends Controller
         $product = $this->product->find($id);
         if ($product->inventory > 0){
             $cart = Cart::add($product->id, $product->name, 1, $product->price, 0, ['image' => $product->image_path, 'inventory' => $product->inventory]);
-
             if ($cart->qty > $product->inventory){
                 Cart::update($cart->rowId, $product->inventory);
                 return redirect()->route('front-end.cart')->with('err', 'Số lượng đã đạt giới hạn');
@@ -57,6 +56,9 @@ class CartController extends Controller
     public function checkout(){
         $address = auth()->user()->infos;
         $cart = Cart::content();
+        if (count($cart) <= 0){
+            return redirect()->route('front-end.home')->with('error', 'Chưa có sản phẩm nào được mua!');
+        }
         $totalPrice = Cart::priceTotal();
         return view('front-end.checkout', [
             'page'=>'checkout',
@@ -78,6 +80,10 @@ class CartController extends Controller
         ]);
 
         foreach (Cart::content() as $cart){
+            $product = $this->product->find($cart->id);
+            $product->update([
+                'inventory' => ($product->inventory - $cart->qty)
+            ]);
             $this->orderDetail->create([
                 'order_id'=>$order->id,
                 'product_id'=>$cart->id,

@@ -68,10 +68,29 @@
                 </div>
                 <!-- ./col -->
             </div>
-            <!-- /.row -->
-            <!-- Main row -->
-
-            <!-- /.row (main row) -->
-        </div><!-- /.container-fluid -->
+        </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <canvas id="myChart" style="margin: 30px 0"></canvas>
+    <script>
+        var chart = '<?php echo json_encode($chart);?>';
+        chart = JSON.parse(chart);
+
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'line',
+            // The data for our dataset
+            data: {
+                labels: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12'],
+                datasets: [{
+                    label: 'Biểu đồ số lượng đơn hàng qua các tháng',
+                    backgroundColor: 'rgb(32,96,191)',
+                    borderColor: 'rgb(32,96,191)',
+                    data: chart
+                }]
+            },
+            options: {}
+        });
+    </script>
 @endsection

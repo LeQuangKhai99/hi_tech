@@ -440,3 +440,7 @@ img{
     margin: 0;
     text-transform: uppercase;
 }
+
+.img-device{
+    width: 100%;
+}

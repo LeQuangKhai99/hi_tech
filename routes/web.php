@@ -15,6 +15,32 @@ Route::group(['prefix' => '', 'namespace'=>'Frontend'], function () {
         'as'=>'front-end.home',
         'uses'=>'HomeController@index'
     ]);
+
+    Route::get('/cap-nhat-thong-tin-ca-nhan',[
+        'as' => 'front-end.edit-info',
+        'uses' => 'HomeController@editInfo'
+    ]);
+
+    Route::post('/cap-nhat-thong-tin-ca-nhan',[
+        'as' => 'front-end.update-info',
+        'uses' => 'HomeController@updateInfo'
+    ]);
+
+    Route::get('/doi-mat-khau',[
+        'as' => 'front-end.change-pass',
+        'uses' => 'HomeController@changePass'
+    ]);
+
+    Route::post('/doi-mat-khau',[
+        'as' => 'front-end.post-change-pass',
+        'uses' => 'HomeController@postChangePass'
+    ]);
+
+    Route::get('/thong-tin-dat-hang',[
+        'as' => 'front-end.order-info',
+        'uses' => 'HomeController@orderInfo'
+    ]);
+
     Route::get('/gioi-thieu', [
         'as'=>'front-end.intro',
         'uses'=>'HomeController@intro'
@@ -122,3 +148,4 @@ Route::group(['prefix' => '', 'namespace'=>'Frontend'], function () {
     });
 
 });
+Route::get('export', 'ExportController@export')->name('export');

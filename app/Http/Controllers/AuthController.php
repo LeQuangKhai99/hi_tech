@@ -137,7 +137,7 @@ class AuthController extends Controller
             return redirect()->route('home');
         }
         else{
-            return redirect()->route('auth.login')->with(['mess-err'=>'Sai tài khoản hoặc mật khẩu']);
+            return redirect()->route('auth.login')->with('mess-err','Sai tài khoản hoặc mật khẩu');
         }
     }
 
@@ -152,7 +152,8 @@ class AuthController extends Controller
             'email' => $request->email,
             'phone' => $request->phone,
             'address' => $request->address,
-            'password' => Hash::make($request->password)
+            'phone' => $request->phone,
+            'password' => Hash::make($request->password),
         ]);
 
         if (isset($request->address2)) {

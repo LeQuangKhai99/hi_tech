@@ -14,12 +14,14 @@ use App\Project;
 use App\Recruitment;
 use App\Service;
 use App\Slide;
+use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class HomeController extends Controller
 {
-    private $slide, $brand, $cate, $post, $postCate, $intro, $service, $recruitment, $contact, $project, $product;
-    public function __construct(Slide $slide, Brand $brand, Categories $cate, Post $post, PostCate $postCate, Intro $intro, Service $service, Recruitment $recruitment, Contact $contact, Project $project, Product $product)
+    private $slide, $brand, $cate, $post, $postCate, $intro, $service, $recruitment, $contact, $project, $product, $user;
+    public function __construct(User $user,Slide $slide, Brand $brand, Categories $cate, Post $post, PostCate $postCate, Intro $intro, Service $service, Recruitment $recruitment, Contact $contact, Project $project, Product $product)
     {
         $this->slide = $slide;
         $this->brand = $brand;
@@ -32,6 +34,7 @@ class HomeController extends Controller
         $this->contact = $contact;
         $this->project = $project;
         $this->product = $product;
+        $this->user = $user;
     }
 
     public function index()
@@ -45,6 +48,46 @@ class HomeController extends Controller
             'brands'=>$brands,
             'colors'=>$colors,
             'posts'=>$posts,
+        ]);
+    }
+
+    public function editInfo(){
+        $user = $this->user->find(auth()->user()->id);
+        return view('front-end.edit-info', [
+            'page' => 'info',
+            'user' => $user
+        ]);
+    }
+
+    public function updateInfo(Request $request){
+        $user = $this->user->find(auth()->user()->id);
+        $user->update([
+            'name' => $request->name,
+            'phone' => $request->phone,
+            'address' => $request->address,
+        ]);
+        return redirect()->route('front-end.edit-info')->with(['update-oke'=>'oke']);
+    }
+
+    public function changePass(){
+        return view('front-end.change-pass', [
+            'page' => 'info'
+        ]);
+    }
+
+    public function postChangePass(Request $request){
+        $user = $this->user->find(auth()->user()->id);
+        $user->update([
+            'password' => Hash::make($request->pass),
+        ]);
+        return redirect()->route('front-end.change-pass')->with(['update-oke'=>'oke']);
+    }
+
+    public function orderInfo(){
+        $orders = auth()->user()->orders;
+        return view('front-end.order-info', [
+            'page' => 'info',
+            'orders' => $orders
         ]);
     }
 

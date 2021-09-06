@@ -59,12 +59,9 @@
             <div class="facebook">
                 <h3>FACEBOOK</h3>
             </div>
-            <div class="text-right address">
-                <iframe
-                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FVienCongNgheDevmaster25%2F&tabs&width=400&height=160&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId"
-                    width="100%" height="160" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                    allowTransparency="true" allow="encrypted-media"></iframe>
-            </div>
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v9.0&appId=2122036734564718&autoLogAppEvents=1" nonce="CYgNRCEG"></script>
+            <div class="fb-page" data-href="https://www.facebook.com/Thi&#x1ebf;t-b&#x1ecb;-y-t&#x1ebf;-TMHiTech-110270704128934/" data-tabs="" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Thi&#x1ebf;t-b&#x1ecb;-y-t&#x1ebf;-TMHiTech-110270704128934/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Thi&#x1ebf;t-b&#x1ecb;-y-t&#x1ebf;-TMHiTech-110270704128934/">Thiết bị y tế TMHiTech</a></blockquote></div>
         </div>
     </div>
     <div class="row b-top">

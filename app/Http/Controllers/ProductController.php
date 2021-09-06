@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Brand;
 use App\Categories;
 use App\Component\RecusiveOptionSelect;
+use App\Http\Requests\ProductStoreRequest;
 use App\Product;
 use App\ProductImage;
 use App\ProductTag;
@@ -75,7 +76,7 @@ class ProductController extends Controller
         ]);
     }
 
-    public function store(Request $request){
+    public function store(ProductStoreRequest $request){
         try {
             DB::beginTransaction();
             $product = $this->product->create([
@@ -184,7 +185,8 @@ class ProductController extends Controller
                 'image_path'=>$image_path,
                 'user_id'=>auth()->user()->id,
                 'category_id'=>$request->cate,
-                'brand_id'=>$request->brand
+                'brand_id'=>$request->brand,
+                'inventory' => $request->inventory
             ]);
             // nếu thêm ảnh chi tiết mới
             if ($request->images != null){
@@ -276,5 +278,4 @@ class ProductController extends Controller
             ]);
         }
     }
-
 }
