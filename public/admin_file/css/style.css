@@ -3,6 +3,10 @@
     margin-top: 10px;
 }
 
+.un-seen {
+    color: #1479fb;
+}
+
 .del-img{
     display: flex;
     align-items: center;

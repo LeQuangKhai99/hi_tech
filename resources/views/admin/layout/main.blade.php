@@ -102,6 +102,29 @@
 <script src="/adminlte/dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="/adminlte/dist/js/demo.js"></script>
+<script src="https://js.pusher.com/7.0/pusher.min.js"></script>p
+<script>
+    var pusher = new Pusher('1cff5a9f80d89c700679', {
+        cluster: 'ap1',
+        forceTLS: true
+    });
+
+    var channel = pusher.subscribe('notify');
+    let html = '';
+    let listNotify = $('.list-notify');
+    let totalNewNotice = $('.total-new-notice');
+
+    channel.bind('notify', function(data) {
+        let time = new Date();
+        html += '<a href="{{route('order.view', ['', ''])}}/'+data.idOrder+'" class="dropdown-item un-seen">';
+        html += '<i class="far fa-bell"></i>'+data.mess;
+        html += '<span class="float-right text-muted text-sm">'+time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true })+'</span>';
+        html += '</a>';
+        listNotify.prepend(html);
+        totalNewNotice.html(parseInt(totalNewNotice.html()) + 1);
+        html = '';
+    });
+</script>
 @yield('js')
 </body>
 </html>

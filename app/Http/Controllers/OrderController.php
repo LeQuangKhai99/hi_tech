@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Notify;
 use App\Order;
 use App\OrderDetail;
 use App\Product;
@@ -9,16 +10,17 @@ use Illuminate\Http\Request;
 
 class OrderController extends Controller
 {
-    private $order, $orderDetail, $product;
+    private $order, $orderDetail, $product, $notify;
 
-    public function __construct(Order $order, OrderDetail $orderDetail, Product $product){
+    public function __construct(Order $order, OrderDetail $orderDetail, Product $product, Notify $notify){
         $this->order = $order;
         $this->orderDetail = $orderDetail;
         $this->product = $product;
+        $this->notify = $notify;
     }
 
     public function index(){
-        $orders = $this->order->whereNull('deleted_at')->latest()->paginate(5);
+        $orders = $this->order->whereNull('deleted_at')->orderBy('status')->paginate(5);
         return view('admin.order.index', [
             'orders'=>$orders,
             'page'=>'order'
@@ -38,6 +40,11 @@ class OrderController extends Controller
             $orderDetails[$i]['total'] = $product->price * $item->quantity;
             $i++;
         }
+
+        $notify = $this->notify->where('idOrder', $order->id)->first();
+        $notify->update([
+            'status' => 1
+        ]);
         return view('admin.order.view', [
             'order' => $order,
             'orderDetails' => $orderDetails

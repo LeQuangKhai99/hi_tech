@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\Frontend;
 
+use App\Events\Mess;
+use App\Events\Notify;
 use App\Http\Controllers\Controller;
 use App\Order;
 use App\OrderDetail;
@@ -12,13 +14,14 @@ use Illuminate\Http\Request;
 
 class CartController extends Controller
 {
-    private $product, $user, $order, $orderDetail;
+    private $product, $user, $order, $orderDetail, $notify;
 
-    public function __construct(Product $product, User $user, Order $order, OrderDetail $orderDetail){
+    public function __construct(Product $product, User $user, Order $order, OrderDetail $orderDetail, \App\Notify $notify){
         $this->product = $product;
         $this->user = $user;
         $this->order = $order;
         $this->orderDetail = $orderDetail;
+        $this->notify = $notify;
     }
 
     public function index(){
@@ -90,7 +93,13 @@ class CartController extends Controller
                 'quantity'=>$cart->qty
             ]);
         }
-
+        $name = "$request->name đã đặt hàng!";
+        $this->notify->create([
+            'idOrder' => $order->id,
+            'name' => $name,
+            'status' => 0
+        ]);
+        event(new Notify($order->id, 'Có đơn hàng mới!'));
         Cart::destroy();
         return redirect()->route('front-end.home')->with('mess', 'oke');
     }

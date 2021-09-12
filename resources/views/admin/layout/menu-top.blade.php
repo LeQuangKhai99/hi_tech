@@ -89,27 +89,21 @@
         <li class="nav-item dropdown">
             <a class="nav-link" data-toggle="dropdown" href="#">
                 <i class="far fa-bell"></i>
-                <span class="badge badge-warning navbar-badge">15</span>
+                <span class="badge badge-warning navbar-badge"><span class="total-new-notice">{{$totalNotice}}</span></span>
             </a>
             <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                <span class="dropdown-item dropdown-header">15 Notifications</span>
+                <span class="dropdown-item dropdown-header">Có <span class="total-new-notice">{{$totalNotice}}</span> thông báo mới</span>
                 <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item">
-                    <i class="fas fa-envelope mr-2"></i> 4 new messages
-                    <span class="float-right text-muted text-sm">3 mins</span>
-                </a>
+               <div class="list-notify">
+                   @foreach($notifies as $notify)
+                       <a href="{{route('order.view', ['id' => $notify->idOrder])}}" class="dropdown-item {{$notify->status == 0 ? 'un-seen' : ''}}">
+                           <i class="far fa-bell"></i> Có đơn hàng mới!
+                           <span class="float-right text-muted text-sm">{{date("h:i:s A", strtotime($notify->created_at))}}</span>
+                       </a>
+                   @endforeach
+               </div>
                 <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item">
-                    <i class="fas fa-users mr-2"></i> 8 friend requests
-                    <span class="float-right text-muted text-sm">12 hours</span>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item">
-                    <i class="fas fa-file mr-2"></i> 3 new reports
-                    <span class="float-right text-muted text-sm">2 days</span>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+                <a href="#" class="dropdown-item dropdown-footer">Xem tất cả thông báo</a>
             </div>
         </li>
         <li class="nav-item">

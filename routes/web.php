@@ -1,11 +1,27 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Illuminate\Http\Request;
+use App\Events\Mess;
+use App\Events\Notify;
 @include ('admin-route.php');
 
 Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
     \UniSharp\LaravelFilemanager\Lfm::routes();
+});
+
+Route::get('/counter', function() {
+    return view('counter');
+});
+
+Route::get('/sender', function() {
+    return view('sender');
+});
+
+Route::post('sender', function() {
+    $text = request()->text;
+    event(new Mess($text));
+    event(new Notify(1, 'adsa'));
+
 });
 
 Route::group(['prefix' => '', 'namespace'=>'Frontend'], function () {

@@ -130,6 +130,20 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpoffice/phpspreadsheet" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/psr/http-client" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/psr/http-factory" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/pusher/pusher-php-server" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-php81" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/paragonie/random_compat" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/paragonie/sodium_compat" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/aws/aws-crt-php" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/laravel-notification-channels/webpush" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/fgrosse/phpasn1" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/web-token/jwt-util-ecc" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/web-token/jwt-signature-algorithm-ecdsa" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/web-token/jwt-signature" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/web-token/jwt-key-mgmt" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/web-token/jwt-core" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/spomky-labs/base64url" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/minishlink/web-push" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
