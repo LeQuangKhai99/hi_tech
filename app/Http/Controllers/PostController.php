@@ -22,7 +22,7 @@ class PostController extends Controller
     }
 
     public function index(){
-        $posts = $this->post->whereNull('deleted_at')->latest()->paginate(5);
+        $posts = $this->post->with('user')->with('postCate')->whereNull('deleted_at')->latest()->paginate(5);
         return view('admin.post.index', [
             'posts'=>$posts,
             'page'=>'post'

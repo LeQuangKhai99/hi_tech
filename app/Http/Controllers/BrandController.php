@@ -16,7 +16,7 @@ class BrandController extends Controller
         $this->brand = $brand;
     }
     public function index(){
-        $brands = $this->brand->whereNull('deleted_at')->latest()->paginate(5);
+        $brands = $this->brand->with('user')->whereNull('deleted_at')->latest()->paginate(5);
         $brandAll = $this->brand->whereNull('deleted_at')->get();
 
         $recusive = new RecusiveOptionSelect($brandAll);

@@ -31,7 +31,7 @@ class ProductController extends Controller
     }
 
     public function index(){
-        $products = $this->product->whereNull('deleted_at')->latest()->paginate(5);
+        $products = $this->product->with('category')->whereNull('deleted_at')->latest()->paginate(5);
         return view('admin.product.index', [
             'products'=>$products,
             'page'=>'product'

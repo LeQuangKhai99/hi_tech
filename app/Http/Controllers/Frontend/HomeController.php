@@ -16,7 +16,10 @@ use App\Service;
 use App\Slide;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Redis;
+use Illuminate\Support\Str;
 
 class HomeController extends Controller
 {
@@ -35,11 +38,40 @@ class HomeController extends Controller
         $this->project = $project;
         $this->product = $product;
         $this->user = $user;
+        ini_set('max_execution_time', 10000);
     }
 
+    public function test() {
+
+//        return
+//        for ($i = 0; $i < 10000; $i ++) {
+//            $product = $this->product->create([
+//                'name'=>'fdsafsd',
+//                'price'=>32432,
+//                'inventory' => 42343,
+//                'slug'=>'sdgdfgdsfgfsd',
+//                'model'=> 1,
+//                'made_by'=>'sdvaf',
+//                'des'=>'gjhfghjfg',
+//                'content'=>'sdfafdsa',
+//                'image_path'=>'fdsafdsaa' ,
+//                'user_id'=>1,
+//                'category_id'=>1,
+//                'brand_id'=>1
+//            ]);
+//        }return 'ok';
+//        $products = Redis::get('dcm1');
+//        if (is_null($products)) {
+//            $products = json_encode($this->product->get(), true);
+//            Redis::set('dcm1', $products);
+//            return $products;
+//        }
+//        return $products;
+    }
     public function index()
     {
         $brands = $this->brand->whereNull('deleted_at')->get();
+        Redis::set('bla', json_encode($brands, true));
         $colors = ['#54b6c4', '#b8a7cc', '#e8b25b', '#6e88a3', '#e57c91', '#5a9ac3'];
         $firstPostCate = $this->postCate->whereNull('deleted_at')->first();
         $posts = $this->post->whereNull('deleted_at')->where('post_cate_id', $firstPostCate->id)->get();
@@ -201,7 +233,7 @@ class HomeController extends Controller
         $brands = $this->brand->whereNull('deleted_at')->get();
         $hotNews = $this->post->whereNull('deleted_at')->latest()->limit(5)->get();
         $cate = $this->cate->whereNull('deleted_at')->where('slug', $slug)->first();
-        $products = $cate->products()->whereNull('deleted_at')->where('category_id', $cate->id)->latest()->paginate(8);
+        $products = $cate->products()->with('brand')->whereNull('deleted_at')->where('category_id', $cate->id)->latest()->paginate(8);
         return view('front-end.list-product', [
             'page'=>'product',
             'hotNews'=>$hotNews,
@@ -239,7 +271,7 @@ class HomeController extends Controller
         if ($brand == null){
             return  redirect('/');
         }
-        $products = $brand->products()->whereNull('deleted_at')->where('brand_id', $brand->id)->latest()->paginate(8);
+        $products = $brand->products()->with('brand')->whereNull('deleted_at')->where('brand_id', $brand->id)->latest()->paginate(8);
 
         return view('front-end.brand-list-product', [
             'page'=>'product',

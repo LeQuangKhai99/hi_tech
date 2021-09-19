@@ -14,7 +14,7 @@ class RoleController extends Controller
         $this->per = $per;
     }
     public function index(){
-        $roles = $this->role->whereNull('deleted_at')->latest()->paginate(5);
+        $roles = $this->role->with('user')->whereNull('deleted_at')->latest()->paginate(5);
         return view('admin.role.index', [
             'roles'=>$roles,
             'page'=>'role'

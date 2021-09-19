@@ -27,6 +27,10 @@ Route::post('sender', function() {
 Route::group(['prefix' => '', 'namespace'=>'Frontend'], function () {
     Route::get('/trang-chu', 'HomeController@index')->name('home');
 
+    Route::get('/test', 'HomeController@test');
+    Route::get('/test-recursive', function() {
+        dump(\App\Categories::findOrFail(43)->allChildCate());
+    });
     Route::get('/', [
         'as'=>'front-end.home',
         'uses'=>'HomeController@index'

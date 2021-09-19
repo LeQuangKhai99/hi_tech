@@ -20,9 +20,8 @@ class CategoryController extends Controller
         $this->cate = $cate;
     }
     public function index(){
-        $categories = $this->cate->whereNull('deleted_at')->latest()->paginate(5);
+        $categories = $this->cate->with('user')->with('parentCate')->whereNull('deleted_at')->latest()->paginate(5);
         $categoryAll = $this->cate->whereNull('deleted_at')->get();
-
         $recusive = new RecusiveOptionSelect($categoryAll);
         $html = $recusive->Option('', 0, null);
         return view('admin.category.index', [

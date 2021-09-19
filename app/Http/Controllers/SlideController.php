@@ -16,7 +16,7 @@ class SlideController extends Controller
         $this->slide = $slide;
     }
     public function index(){
-        $slides = $this->slide->whereNull('deleted_at')->latest()->paginate(5);
+        $slides = $this->slide->with('user')->whereNull('deleted_at')->latest()->paginate(5);
         $slideAll = $this->slide->whereNull('deleted_at')->get();
 
         return view('admin.slide.index', [

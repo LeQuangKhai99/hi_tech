@@ -13,7 +13,7 @@ class PostCateController extends Controller
         $this->postCate = $postCate;
     }
     public function index(){
-        $postCates = $this->postCate->whereNull('deleted_at')->latest()->paginate(5);
+        $postCates = $this->postCate->with('user')->whereNull('deleted_at')->latest()->paginate(5);
         return view('admin.post-cate.index', ['postCates'=>$postCates,
             'page'=>'post_cate']);
     }

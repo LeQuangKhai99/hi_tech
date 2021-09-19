@@ -16,7 +16,7 @@ class PermissionController extends Controller
         $this->per = $per;
     }
     public function index(){
-        $pers = $this->per->whereNull('deleted_at')->latest()->paginate(5);
+        $pers = $this->per->with('parentPer')->whereNull('deleted_at')->latest()->paginate(5);
         $perAll = $this->per->whereNull('deleted_at')->get();
 
         $recusive = new RecusiveOptionSelect($perAll);
