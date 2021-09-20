@@ -70,11 +70,21 @@ class HomeController extends Controller
     }
     public function index()
     {
-        $brands = $this->brand->whereNull('deleted_at')->get();
-        Redis::set('bla', json_encode($brands, true));
+        $brands = json_decode(Redis::get('brands1'));
+        if (is_null($brands)) {
+            $brands = $this->brand->whereNull('deleted_at')->get();
+            Redis::set('brands1', json_encode($brands, true));
+            Redis::expire('brands1', 60*60*24);
+        }
         $colors = ['#54b6c4', '#b8a7cc', '#e8b25b', '#6e88a3', '#e57c91', '#5a9ac3'];
         $firstPostCate = $this->postCate->whereNull('deleted_at')->first();
-        $posts = $this->post->whereNull('deleted_at')->where('post_cate_id', $firstPostCate->id)->get();
+
+        $posts = json_decode(Redis::get('posts'));
+        if (is_null($posts)) {
+            $posts = $this->post->whereNull('deleted_at')->where('post_cate_id', $firstPostCate->id)->get();
+            Redis::set('posts', json_encode($posts, true));
+            Redis::expire('posts', 60*60*24);
+        }
         return view('front-end.home', [
             'page'=>'home',
             'brands'=>$brands,
@@ -196,6 +206,7 @@ class HomeController extends Controller
     public function detailNews($slug){
         $hotNews = $this->post->whereNull('deleted_at')->latest()->limit(5)->get();
         $post = $this->post->where('slug',$slug)->whereNull('deleted_at')->first();
+
         $relatedPost = $this->post->inRandomOrder()->whereNull('deleted_at')->limit(6)->get();
 
         return view('front-end.detail-news', [
@@ -253,7 +264,8 @@ class HomeController extends Controller
         }
         $cate = $product->category()->whereNull('deleted_at')->first();
 
-        $productRelated = $this->product->whereNull('deleted_at')->where('category_id', $cate->id)->where('id', '<>', $product->id)->get();
+        $productRelated = $this->product->with('brand')->whereNull('deleted_at')->where('category_id', $cate->id)->where('id', '<>', $product->id)->get();
+
         return view('front-end.detail-product', [
             'page'=>'product',
             'hotNews'=>$hotNews,
@@ -285,7 +297,7 @@ class HomeController extends Controller
     public function searchProduct(Request $request){
         $brands = $this->brand->whereNull('deleted_at')->get();
         $hotNews = $this->post->whereNull('deleted_at')->latest()->limit(5)->get();
-        $products = $this->product->whereNull('deleted_at')->where('name', 'like', '%'.$request->key.'%')->latest()->paginate(8);
+        $products = $this->product->with('brand')->whereNull('deleted_at')->where('name', 'like', '%'.$request->key.'%')->latest()->paginate(8);
         return view('front-end.search-product', [
             'page'=>'product',
             'hotNews'=>$hotNews,
