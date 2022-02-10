@@ -9,6 +9,7 @@ Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']
 });
 
 Route::group(['prefix' => '', 'namespace'=>'Frontend'], function () {
+    Route::get('test', 'HomeController@addPermission');
     Route::get('/trang-chu', 'HomeController@index')->name('home');
 
     Route::get('/', [

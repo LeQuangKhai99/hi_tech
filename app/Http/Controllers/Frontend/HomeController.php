@@ -15,13 +15,14 @@ use App\Recruitment;
 use App\Service;
 use App\Slide;
 use App\User;
+use App\Permission;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
 class HomeController extends Controller
 {
-    private $slide, $brand, $cate, $post, $postCate, $intro, $service, $recruitment, $contact, $project, $product, $user;
-    public function __construct(User $user,Slide $slide, Brand $brand, Categories $cate, Post $post, PostCate $postCate, Intro $intro, Service $service, Recruitment $recruitment, Contact $contact, Project $project, Product $product)
+    private $slide, $brand, $cate, $post, $postCate, $intro, $service, $recruitment, $contact, $project, $product, $user, $per;
+    public function __construct(User $user,Slide $slide, Brand $brand, Categories $cate, Post $post, PostCate $postCate, Intro $intro, Service $service, Recruitment $recruitment, Contact $contact, Project $project, Product $product, Permission $per)
     {
         $this->slide = $slide;
         $this->brand = $brand;
@@ -35,6 +36,31 @@ class HomeController extends Controller
         $this->project = $project;
         $this->product = $product;
         $this->user = $user;
+        $this->per = $per;
+    }
+
+    public function addPermission() {
+        $obj = ['category', 'product', 'tag', 'brand', 'slide', 'post-cate', 'post-cate', 'post', 'user', 'role', 'permission', 'intro', 'service', 'recruitment', 'contact', 'project', 'order'];
+        $action = ['list', 'add', 'update', 'delete', 'trash', 'restore', 'force-delete'];
+
+        foreach($obj as $o) {
+            $data = [
+                'name'=>"$o-module",
+                'des'=>"$o-module" ,
+                'parent_id'=>0,
+                'key_code'=>"$o-module",
+            ];
+            $per = $this->per->create($data);
+            foreach($action as $a) {
+                $data = [
+                    'name'=>"$o-$a",
+                    'des'=>"$o-$a" ,
+                    'parent_id'=>$per->id,
+                    'key_code'=>"$o-$a",
+                ];
+                $this->per->create($data);
+            }
+        }
     }
 
     public function index()
