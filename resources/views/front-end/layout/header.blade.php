@@ -3,7 +3,7 @@
         <div class="col-xs-12 col-sm-2 col-md-1 text-center">
             <!-- logo -->
             <div class="logo">
-                <img src="/hi-tech/images/logo.png" alt="logo TM Hitech" class="img-thumbnail">
+                <img src="/hi-tech/images/logo2.png" alt="logo TM Hitech" class="img-thumbnail">
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-8 d-flex align-items-center ">
