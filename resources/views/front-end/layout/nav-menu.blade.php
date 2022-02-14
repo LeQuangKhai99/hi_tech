@@ -13,35 +13,14 @@
             <li class="nav-item {{$page == 'intro' ? 'active' : ''}}">
                 <a class="nav-link" href="{{route('front-end.intro')}}">GIỚI THIỆU</a>
             </li>
-            <li class="nav-item btn-list-product {{$page == 'product' ? 'active' : ''}}">
-                <a class="nav-link" href="javascript:">SẢN PHẨM</a>
-                <div class="dropdown-menu-product">
-                    <div class="row list-menu-product">
+            <li class="w3-container nav-item btn-list-news {{$page == 'product' ? 'active' : ''}}">
+                <div class="w3-dropdown-hover" style="background-color: #ffffff">
+                    <a class="nav-link ">SẢN PHẨM</a>
+                    <div class="w3-dropdown-content w3-bar-block w3-border">
                         @foreach($parentCates as $key => $parentCate)
-                            @if($key == count($parentCates)-1)
-                                <div class="col-md-2 list-cate-product last-col-menu">
-                                    <ul>
-                                        <li class="link-header-product"><a href="{{route('front-end.list-cate-product', ['slug'=>$parentCate->slug])}}">{{$parentCate->name}}</a></li>
-                                        @foreach($parentCate->childCate()->whereNull('deleted_at')->limit(5)->get() as $child)
-                                            <li class="link-normal-product"><a href="{{route('front-end.list-product', ['slug'=>$child->slug])}}">{{$child->name}}</a></li>
-                                        @endforeach
-                                        <li class="link-footer-product"><a href="{{route('front-end.list-cate-product', ['slug'=>$parentCate->slug])}}">Xem tất cả <i class="fas fa-caret-down"></i> </a></li>
-                                    </ul>
-                                </div>
-                            @else
-                                <div class="col-md-2 list-cate-product">
-                                    <ul>
-                                        <li class="link-header-product"><a href="{{route('front-end.list-cate-product', ['slug'=>$parentCate->slug])}}">{{$parentCate->name}}</a></li>
-                                        @foreach($parentCate->childCate()->whereNull('deleted_at')->limit(5)->get() as $child)
-                                            <li class="link-normal-product"><a href="{{route('front-end.list-product', ['slug'=>$child->slug])}}">{{$child->name}}</a></li>
-                                        @endforeach
-                                        <li class="link-footer-product"><a href="{{route('front-end.list-cate-product', ['slug'=>$parentCate->slug])}}">Xem tất cả <i class="fas fa-caret-down"></i> </a></li>
-                                    </ul>
-                                </div>
-                            @endif
+                        <a href="{{route('front-end.list-product', ['slug'=>$parentCate->slug])}}" class="w3-bar-item w3-button {{$key == count($parentCates) ? 'w3-border-none' : ''}}">{{$parentCate->name}}</a>
                         @endforeach
                     </div>
-                    <img style="width: 100%;" src="/hi-tech/images/menu4.png" alt="">
                 </div>
             </li>
             <li class="nav-item {{$page == 'project' ? 'active' : ''}}">

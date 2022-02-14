@@ -12,13 +12,7 @@
 }
 .btnsw
 {
-	background: white;
-	width: 74px !important;
-	margin-left: -10px !important;
-	color: gray !important;
-	margin-right: -14px !important;
-	height: 96px !important;
-	margin-top: -50px!important;
+  display: none;
 }
 .btnprenext
 {
@@ -27,7 +21,8 @@
 .img_sw
 {
 	padding-top: 15px;
-	width: 55%;
+	width: 120px;
+  height: 65px;
 }
 
 .swiper-button-prev:after,.swiper-button-next:after{
@@ -56,6 +51,30 @@
     padding: 0 7.5px !important;
 }
 
+.box-cate-0:hover .cate-0{
+  display: table;
+}
+
+.box-cate-1:hover .cate-1{
+  display: table;
+}
+
+.box-cate-2:hover .cate-2{
+  display: table;
+}
+
+.box-cate-3:hover .cate-3{
+  display: table;
+}
+
+.box-cate-4:hover .cate-4{
+  display: table;
+}
+
+.box-cate-5:hover .cate-5{
+  display: table;
+}
+
 .anim-left{
     position: absolute;
     top:0;
@@ -63,7 +82,7 @@
     height: 100%;
     width: 35%;
     opacity: 0.9;
-    display: table;
+    display: none;
 }
 
 .anim-right{
@@ -73,7 +92,7 @@
     height: 100%;
     width: 35%;
     opacity: 0.9;
-    display: table;
+    display: none;
 }
 
 .left-content{
@@ -225,5 +244,6 @@
 
 .slide-prd{
     height: 80px;
+    overflow: hidden;
 }
 

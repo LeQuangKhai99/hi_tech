@@ -42,8 +42,9 @@ a{
 }
 .img_sw
 {
-    padding-top: 15px;
-    width: 55%;
+	padding-top: 15px;
+	width: 120px;
+  height: 65px;
 }
 
 .swiper-button-prev:after,.swiper-button-next:after{
@@ -154,4 +155,6 @@ a{
 
 .slide-prd{
     height: 80px;
+    overflow: hidden;
 }
+

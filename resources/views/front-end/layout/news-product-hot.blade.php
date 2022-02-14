@@ -8,9 +8,9 @@
                 <li class="list-group-item align-items-center d-flex">
                     <img width="100px" height="100px" src="{{$parentCate->image_path}}" class="img-thumbnail" alt="Chuẩn đoán hình  ">
                     <div class="card-body">
-                        <h5><a class="hot-title" href="{{route('front-end.list-cate-product', ['slug'=>$parentCate->slug])}}">{{$parentCate->name}}</a></h5>
+                        <h5><a class="hot-title" href="{{route('front-end.list-product', ['slug'=>$parentCate->slug])}}">{{$parentCate->name}}</a></h5>
                         <i class="fa fa-caret-right" aria-hidden="true"></i>
-                        <a class="hot-see-detail" href="{{route('front-end.list-cate-product', ['slug'=>$parentCate->slug])}}">Xem chi tiết</a>
+                        <a class="hot-see-detail" href="{{route('front-end.list-product', ['slug'=>$parentCate->slug])}}">Xem chi tiết</a>
                     </div>
                 </li>
             @endforeach

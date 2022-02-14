@@ -63,7 +63,7 @@
             $bit = true;
         @endphp
         @foreach($parentCates as $key => $parentCate)
-        <div class="col-sm-6 device">
+        <div class="col-sm-6 device box-cate-{{$key}}">
             <img class="img-device" src="{{$parentCate->image_path}}" alt="">
             @if($key %2 == 0)
                 @if($x == 0)
@@ -89,11 +89,11 @@
                 @endif
 
             @endif
-            <div class="{{$class}}" style="background-color: {{$colors[$key]}};">
+            <div class="{{$class}} cate-{{$key}}" style="background-color: {{$colors[$key]}};">
                 <div class="left-content">
-                    <p>Thiết bị</p>
+                    <p>Sản phẩm</p>
                     <h3>{{$parentCate->name}}</h3>
-                    <a href="{{route('front-end.list-cate-product', ['slug'=>$parentCate->slug])}}">Xem thêm <i class="fa fa-angle-right"></i> </a>
+                    <a href="{{route('front-end.list-product', ['slug'=>$parentCate->slug])}}">Xem thêm <i class="fa fa-angle-right"></i> </a>
                 </div>
             </div>
         </div>
@@ -102,7 +102,7 @@
 
     <div class="knowledge">
         <div class="knowledge-title">
-            <h3>Kiến thức y tế</h3>
+            <h3>Tin Tức Thời Trang</h3>
         </div>
         <div>
             <div class="container-fluid">

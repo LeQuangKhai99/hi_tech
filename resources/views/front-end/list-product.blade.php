@@ -6,7 +6,7 @@
     <section id="nav-link" class="w-100">
         <a href="{{route('home')}}">Trang chủ</a>
         <i class="fa fa-angle-right" aria-hidden="true"></i>
-        <a href="{{route('front-end.list-cate-product', ['slug'=>$cate->parentCate()->whereNull('deleted_at')->first()->slug])}}">{{$cate->parentCate()->whereNull('deleted_at')->first()->name}}</a>
+        <span>Loại sản phẩm</span>
         <i class="fa fa-angle-right" aria-hidden="true"></i>
         <a>{{$cate->name}}</a>
     </section>
