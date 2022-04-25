@@ -105,7 +105,8 @@ class ProductController extends Controller
             if ($request->tags != null){
                 foreach ($request->tags as $tag){
                     $temp = $this->tag->firstOrCreate([
-                        'name'=>$tag
+                        'name'=>$tag,
+                        'user_id'=>auth()->user()->id
                     ]);
                     $tagids[] = $temp->id;
                 }
