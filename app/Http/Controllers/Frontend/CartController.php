@@ -9,6 +9,7 @@ use App\Product;
 use App\User;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class CartController extends Controller
 {
@@ -39,7 +40,7 @@ class CartController extends Controller
                 Cart::update($cart->rowId, $product->inventory);
                 return redirect()->route('front-end.cart')->with('err', 'Số lượng đã đạt giới hạn');
             }
-            else {
+            else {        
                 return redirect()->route('front-end.cart')->with('success', 'Thêm sản phẩm vào giỏ hàng thành công');
             }
         }
@@ -91,6 +92,12 @@ class CartController extends Controller
             ]);
         }
 
+        Mail::send('mailclient', array(), function($message){
+            $message->to(auth()->user()->email, 'Cảm ơn quý khách!')->subject('Cảm ơn quý khách đã mua hàng tại của hàng của chúng tôi!');
+        });
+        Mail::send('mailadmin', array(), function($message){
+            $message->to("foxkd789@gmail.com", 'Có đơn hàng mới!')->subject('Có đơn hàng mới');
+        });
         Cart::destroy();
         return redirect()->route('front-end.home')->with('mess', 'oke');
     }
