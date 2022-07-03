@@ -116,7 +116,7 @@ Route::group(['prefix' => '', 'namespace'=>'Frontend'], function () {
         ]);
     });
 
-    Route::group(['prefix'=>'/', 'middleware'=>['check_login']],function () {
+    Route::group(['prefix'=>'/'],function () {
         Route::get('/gio-hang', [
             'as'=>'front-end.cart',
             'uses'=>'CartController@index'
@@ -139,12 +139,19 @@ Route::group(['prefix' => '', 'namespace'=>'Frontend'], function () {
 
         Route::get('/thanh-toan', [
             'as'=>'front-end.checkout',
-            'uses'=>'CartController@checkout'
+            'uses'=>'CartController@checkout',
+            'middleware'=>'check_login'
         ]);
 
         Route::post('/thanh-toan', [
             'as'=>'front-end.postCheckout',
-            'uses'=>'CartController@postCheckout'
+            'uses'=>'CartController@postCheckout',
+            'middleware'=>'check_login'
+        ]);
+
+        Route::get('/reload', [
+            'as'=>'reload',
+            'uses'=>'CartController@reload'
         ]);
     });
 

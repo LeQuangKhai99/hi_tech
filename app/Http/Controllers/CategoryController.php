@@ -90,7 +90,7 @@ class CategoryController extends Controller
         try {
             $cate = $this->cate->find($id);
             $cate->update([
-                'deleted_at'=>"a"
+                'deleted_at'=>date('Y-m-d H:i:s')
             ]);
             return response()->json([
                 'code'=>'200',

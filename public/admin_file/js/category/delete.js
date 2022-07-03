@@ -1,7 +1,7 @@
-
-$('.act-del').on('click', function (e){
+$('.act-del').on('click', function(e) {
     e.preventDefault();
     var url = $(this).data('url');
+    console.log(url);
     var btn = $(this);
     Swal.fire({
         title: 'Bạn có chắc muốn xóa?',
@@ -14,19 +14,18 @@ $('.act-del').on('click', function (e){
     }).then((result) => {
         if (result.value) {
             $.ajax({
-                type:'GET',
+                type: 'GET',
                 url: url,
-                success: function (data){
+                success: function(data) {
                     console.log(data)
-                    if (data.code == 200){
+                    if (data.code == 200) {
                         btn.parent().parent().remove();
                         Swal.fire(
                             'Deleted!',
                             'Dữ liệu đã được xóa',
                             'success'
                         )
-                    }
-                    else {
+                    } else {
                         Swal.fire(
                             'ERROR!',
                             'Dữ liệu chưa được xóa',
@@ -35,7 +34,7 @@ $('.act-del').on('click', function (e){
                     }
 
                 },
-                error: function (){
+                error: function() {
                     Swal.fire(
                         'ERROR!',
                         'Bạn không có quyền xóa',

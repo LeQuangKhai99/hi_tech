@@ -10,6 +10,7 @@ use App\User;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Session;
 
 class CartController extends Controller
 {
@@ -70,6 +71,21 @@ class CartController extends Controller
     }
 
     public function postCheckout(Request $request){
+        $request->validate([
+            'g-recaptcha-response' => function($attribute, $value, $fail) {
+                $secretKey = '6LdJrOwfAAAAAIXIj4Z2PZfaVKv-Atn-7Tq2EzDB';
+                $response = $value;
+                $userIP = $_SERVER['REMOTE_ADDR'];
+                $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$response&remoteip=$userIP";
+                $response = \file_get_contents($url);
+                $response = json_decode($response);
+                if(!$response->success) {
+                    Session::flash('captcha-err', 'true');
+                    $fail($attribute.' google reCatpcha failed');
+                }
+            }
+        ]);
+
         $order = $this->order->create([
             'user_id'=>auth()->user()->id,
             'ship_name'=>$request->name,

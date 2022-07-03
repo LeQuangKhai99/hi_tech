@@ -62,7 +62,10 @@
                     </div>
                 </div>
             </div>
-
+            @if(Session::has('captcha-err'))
+                <div style="color: red" class="error">Vui lòng check captcha</div>
+            @endif
+            <div class="g-recaptcha" data-sitekey="6LdJrOwfAAAAAKrNU4O6YqwVNh-xa6vJWKkR6kK_"></div>
             <div class="checkout-footer d-flex align-items-center justify-content-between">
                 <a class="previous-link" href=""><i class="fas fa-chevron-left mr-2"></i>Giỏ hàng</a>
                 <button name="button" type="submit" class="continue-btn btn">Hoàn tất đơn hàng</button>
