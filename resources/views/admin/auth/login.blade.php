@@ -56,6 +56,17 @@
                                 <span class="ml-auto"><a href="{{route('auth.register')}}" class="forgot-pass">Chưa có tài khoản ? Đăng kí</a></span>
                             </div>
                         </form>
+                        <div class="box-media">
+                            <a href="{{route('login.google')}}">
+                                <img src="/images/common/ico-google.png" alt="">
+                            </a>
+                            <a href="{{route('login.google')}}">
+                                <img src="/images/common/ico-face.png" alt="">
+                            </a>
+                            <a href="{{route('login.google')}}">
+                                <img src="/images/common/ico-twiter.png" alt="">
+                            </a>
+                        </div>
                     </div>
                 </div>
 
