@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use App\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Laravel\Socialite\Facades\Socialite;
 
 class AuthController extends Controller
 {
@@ -139,6 +140,31 @@ class AuthController extends Controller
         else{
             return redirect()->route('auth.login')->with('mess-err','Sai tài khoản hoặc mật khẩu');
         }
+    }
+
+    public function redirectToGoogle()
+    {
+        return Socialite::driver('google')->redirect();
+    }
+
+    public function handleGoogleCallback(Request $request)
+    {
+        $user = Socialite::driver('google')->user();
+        $userCheck = $this->user->where('email', $user->email)->first();
+        if($userCheck) 
+        {
+            Auth::login($userCheck);
+        }
+        else {
+            $userNew = $this->user->create([
+                'name' => $user->name,
+                'email' => $user->email,
+                'password' => Hash::make('123456'),
+            ]);
+            Auth::login($userNew);
+        }
+        
+        return redirect('/');
     }
 
     public function register(){

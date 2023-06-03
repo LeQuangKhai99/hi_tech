@@ -74,7 +74,13 @@ return [
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',
-        // ],
+        // ],   
+    ],
+
+    'socialite' => [
+        'drivers' => [
+            'google',
+        ],
     ],
 
     /*
