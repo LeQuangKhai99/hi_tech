@@ -2,6 +2,7 @@
 Route::prefix('auth')->group(function () {
     Route::get('login/google', 'AuthController@redirectToGoogle')->name('login.google');
     Route::get('login/google/callback', 'AuthController@handleGoogleCallback');
+    Route::get('login/facebook/callback', 'AuthController@handleFacebookCallback');
 
     Route::get('/login', [
         'as'=>'auth.login',

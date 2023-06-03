@@ -167,6 +167,10 @@ class AuthController extends Controller
         return redirect('/');
     }
 
+    public function handleFacebookCallback() {
+        dd('aa');
+    }
+
     public function register(){
         return view('admin.auth.register');
     }
