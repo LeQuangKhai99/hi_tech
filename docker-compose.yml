@@ -1,0 +1,71 @@
+version: '3'
+
+services:
+
+    mysql:
+        image: mysql:5.7
+        command: --default-authentication-plugin=mysql_native_password
+        container_name: laravel-cicd_mysql
+        restart: unless-stopped
+        ports:
+            - 3308:3306
+        volumes:
+            - ./docker/mysql:/var/lib/mysql
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: laravel-ci-cd
+            MYSQL_USER: "app_user"
+            MYSQL_PASSWORD: "123456"
+        networks:
+            - backend
+
+    php:
+        build:
+            context: ./docker
+            dockerfile: Dockerfile
+        container_name: laravel-cicd_php
+        restart: unless-stopped
+        depends_on:
+            - mysql
+        volumes:
+            - ./:/var/www/html/hitech/
+        working_dir: /var/www/html/hitech/
+        networks:
+            - backend
+
+    nginx:
+        image: nginx:latest
+        container_name: laravel-cicd_nginx
+        volumes:
+            - .:/var/www/html/hitech/
+            - ./docker/nginx_log:/var/log/nginx
+            - ./docker/php-fpm/php-fpm.log:/var/log/php-fpm.log
+            - ./docker/config/app.conf:/etc/nginx/conf.d/app.conf
+            - ./docker/nginx/certs:/etc/nginx/certs
+        ports:
+            - "9982:80"
+            - "4433:443"
+        depends_on:
+            - php
+        networks:
+            - backend
+
+    phpmyadmin:
+        image: phpmyadmin
+        container_name: laravel-cicd_phpmyadmin
+        restart: unless-stopped
+        ports:
+            - 8181:80
+        depends_on:
+            - mysql
+        environment:
+            - PMA_HOST=mysql
+            - PMA_PORT=3306
+            - PMA_USER=root
+            - PMA_PASSWORD=root
+            - MYSQL_ROOT_PASSWORD=root
+            - UPLOAD_LIMIT=64M
+        networks:
+            - backend
+networks:
+    backend:

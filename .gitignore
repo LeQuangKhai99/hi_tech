@@ -10,3 +10,6 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
+docker/mysql
+docker/nginx_log
+docker/php-fpm
