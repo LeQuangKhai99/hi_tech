@@ -3,6 +3,12 @@ Route::prefix('auth')->group(function () {
     Route::get('login/google', 'AuthController@redirectToGoogle')->name('login.google');
     Route::get('login/google/callback', 'AuthController@handleGoogleCallback');
 
+    Route::get('login/twiter', 'AuthController@redirectToTwitter')->name('login.twiter');
+    Route::get('login/twiter/callback', 'AuthController@handleTwitterCallback');
+
+    Route::get('login/face', 'AuthController@redirectToFace')->name('login.face');
+    Route::get('login/face/callback', 'AuthController@handleFaceCallback');
+
     Route::get('/login', [
         'as'=>'auth.login',
         'uses'=>'AuthController@login'

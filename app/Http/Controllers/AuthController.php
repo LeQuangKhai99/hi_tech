@@ -22,26 +22,29 @@ class AuthController extends Controller
         $this->info = $info;
     }
 
-    public function index(){
+    public function index()
+    {
         $user = $this->user->whereNull('deleted_at')->latest()->paginate(5);
         $roles = $this->role->whereNull('deleted_at')->get();
-        return view('admin.user.index', ['users'=>$user, 'roles'=>$roles, 'page'=>'user']);
+        return view('admin.user.index', ['users' => $user, 'roles' => $roles, 'page' => 'user']);
     }
 
-    public function update($id){
+    public function update($id)
+    {
         $user = $this->user->find($id);
         $roles = $this->role->whereNull('deleted_at')->get();
         $roleOfUser = $user->roles;
         $infos = $user->infos;
         return response()->json([
-            'user'=>$user,
-            'roles'=>$roles,
-            'roleOfUser'=>$roleOfUser,
-            'infos'=>$infos
+            'user' => $user,
+            'roles' => $roles,
+            'roleOfUser' => $roleOfUser,
+            'infos' => $infos
         ]);
     }
 
-    public function postUpdate(Request $request){
+    public function postUpdate(Request $request)
+    {
         $user = $this->user->find($request->id);
         $user->infos()->delete();
         $user->update([
@@ -52,93 +55,98 @@ class AuthController extends Controller
             'password' => Hash::make($request->password),
         ]);
         if (isset($request->address2)) {
-            foreach ($request->address2 as $address){
+            foreach ($request->address2 as $address) {
                 if ($address != null) {
                     $this->info->create([
-                        'address'=>$address,
-                        'user_id'=>$user->id
+                        'address' => $address,
+                        'user_id' => $user->id
                     ]);
                 }
             }
         }
         $user->roles()->sync($request->roles);
-        return redirect()->route('user.index')->with(['add-oke'=>'oke']);
+        return redirect()->route('user.index')->with(['add-oke' => 'oke']);
     }
 
-    public function delete($id){
+    public function delete($id)
+    {
         try {
             $cate = $this->user->find($id);
             $cate->update([
-                'deleted_at'=>date('Y-m-d H:i:s')
+                'deleted_at' => date('Y-m-d H:i:s')
             ]);
             return response()->json([
-                'code'=>'200',
-                'mess'=>'success'
+                'code' => '200',
+                'mess' => 'success'
             ]);
-        }catch (\Exception $exception){
+        } catch (\Exception $exception) {
             return response()->json([
-                'code'=>'404',
-                'mess'=>'err'
+                'code' => '404',
+                'mess' => 'err'
             ]);
         }
     }
 
-    public function trash(){
+    public function trash()
+    {
         $user = $this->user->whereNotNull('deleted_at')->latest()->paginate(5);
         return view('admin.user.trash', [
-            'users'=>$user,
-            'page'=>'user'
+            'users' => $user,
+            'page' => 'user'
         ]);
     }
 
-    public function restore($id){
+    public function restore($id)
+    {
         try {
             $user = $this->user->find($id);
             $user->update([
-                'deleted_at'=>null
+                'deleted_at' => null
             ]);
             return response()->json([
-                'code'=>'200',
-                'mess'=>'success'
+                'code' => '200',
+                'mess' => 'success'
             ]);
-        }catch (\Exception $exception){
+        } catch (\Exception $exception) {
             return response()->json([
-                'code'=>'404',
-                'mess'=>'err'
+                'code' => '404',
+                'mess' => 'err'
             ]);
         }
     }
 
-    public function forceDelete($id){
+    public function forceDelete($id)
+    {
         try {
             $user = $this->user->find($id);
             $user->delete();
             return response()->json([
-                'code'=>'200',
-                'mess'=>'success'
+                'code' => '200',
+                'mess' => 'success'
             ]);
-        }catch (\Exception $exception){
+        } catch (\Exception $exception) {
             return response()->json([
-                'code'=>'404',
-                'mess'=>'err'
+                'code' => '404',
+                'mess' => 'err'
             ]);
         }
     }
 
-    public function login(){
+    public function login()
+    {
         return view('admin.auth.login');
     }
 
-    public function postLogin(Request $request){
+    public function postLogin(Request $request)
+    {
         $isLogin = Auth::attempt([
-            'email'=>$request->email,
-            'password'=>$request->password
+            'email' => $request->email,
+            'password' => $request->password
         ]);
-        if ($isLogin){
+        if ($isLogin) {
             return redirect()->route('home');
-        }
-        else{
-            return redirect()->route('auth.login')->with('mess-err','Sai tài khoản hoặc mật khẩu');
+        } else {
+            return redirect()->route('auth.login')->with('mess-err', 'Sai tài khoản hoặc mật khẩu');
         }
     }
 
@@ -151,11 +159,9 @@ class AuthController extends Controller
     {
         $user = Socialite::driver('google')->user();
         $userCheck = $this->user->where('email', $user->email)->first();
-        if($userCheck) 
-        {
+        if ($userCheck) {
             Auth::login($userCheck);
-        }
-        else {
+        } else {
             $userNew = $this->user->create([
                 'name' => $user->name,
                 'email' => $user->email,
@@ -163,11 +169,59 @@ class AuthController extends Controller
             ]);
             Auth::login($userNew);
         }
-        
+
         return redirect('/');
     }
 
-    public function register(){
+    public function redirectToTwitter()
+    {
+        return Socialite::driver('twitter')->redirect();
+    }
+
+    public function handleTwitterCallback()
+    {
+        $user = Socialite::driver('twitter')->user();
+        dd($user);
+        $userCheck = $this->user->where('email', $user->email)->first();
+        if ($userCheck) {
+            Auth::login($userCheck);
+        } else {
+            $userNew = $this->user->create([
+                'name' => $user->name,
+                'email' => $user->email,
+                'password' => Hash::make('123456'),
+            ]);
+            Auth::login($userNew);
+        }
+
+        return redirect('/');
+    }
+
+    public function redirectToFace()
+    {
+        return Socialite::driver('facebook')->redirect();
+    }
+
+    public function handleFaceCallback()
+    {
+        $user = Socialite::driver('facebook')->user();
+        $userCheck = $this->user->where('email', $user->email)->first();
+        if ($userCheck) {
+            Auth::login($userCheck);
+        } else {
+            $userNew = $this->user->create([
+                'name' => $user->name,
+                'email' => $user->email,
+                'password' => Hash::make('123456'),
+            ]);
+            Auth::login($userNew);
+        }
+
+        return redirect('/');
+    }
+
+    public function register()
+    {
         return view('admin.auth.register');
     }
 
@@ -183,27 +237,28 @@ class AuthController extends Controller
         ]);
 
         if (isset($request->address2)) {
-            foreach ($request->address2 as $address){
+            foreach ($request->address2 as $address) {
                 if ($address != null) {
                     $this->info->create([
-                        'address'=>$address,
-                        'user_id'=>$user->id
+                        'address' => $address,
+                        'user_id' => $user->id
                     ]);
                 }
             }
         }
 
-        if ($request->roles != null){
+        if ($request->roles != null) {
             $user->roles()->sync($request->roles);
         }
-        if ($request->admin != null){
-            return redirect()->route('user.index')->with(['add-oke'=>'oke']);
-        }else{
-            return redirect()->route('auth.login')->with(['oke'=>'oke']);
+        if ($request->admin != null) {
+            return redirect()->route('user.index')->with(['add-oke' => 'oke']);
+        } else {
+            return redirect()->route('auth.login')->with(['oke' => 'oke']);
         }
     }
 
-    public function logout(){
+    public function logout()
+    {
         Auth::logout();
         return redirect()->route('auth.login');
     }

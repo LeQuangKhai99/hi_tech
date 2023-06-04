@@ -60,10 +60,10 @@
                             <a href="{{route('login.google')}}">
                                 <img src="/images/common/ico-google.png" alt="">
                             </a>
-                            <a href="{{route('login.google')}}">
+                            <a href="{{route('login.face')}}">
                                 <img src="/images/common/ico-face.png" alt="">
                             </a>
-                            <a href="{{route('login.google')}}">
+                            <a href="{{route('login.twiter')}}">
                                 <img src="/images/common/ico-twiter.png" alt="">
                             </a>
                         </div>
